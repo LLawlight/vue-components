@@ -42,7 +42,7 @@ export default {
     },
     content: {
       type: String,
-      default: ""
+      required: true
     },
     type: {
       type: String,
@@ -61,9 +61,6 @@ export default {
       }
     }
   },
-  computed: {},
-  ready() {},
-  attached() {},
   methods: {
     sureFunc: function() {
       this.show = false
@@ -73,8 +70,7 @@ export default {
       this.show = false
       this.cancelEvent()
     }
-  },
-  components: {}
+  }
 };
 </script>
 

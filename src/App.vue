@@ -5,75 +5,148 @@
       <hello></hello>
     </div>
 
-    <div id="modal" class="section">
-      <h2>Modal</h2>
-
-      <div class="introduce">
-        <a class="z-btn" @click.prevent="alert.show = true">Alert</a>
-        <modal
-        :show.sync="alert.show"
-        :content="'这是一个alert！'"
-        ></modal>
-      </div>
-
-      <div class="introduce">
-        <a class="z-btn" @click.prevent="confirm.show = true">confirm</a>
-        <modal
-        :show.sync="confirm.show"
-        :type="'confirm'"
-        :content="'这是一个confirm！'"
-        ></modal>
-      </div>
-    </div>
-
     <div id="aside" class="section">
       <h2>Aside</h2>
       <div class="introduce">
-        <a class="z-btn" @click.prevent="asideLeft.show = true">left</a>
-        <aside
+        <z-button
+        :text="'Left'"
+        @click="asideLeft.show = true">
+        </z-button>
+        <z-aside
         :show.sync="asideLeft.show"
         :type="'left'">
           <h3>我是Aside-Left</h3>
           <div>组件内部可以自定义HTML结构</div>
           <p>直接在&lt;aside&gt;标签中写即可</p>
           <div>内容长度无限制，超过部分可以滚动浏览</div>
-        </aside>
+        </z-aside>
       </div>
 
       <div class="introduce">
-        <a class="z-btn" @click.prevent="asideTop.show = true">top</a>
-        <aside
+        <z-button
+        :text="'Top'"
+        @click="asideTop.show = true">
+        </z-button>
+        <z-aside
         :show.sync="asideTop.show"
         :type="'top'">
           <h3>我是Aside-Top</h3>
           <div>组件内部可以自定义HTML结构</div>
           <p>直接在&lt;aside&gt;标签中写即可</p>
           <div>内容长度无限制，超过部分可以滚动浏览</div>
-        </aside>
+        </z-aside>
       </div>
 
       <div class="introduce">
-        <a class="z-btn" @click.prevent="asideRight.show = true">right</a>
-        <aside
+        <z-button
+        :text="'Right'"
+        @click="asideRight.show = true">
+        </z-button>
+        <z-aside
         :show.sync="asideRight.show"
         :type="'right'">
           <h3>我是Aside-Right</h3>
           <div>组件内部可以自定义HTML结构</div>
           <p>直接在&lt;aside&gt;标签中写即可</p>
           <div>内容长度无限制，超过部分可以滚动浏览</div>
-        </aside>
+        </z-aside>
       </div>
 
       <div class="introduce">
-        <a class="z-btn" @click.prevent="asideBottom.show = true">bottom</a>
-        <aside
+        <z-button
+        :text="'Bottom'"
+        @click="asideBottom.show = true">
+        </z-button>
+        <z-aside
         :show.sync="asideBottom.show"
         :type="'bottom'">
           <h3>我是Aside-Bottom</h3>
           <div>组件内部可以自定义HTML结构</div>
           <p>直接在&lt;aside&gt;标签中写即可</p>
           <div>内容长度无限制，超过部分可以滚动浏览</div>
-        </aside>
+        </z-aside>
+      </div>
+    </div>
+
+    <div id="button" class="section">
+      <h2>Button</h2>
+
+      <div class="introduce">
+        <z-button
+        :text="'defalut'">
+        </z-button>
+      </div>
+
+      <div class="introduce">
+        <z-button
+        :text="'primary'"
+        :type="'primary'">
+        </z-button>
+      </div>
+
+      <div class="introduce">
+        <z-button
+        :text="'success'"
+        :type="'success'">
+        </z-button>
+      </div>
+
+      <div class="introduce">
+        <z-button
+        :text="'info'"
+        :type="'info'">
+        </z-button>
+      </div>
+
+      <div class="introduce">
+        <z-button
+        :text="'warning'"
+        :type="'warning'">
+        </z-button>
+      </div>
+
+      <div class="introduce">
+        <z-button
+        :text="'danger'"
+        :type="'danger'">
+        </z-button>
+      </div>
+    </div>
+
+    <div id="modal" class="section">
+      <h2>Modal</h2>
+
+      <div class="introduce">
+        <z-button
+        :text="'Alert'"
+        @click="alert.show = true">
+        </z-button>
+        <z-modal
+        :show.sync="alert.show"
+        :content="'这是一个alert！'">
+        </z-modal>
+      </div>
+
+      <div class="introduce">
+        <z-button
+        :text="'Confirm'"
+        @click="confirm.show = true">
+        </z-button>
+        <z-modal
+        :show.sync="confirm.show"
+        :type="'confirm'"
+        :content="'这是一个confirm！'"></z-modal>
+      </div>
+    </div>
+
+    <div id="table" class="section">
+      <h2>Table</h2>
+
+      <div class="introduce">
+        <z-table
+        :ths="['参数','类型','必填','说明']"
+        :trs="[['ths','一维数组','是','表头的数据'],['trs','二维数组','是','表体的数据']]">
+        </z-table>
       </div>
     </div>
 
@@ -82,14 +155,18 @@
 
 <script>
 import Hello from './components/Hello'
-import Modal from './components/Modal'
-import Aside from './components/Aside'
+import zAside from './components/Aside'
+import zButton from './components/Button'
+import zModal from './components/Modal'
+import zTable from './components/Table'
 
 export default {
   components: {
     Hello,
-    Modal,
-    Aside
+    zAside,
+    zButton,
+    zModal,
+    zTable
   },
   data() {
     return {
@@ -117,15 +194,20 @@ export default {
 </script>
 
 <style>
-h1,h2 {
+html,body,h1,h2,a {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 0;
 }
 
 #app {
   color: rgb(53, 73, 94);
   font-family: Source Sans Pro, Helvetica, sans-serif;
   font-size: 16px;
+  padding: 10px;
 }
 
 a {
@@ -143,21 +225,14 @@ a {
 }
 
 .section {
-  margin: 20px;
+  margin: 20px 0 0;
 }
 
 .introduce {
-  margin: 10px 0;
+  margin: 10px 5px 0 0;
   display: inline-block;
 }
-
-.z-btn {
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
+.introduce:last-child {
+  margin-right: 0;
 }
-
 </style>

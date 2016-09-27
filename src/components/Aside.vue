@@ -61,7 +61,6 @@ export default {
 .z-dimmer-transition {
   transition: all .3s ease;
 }
-
 .z-dimmer-enter, .z-dimmer-leave {
   opacity: 0;
 }
@@ -77,7 +76,6 @@ export default {
   width:300px;
   left: 0;
 }
-
 .z-aside-left-enter, .z-aside-left-leave {
   left: -300px;
 }
@@ -87,7 +85,6 @@ export default {
   width:300px;
   right: 0;
 }
-
 .z-aside-right-enter, .z-aside-right-leave {
   right: -300px;
 }
@@ -97,7 +94,6 @@ export default {
   height: 300px;
   top: 0;
 }
-
 .z-aside-top-enter, .z-aside-top-leave {
   top: -300px;
 }
@@ -107,7 +103,6 @@ export default {
   height: 300px;
   bottom: 0;
 }
-
 .z-aside-bottom-enter, .z-aside-bottom-leave {
   bottom: -300px;
 }
@@ -135,17 +130,16 @@ export default {
 
 .z-aside-footer {
   height: 44px;
-  display: table;
   width: 100%;
   position: absolute;
   bottom: 0;
   border-top: 1px solid #ccc;
-  z-index: 999;
   background-color: #fff;
 }
 
 .z-btn-aside {
-  display: table-cell;
+  width: 100%;
+  display: inline-block;
   text-align: center;
   line-height: 44px;
   cursor: pointer;
