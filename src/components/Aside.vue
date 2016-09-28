@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="z-supernatant" v-show="show" transition="z-dimmer">
     <div class="z-aside" v-show="show" :transition="'z-aside-'+type">
-      <div class="z-aside-title">
+      <div class="z-aside-title" v-if="title">
         {{title}}
       </div>
       <div class="z-aside-content">
@@ -30,8 +30,7 @@ export default {
       default: false
     },
     title: {
-      type: String,
-      default: "标题"
+      type: String
     },
     type: {
       type: String,

@@ -6,7 +6,10 @@
     </div>
 
     <div id="aside" class="section">
-      <h2>Aside</h2>
+      <a href="#aside">
+        <h2>Aside</h2>
+      </a>
+
       <div class="introduce">
         <z-button
         :text="'Left'"
@@ -14,6 +17,7 @@
         </z-button>
         <z-aside
         :show.sync="asideLeft.show"
+        :title="'标题'"
         :type="'left'">
           <h3>我是Aside-Left</h3>
           <div>组件内部可以自定义HTML结构</div>
@@ -29,6 +33,7 @@
         </z-button>
         <z-aside
         :show.sync="asideTop.show"
+        :title="'标题'"
         :type="'top'">
           <h3>我是Aside-Top</h3>
           <div>组件内部可以自定义HTML结构</div>
@@ -44,6 +49,7 @@
         </z-button>
         <z-aside
         :show.sync="asideRight.show"
+        :title="'标题'"
         :type="'right'">
           <h3>我是Aside-Right</h3>
           <div>组件内部可以自定义HTML结构</div>
@@ -59,6 +65,7 @@
         </z-button>
         <z-aside
         :show.sync="asideBottom.show"
+        :title="'标题'"
         :type="'bottom'">
           <h3>我是Aside-Bottom</h3>
           <div>组件内部可以自定义HTML结构</div>
@@ -66,10 +73,25 @@
           <div>内容长度无限制，超过部分可以滚动浏览</div>
         </z-aside>
       </div>
+
+      <div class="introduce-block">
+        <p>备注：组件标签内可以自定义HTML结构。</p>
+        <z-table
+        :ths="['参数','类型','必填','默认值','说明']"
+        :trs="[
+                ['show','Boolean','是(双向绑定)','false','显示状态'],
+                ['title','String','否','-','表体的数据'],
+                ['type','String','否','left','显示位置(left,top,right,bottom)'],
+                ['close','String','否','关闭','关闭按钮文字']
+              ]">
+        </z-table>
+      </div>
     </div>
 
     <div id="button" class="section">
-      <h2>Button</h2>
+      <a href="#button">
+        <h2>Button</h2>
+      </a>
 
       <div class="introduce">
         <z-button
@@ -111,10 +133,22 @@
         :type="'danger'">
         </z-button>
       </div>
+
+      <div class="introduce-block">
+        <z-table
+        :ths="['参数','类型','必填','默认值','说明']"
+        :trs="[
+                ['text','String','是','-','按钮文字'],
+                ['type','String','否','defalut','按钮样式(defalut,primary,success,info,warning,danger)']
+              ]">
+        </z-table>
+      </div>
     </div>
 
     <div id="modal" class="section">
-      <h2>Modal</h2>
+      <a href="#modal">
+        <h2>Modal</h2>
+      </a>
 
       <div class="introduce">
         <z-button
@@ -137,15 +171,34 @@
         :type="'confirm'"
         :content="'这是一个confirm！'"></z-modal>
       </div>
+
+      <div class="introduce-block">
+        <z-table
+        :ths="['参数','类型','必填','默认值','说明']"
+        :trs="[
+                ['show','Boolean','是(双向绑定)','false','显示状态'],
+                ['content','String','是','-','弹窗内容'],
+                ['type','String','否','alert','弹窗类型(alert,confirm)'],
+                ['title','String','否','提示','弹窗标题'],
+                ['sure','String','否','确定','确定按钮文字'],
+                ['cancle','String','否','取消','取消按钮文字'],
+                ['sureEvent','Function','否','-','确定按钮点击事件'],
+                ['cancelEvent','Function','否','-','取消按钮点击事件'],
+              ]">
+        </z-table>
+      </div>
     </div>
 
     <div id="table" class="section">
-      <h2>Table</h2>
+      <a href="#table">
+        <h2>Table</h2>
+      </a>
 
       <div class="introduce">
         <z-table
+        :title="'表格属性'"
         :ths="['参数','类型','必填','说明']"
-        :trs="[['ths','一维数组','是','表头的数据'],['trs','二维数组','是','表体的数据']]">
+        :trs="[['title','字符串','否','表格标题'],['ths','一维数组','是','表头的数据'],['trs','二维数组','是','表体的数据']]">
         </z-table>
       </div>
     </div>
@@ -234,5 +287,9 @@ a {
 }
 .introduce:last-child {
   margin-right: 0;
+}
+
+.introduce-block {
+  margin: 10px 0 0;
 }
 </style>
