@@ -1,27 +1,26 @@
 <template lang="html">
-  <div class="z-supernatant" v-show="show" transition="z-modal-expand">
-    <div class="z-modal-wrapper">
-      <div class="z-modal">
-        <div class="z-modal-title">
-          {{title}}
-        </div>
-        <div class="z-modal-content">
-          {{content}}
-        </div>
-        <div class="z-modal-footer">
-          <a class="z-btn-modal" @click="cancelFunc" v-if="type=='confirm'">{{cancel}}</a>
-          <a class="z-btn-modal" :class="{'z-btn-modal-sure': type=='confirm'}" @click="sureFunc">{{sure}}</a>
+  <transition name="z-modal-expand">
+    <div class="z-supernatant" v-show="show">
+      <div class="z-modal-wrapper">
+        <div class="z-modal">
+          <div class="z-modal-title">
+            {{title}}
+          </div>
+          <div class="z-modal-content">
+            {{content}}
+          </div>
+          <div class="z-modal-footer">
+            <a class="z-btn-modal" @click="cancelFunc" v-if="type=='confirm'">{{cancel}}</a>
+            <a class="z-btn-modal" :class="{'z-btn-modal-sure': type=='confirm'}" @click="sureFunc">{{sure}}</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
-  },
   props: {
     sure: {
       type: String,
@@ -33,8 +32,7 @@ export default {
     },
     show: {
       type: Boolean,
-      twoWay: true,
-      default: false
+      required: true
     },
     title: {
       type: String,
@@ -63,18 +61,18 @@ export default {
   },
   methods: {
     sureFunc: function() {
-      this.show = false
+      this.$emit("closeModal")
       this.sureEvent()
     },
     cancelFunc: function() {
-      this.show = false
+      this.$emit("closeModal")
       this.cancelEvent()
     }
   }
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
   .z-supernatant {
     position: fixed;
     z-index: 9998;
@@ -102,11 +100,11 @@ export default {
     transition: all .3s ease;
   }
 
-  .z-modal-expand-enter, .z-modal-expand-leave {
+  .z-modal-expand-enter, .z-modal-expand-leave-active {
     opacity: 0;
   }
 
-  .z-modal-expand-enter .z-modal, .z-modal-expand-leave .z-modal{
+  .z-modal-expand-enter .z-modal, .z-modal-expand-leave-active .z-modal{
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }

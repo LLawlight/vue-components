@@ -1,5 +1,5 @@
 <template lang="html">
-  <a class="z-btn z-btn-{{type}}">{{text}}</a>
+  <a :class="'z-btn z-btn-' + type">{{text}}</a>
 </template>
 
 <script>

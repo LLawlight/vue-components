@@ -16,10 +16,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-    };
-  },
   props: {
     title: {
       type: String
@@ -32,12 +28,7 @@ export default {
       type: Array,
       required: true
     }
-  },
-  computed: {},
-  ready() {},
-  attached() {},
-  methods: {},
-  components: {}
+  }
 };
 </script>
 
