@@ -1,17 +1,19 @@
 <template lang="html">
-  <table class="z-table">
-    <caption v-if="title">{{title}}</caption>
-    <thead>
-      <tr>
-        <th v-for="th in ths">{{th}}</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="tr in trs">
-        <td v-for="td in tr">{{td}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="z-table-wraper">
+    <table class="z-table">
+      <caption v-if="title">{{title}}</caption>
+      <thead>
+        <tr>
+          <th v-for="th in ths">{{th}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="tr in trs">
+          <td v-for="td in tr">{{td}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
@@ -32,7 +34,12 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+.z-table-wraper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .z-table {
   max-width: 100%;
   border: 1px solid #ddd;

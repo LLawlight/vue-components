@@ -154,6 +154,48 @@
           </div>
         </div>
 
+        <div id="carrousel" class="section">
+          <a href="#carrousel">
+            <h2>Carrousel</h2>
+          </a>
+
+          <div class="introduce">
+            <z-carrousel
+            :id="'carrousel-one'"
+            :lis="[
+              {
+                link: 'http://www.zhaoyuxiang.cn',
+                src: 'static/01.jpg'
+              },
+              {
+                link: 'http://www.zhaoyuxiang.cn',
+                src: 'static/02.jpeg'
+              },
+              {
+                link: 'http://www.zhaoyuxiang.cn',
+                src: 'static/03.jpg'
+              }
+            ]"
+            :width="200"
+            :height="150">
+            </z-carrousel>
+          </div>
+
+          <div class="introduce-block">
+            <p>图片尺寸不限，组件自动根据容器尺寸裁剪图片。</p>
+            <z-table
+            :ths="['参数','类型','必填','默认值','说明']"
+            :trs="[
+                    ['id','String','是','-','每次调用赋予一个唯一id，同一页面可无限复用此组件'],
+                    ['lis','Array','是','-','图片的链接(link)和路径(src)'],
+                    ['width','Number','是','-','容器宽度'],
+                    ['height','Number','是','-','容器高度'],
+                    ['delay','Number','否','5000','每张图片停留的时间(ms)']
+                  ]">
+            </z-table>
+          </div>
+        </div>
+
         <div id="modal" class="section">
           <a href="#modal">
             <h2>Modal</h2>
@@ -220,9 +262,9 @@
     </div>
 
     <div class="footer">
-      <p>made with <span class="heart">❤</span> by <a href="http://zhaoyuxiang.cn" class="footerLink">ZYX</a></p>
+      <p>Released under the <a href="https://github.com/Clark-Zhao/vue-components/blob/master/LICENSE">MIT License</a></p>
       <p>Copyright &copy; 2016</p>
-      <p>Code licensed under <a href="https://github.com/Clark-Zhao/vue-components/blob/master/LICENSE" class="footerLink">MIT</p>
+      <p>made with <span class="heart">❤</span> by <a href="http://zhaoyuxiang.cn">Z<span style="display:none;">GOD_</span>YX</a></p>
     </div>
   </div>
 </template>
@@ -231,6 +273,8 @@
 import Hello from './components/Hello'
 import zAside from './components/Aside'
 import zButton from './components/Button'
+import zCarrousel from './components/Carrousel'
+import zMenu from './components/Menu'
 import zModal from './components/Modal'
 import zTable from './components/Table'
 
@@ -239,6 +283,8 @@ export default {
     Hello,
     zAside,
     zButton,
+    zCarrousel,
+    zMenu,
     zModal,
     zTable
   },
@@ -268,7 +314,7 @@ export default {
 </script>
 
 <style>
-html,body,h1,h2,a {
+html,body,h1,h2,ul {
   margin: 0;
   padding: 0;
 }
@@ -300,11 +346,6 @@ code {
   color: red;
 }
 
-.footerLink {
-  color: #fff;
-  text-decoration: underline;
-}
-
 a {
   color: rgb(65, 184, 131);
   text-decoration: none;
@@ -315,7 +356,13 @@ a {
 }
 
 .content {
-  padding: 0 1em 1em;
+  padding: 0 10px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -330,11 +377,14 @@ a {
 }
 
 .footer {
-  width: 100%;
   text-align: center;
   color: #fff;
-  padding: 2em 0;
-  background-color: #7f8c8d;
+  padding: 50px 0;
+  background-color: #727f80;
+}
+
+.footer a {
+  color: #fff;
 }
 
 .logo {
