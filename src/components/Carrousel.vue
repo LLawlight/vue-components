@@ -3,7 +3,9 @@
     <ul :id=id :style="{width: ulWidth + 'px', height: height + 'px', left: ulLeft + 'px'}">
       <li v-for="li in lis" :style="{width: width + 'px', height: height + 'px'}"><a :href="li.link"><img :src="li.src" /></a></li>
     </ul>
-    <ul class="dots"><li v-for="index in lis.length-2" :class="{active:liIndex == index}"></li></ul>
+    <ul class="dots"><li v-for="index in lis.length-2" :class="{active:liIndex == index}" @click="chooseImage(index)"></li></ul>
+    <span class="arrow arrow-left" @click="preImg">&lt;</span>
+    <span class="arrow arrow-right" @click="nextImg">&gt;</span>
   </div>
 </template>
 
@@ -78,6 +80,27 @@ export default {
         img.style.left = -(this.height * (imageWidth/imageHeight) - this.width)/2 + 'px'
       }
     },
+    preImg: function() {
+      clearInterval(this.autoplayTimer)
+      if (this.timer) {
+        return false
+      }
+      var self = this
+      if (this.ulLeft >= -this.width) {
+        this.ulLeft = -this.width * (this.lis.length - 1)
+      }
+      var offsetLeft = this.ulLeft + this.width
+      self.timer = setInterval(function(){
+        if (self.ulLeft >= offsetLeft) {
+          clearInterval(self.timer)
+          self.timer = 0
+          self.ulLeft = offsetLeft
+          self.autoplay()
+        }else {
+          self.ulLeft = self.ulLeft + self.width/50
+        }
+      },10)
+    },
     nextImg: function() {
       clearInterval(this.autoplayTimer)
       if (this.timer) {
@@ -95,12 +118,20 @@ export default {
           self.ulLeft = offsetLeft
           self.autoplay()
         }else {
-          self.ulLeft = self.ulLeft - self.width/100
+          self.ulLeft = self.ulLeft - self.width/50
         }
       },10)
     },
     autoplay: function() {
-      this.autoplayTimer = setInterval(this.nextImg, this.delay)
+      var self = this
+      this.autoplayTimer = setInterval(self.nextImg, self.delay)
+    },
+    chooseImage: function(index) {
+      clearInterval(this.timer)
+      this.timer = 0
+      clearInterval(this.autoplayTimer)
+      this.ulLeft = -index * this.width
+      this.autoplay()
     }
   }
 };
@@ -142,9 +173,31 @@ img {
   width: 8px;
   height: 8px;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .dots>li.active {
   background-color: rgb(65, 184, 131);
+}
+
+.arrow {
+  background-color: #ccc;
+  opacity: 0.5;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-family: Simsun,Simhei,sans-serif;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5rem;
+}
+.arrow-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrow-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 </style>

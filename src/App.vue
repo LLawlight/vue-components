@@ -177,7 +177,8 @@
               }
             ]"
             :width="200"
-            :height="150">
+            :height="150"
+            :delay="3000">
             </z-carrousel>
           </div>
 

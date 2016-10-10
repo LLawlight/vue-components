@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .z-btn {
   display: inline-block;
   padding: 6px 12px;
