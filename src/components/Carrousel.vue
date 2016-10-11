@@ -1,11 +1,11 @@
 <template lang="html">
-  <div :style="{width: width + 'px', height: height + 'px'}" style="overflow:hidden;">
+  <div :style="{width: width + 'px', height: height + 'px'}" style="overflow:hidden;" class="z-carrousel-container">
     <ul :id=id :style="{width: ulWidth + 'px', height: height + 'px', left: ulLeft + 'px'}">
       <li v-for="li in lis" :style="{width: width + 'px', height: height + 'px'}"><a :href="li.link"><img :src="li.src" /></a></li>
     </ul>
-    <ul class="dots"><li v-for="index in lis.length-2" :class="{active:liIndex == index}" @click="chooseImage(index)"></li></ul>
-    <span class="arrow arrow-left" @click="preImg">&lt;</span>
-    <span class="arrow arrow-right" @click="nextImg">&gt;</span>
+    <ul class="z-dots"><li v-for="index in lis.length-2" :class="{'active':liIndex == index}" @click="chooseImage(index)"></li></ul>
+    <span class="z-arrow z-arrow-left" @click="preImg">&lt;</span>
+    <span class="z-arrow z-arrow-right" @click="nextImg">&gt;</span>
   </div>
 </template>
 
@@ -138,28 +138,28 @@ export default {
 </script>
 
 <style lang="css" scoped>
-div {
+.z-carrousel-container {
   position: relative;
   overflow: hidden;
 }
 
-ul {
+.z-carrousel-container>ul {
   position: absolute;
 }
 
-li {
+.z-carrousel-container li {
   list-style: none;
   position: relative;
   float: left;
   overflow: hidden;
 }
 
-img {
+.z-carrousel-container img {
   position: absolute;
   display: inline-block;
 }
 
-.dots {
+.z-dots {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -167,7 +167,7 @@ img {
   margin-bottom: 5px;
 }
 
-.dots>li {
+.z-dots>li {
   border-radius: 100%;
   border: 1px solid #fff;
   width: 8px;
@@ -176,11 +176,11 @@ img {
   cursor: pointer;
 }
 
-.dots>li.active {
+.z-dots>li.active {
   background-color: rgb(65, 184, 131);
 }
 
-.arrow {
+.z-arrow {
   background-color: #ccc;
   opacity: 0.5;
   padding: 15px 10px;
@@ -190,12 +190,12 @@ img {
   position: absolute;
   font-size: 1.5rem;
 }
-.arrow-left {
+.z-arrow-left {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-.arrow-right {
+.z-arrow-right {
   right: 0;
   top: 50%;
   transform: translateY(-50%);

@@ -180,6 +180,7 @@
             :height="150"
             :delay="3000">
             </z-carrousel>
+            <z-carrousel1></z-carrousel1>
           </div>
 
           <div class="introduce-block">
@@ -275,6 +276,7 @@ import Hello from './components/Hello'
 import zAside from './components/Aside'
 import zButton from './components/Button'
 import zCarrousel from './components/Carrousel'
+import zCarrousel1 from './components/Carrousel1'
 import zMenu from './components/Menu'
 import zModal from './components/Modal'
 import zTable from './components/Table'
@@ -285,6 +287,7 @@ export default {
     zAside,
     zButton,
     zCarrousel,
+    zCarrousel1,
     zMenu,
     zModal,
     zTable
