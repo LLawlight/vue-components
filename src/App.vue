@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <z-navbar>
+      <ul>
+        <li>Github</li>
+        <li>Download</li>
+        <li>Blog</li>
+      </ul>
+    </z-navbar>
     <div class="header">
       <img class="logo" src="./assets/logo.png">
       <hello></hello>
@@ -10,9 +17,7 @@
       <div class="content">
 
         <div id="aside" class="section">
-          <a href="#aside">
-            <h2>Aside</h2>
-          </a>
+          <h2><a href="#aside">Aside</a></h2>
 
           <div class="introduce">
             <z-button
@@ -98,9 +103,7 @@
         </div>
 
         <div id="button" class="section">
-          <a href="#button">
-            <h2>Button</h2>
-          </a>
+          <h2><a href="#button">Button</a></h2>
 
           <div class="introduce">
             <z-button
@@ -154,54 +157,33 @@
           </div>
         </div>
 
-        <div id="carrousel" class="section">
-          <a href="#carrousel">
-            <h2>Carrousel</h2>
-          </a>
+        <div id="ImageInput" class="section">
+          <h2><a href="#ImageInput">ImageInput</a></h2>
 
           <div class="introduce">
-            <z-carrousel
-            :id="'carrousel-one'"
-            :lis="[
-              {
-                link: 'http://www.zhaoyuxiang.cn',
-                src: 'static/01.jpg'
-              },
-              {
-                link: 'http://www.zhaoyuxiang.cn',
-                src: 'static/02.jpeg'
-              },
-              {
-                link: 'http://www.zhaoyuxiang.cn',
-                src: 'static/03.jpg'
-              }
-            ]"
+            <z-imageinput
             :width="200"
             :height="150"
-            :delay="3000">
-            </z-carrousel>
-            <z-carrousel1></z-carrousel1>
+            :src="'http://placehold.it/500x500'"
+            ></z-imageinput>
           </div>
 
           <div class="introduce-block">
-            <p>图片尺寸不限，组件自动根据容器尺寸裁剪图片。</p>
+            <p>自动根据容器尺寸缩放图片并展示中心位置。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
-                    ['id','String','是','-','每次调用赋予一个唯一id，同一页面可无限复用此组件'],
-                    ['lis','Array','是','-','图片的链接(link)和路径(src)'],
                     ['width','Number','是','-','容器宽度'],
                     ['height','Number','是','-','容器高度'],
-                    ['delay','Number','否','5000','每张图片停留的时间(ms)']
+                    ['src','String','是','-','图片路径']
                   ]">
             </z-table>
           </div>
         </div>
 
         <div id="modal" class="section">
-          <a href="#modal">
-            <h2>Modal</h2>
-          </a>
+          <h2><a href="#modal">Modal</a></h2>
+
 
           <div class="introduce">
             <z-button
@@ -246,10 +228,29 @@
           </div>
         </div>
 
+        <div id="switch" class="section">
+          <h2><a href="#switch">Switch</a></h2>
+
+
+          <div class="introduce">
+            <z-switch></z-switch>
+          </div>
+
+          <div class="introduce-block">
+            <p>自动根据容器尺寸缩放图片并展示中心位置。</p>
+            <z-table
+            :ths="['参数','类型','必填','默认值','说明']"
+            :trs="[
+                    ['width','Number','否','50','开关宽度'],
+                    ['height','Number','否','25','开关高度'],
+                    ['bgc','String','否','rgb(65, 184, 131)','开启时的背景色']
+                  ]">
+            </z-table>
+          </div>
+        </div>
+
         <div id="table" class="section">
-          <a href="#table">
-            <h2>Table</h2>
-          </a>
+          <h2><a href="#table">Table</a></h2>
 
           <div class="introduce">
             <z-table
@@ -275,10 +276,11 @@
 import Hello from './components/Hello'
 import zAside from './components/Aside'
 import zButton from './components/Button'
-import zCarrousel from './components/Carrousel'
-import zCarrousel1 from './components/Carrousel1'
+import zImageinput from './components/ImageInput'
 import zMenu from './components/Menu'
 import zModal from './components/Modal'
+import zNavbar from './components/Navbar'
+import zSwitch from './components/Switch'
 import zTable from './components/Table'
 
 export default {
@@ -286,10 +288,11 @@ export default {
     Hello,
     zAside,
     zButton,
-    zCarrousel,
-    zCarrousel1,
+    zImageinput,
     zMenu,
     zModal,
+    zNavbar,
+    zSwitch,
     zTable
   },
   data() {
@@ -410,5 +413,13 @@ a {
 
 .introduce-block {
   margin: 10px 0 0;
+}
+
+.z-nav ul {
+  overflow: hidden;
+}
+.z-nav li {
+  list-style: none;
+  float: left;
 }
 </style>
