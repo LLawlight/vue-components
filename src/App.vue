@@ -2,9 +2,40 @@
   <div id="app">
     <z-navbar>
       <ul>
-        <li>Github</li>
-        <li>Download</li>
-        <li>Blog</li>
+        <li><a href="http://www.zhaoyuxiang.cn" target="_blank">Blog</a></li>
+        <li><a href="https://github.com/Clark-Zhao/vue-components/archive/master.zip" target="_blank">Download</a></li>
+        <li><a href="https://github.com/Clark-Zhao/vue-components" target="_blank">Github</a></li>
+        <li class="z-guide">
+          <z-dropmenu
+          :text="'Guide'"
+          :lis="[
+            {
+              href: '#aside',
+              text: 'Aside'
+            },
+            {
+              href: '#button',
+              text: 'Button'
+            },
+            {
+              href: '#ImageInput',
+              text: 'ImageInput'
+            },
+            {
+              href: '#modal',
+              text: 'Modal'
+            },
+            {
+              href: '#switch',
+              text: 'Switch'
+            },
+            {
+              href: '#table',
+              text: 'Table'
+            }
+          ]"
+          ></z-dropmenu>
+        </li>
       </ul>
     </z-navbar>
     <div class="header">
@@ -157,6 +188,52 @@
           </div>
         </div>
 
+        <div id="dropmenu" class="section">
+          <h2><a href="#dropmenu">Dropmenu</a></h2>
+
+          <div class="introduce">
+            <z-dropmenu
+            :text="'Guide'"
+            :lis="[
+              {
+                href: '#aside',
+                text: 'Aside'
+              },
+              {
+                href: '#button',
+                text: 'Button'
+              },
+              {
+                href: '#ImageInput',
+                text: 'ImageInput'
+              },
+              {
+                href: '#modal',
+                text: 'Modal'
+              },
+              {
+                href: '#switch',
+                text: 'Switch'
+              },
+              {
+                href: '#table',
+                text: 'Table'
+              }
+            ]"
+            ></z-dropmenu>
+          </div>
+
+          <div class="introduce-block">
+            <z-table
+            :ths="['参数','类型','必填','默认值','说明']"
+            :trs="[
+                    ['text','String','是','-','菜单文字'],
+                    ['lis','Array','是','-','列表的文字(text)和链接(href)']
+                  ]">
+            </z-table>
+          </div>
+        </div>
+
         <div id="ImageInput" class="section">
           <h2><a href="#ImageInput">ImageInput</a></h2>
 
@@ -237,7 +314,6 @@
           </div>
 
           <div class="introduce-block">
-            <p>自动根据容器尺寸缩放图片并展示中心位置。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -276,6 +352,7 @@
 import Hello from './components/Hello'
 import zAside from './components/Aside'
 import zButton from './components/Button'
+import zDropmenu from './components/Dropmenu'
 import zImageinput from './components/ImageInput'
 import zMenu from './components/Menu'
 import zModal from './components/Modal'
@@ -288,6 +365,7 @@ export default {
     Hello,
     zAside,
     zButton,
+    zDropmenu,
     zImageinput,
     zMenu,
     zModal,
@@ -415,11 +493,20 @@ a {
   margin: 10px 0 0;
 }
 
-.z-nav ul {
-  overflow: hidden;
+.z-nav>ul {
+  height: 40px;
+  line-height: 40px;
 }
-.z-nav li {
+.z-nav>ul>li {
   list-style: none;
+  float: right;
+  margin: 0 0.6em;
+}
+.z-nav a {
+  color: #34495e;
+}
+.z-nav .z-guide {
   float: left;
+  position: relative;
 }
 </style>

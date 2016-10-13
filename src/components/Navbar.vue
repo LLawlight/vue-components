@@ -19,6 +19,5 @@ export default {
   background-color: #fff;
   padding: 10px 60px;
   box-shadow: 0 0 4px rgba(0,0,0,0.25);
-  width: 100%;
 }
 </style>
