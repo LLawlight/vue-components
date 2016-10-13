@@ -1,11 +1,21 @@
 <template lang="html">
-  <div class="z-dropmenu-title">
-    <a @click="toggleDropMenu">{{text}}<span class="z-dropmenu-arrow"></span></a>
-    <transition name="z-dropmenu-show">
-      <ul class="z-dropmenu" v-show="isShow">
-        <li v-for="li in lis"><a :href="li.href" @click="closeDropMenu">{{li.text}}</a></li>
-      </ul>
-    </transition>
+  <div class="z-dropmenu-wraper">
+    <div class="z-dropmenu-title" v-if="type=='click'">
+      <a @click="toggleDropMenu">{{text}}<span class="z-dropmenu-arrow"></span></a>
+      <transition name="z-dropmenu-show">
+        <ul class="z-dropmenu" v-show="isShow">
+          <li v-for="li in lis"><a :href="li.href" @click="closeDropMenu">{{li.text}}</a></li>
+        </ul>
+      </transition>
+    </div>
+    <div v-else class="z-dropmenu-title" @mouseover="showDropMenu" @mouseleave="closeDropMenu">
+      <a>{{text}}<span class="z-dropmenu-arrow"></span></a>
+      <transition name="z-dropmenu-show">
+        <ul class="z-dropmenu" v-show="isShow">
+          <li v-for="li in lis"><a :href="li.href" @click="closeDropMenu">{{li.text}}</a></li>
+        </ul>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -17,6 +27,10 @@ export default {
     }
   },
   props: {
+    type: {
+      type: String,
+      default: "click"
+    },
     text: {
       type: String,
       required: true
@@ -34,6 +48,9 @@ export default {
   methods: {
     toggleDropMenu() {
       this.isShow = !this.isShow
+    },
+    showDropMenu() {
+      this.isShow = true
     },
     closeDropMenu() {
       this.isShow = false

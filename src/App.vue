@@ -7,6 +7,7 @@
         <li><a href="https://github.com/Clark-Zhao/vue-components" target="_blank">Github</a></li>
         <li class="z-guide">
           <z-dropmenu
+          :type="'hover'"
           :text="'Guide'"
           :lis="[
             {
@@ -16,6 +17,10 @@
             {
               href: '#button',
               text: 'Button'
+            },
+            {
+              href: '#dropmenu',
+              text: 'Dropmenu'
             },
             {
               href: '#ImageInput',
@@ -196,28 +201,16 @@
             :text="'Guide'"
             :lis="[
               {
-                href: '#aside',
-                text: 'Aside'
+                href: 'https://github.com/Clark-Zhao/vue-components',
+                text: 'Github'
               },
               {
-                href: '#button',
-                text: 'Button'
+                href: 'https://github.com/Clark-Zhao/vue-components/archive/master.zip',
+                text: 'Download'
               },
               {
-                href: '#ImageInput',
-                text: 'ImageInput'
-              },
-              {
-                href: '#modal',
-                text: 'Modal'
-              },
-              {
-                href: '#switch',
-                text: 'Switch'
-              },
-              {
-                href: '#table',
-                text: 'Table'
+                href: 'http://www.zhaoyuxiang.cn',
+                text: 'Blog'
               }
             ]"
             ></z-dropmenu>
@@ -227,6 +220,7 @@
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
+                    ['type','String','否','click','菜单显示方式'],
                     ['text','String','是','-','菜单文字'],
                     ['lis','Array','是','-','列表的文字(text)和链接(href)']
                   ]">
@@ -502,8 +496,12 @@ a {
   float: right;
   margin: 0 0.6em;
 }
-.z-nav a {
+.z-nav>ul>li>a {
   color: #34495e;
+  padding-bottom: 3px;
+}
+.z-nav>ul>li>a:hover {
+  border-bottom: 3px solid rgb(65, 184, 131);
 }
 .z-nav .z-guide {
   float: left;
