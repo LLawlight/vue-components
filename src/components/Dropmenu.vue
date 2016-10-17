@@ -47,6 +47,8 @@ export default {
   },
   methods: {
     toggleDropMenu() {
+      event.preventDefault()
+      event.stopPropagation()
       this.isShow = !this.isShow
     },
     showDropMenu() {
@@ -56,6 +58,7 @@ export default {
       this.isShow = false
     },
     clickClose(event) {
+
       event.preventDefault()
       event.stopPropagation()
       if (event.target.parentNode !== this.$el && event.target.parentNode.parentNode !== this.$el) {

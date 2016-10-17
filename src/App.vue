@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <z-navbar>
+    <z-navbar
+    :isFixed="true">
       <ul>
         <li><a href="http://www.zhaoyuxiang.cn" target="_blank">Blog</a></li>
         <li><a href="https://github.com/Clark-Zhao/vue-components/archive/master.zip" target="_blank">Download</a></li>
@@ -29,6 +30,10 @@
             {
               href: '#modal',
               text: 'Modal'
+            },
+            {
+              href: '#navbar',
+              text: 'Navbar'
             },
             {
               href: '#switch',
@@ -220,7 +225,7 @@
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
-                    ['type','String','否','click','菜单显示方式'],
+                    ['type','String','否','click','菜单显示方式(click,hover)'],
                     ['text','String','是','-','菜单文字'],
                     ['lis','Array','是','-','列表的文字(text)和链接(href)']
                   ]">
@@ -299,6 +304,21 @@
           </div>
         </div>
 
+        <div id="navbar" class="section">
+          <h2><a href="#navbar">Navbar</a></h2>
+
+          <div class="introduce-block">
+            <p>效果见本页导航栏。</p>
+            <p>备注：组件标签内可以自定义HTML结构。</p>
+            <z-table
+            :ths="['参数','类型','必填','默认值','说明']"
+            :trs="[
+                    ['isFixed','Boolean','否','false','滚动时菜单是否固定在顶部']
+                  ]">
+            </z-table>
+          </div>
+        </div>
+
         <div id="switch" class="section">
           <h2><a href="#switch">Switch</a></h2>
 
@@ -348,7 +368,6 @@ import zAside from './components/Aside'
 import zButton from './components/Button'
 import zDropmenu from './components/Dropmenu'
 import zImageinput from './components/ImageInput'
-import zMenu from './components/Menu'
 import zModal from './components/Modal'
 import zNavbar from './components/Navbar'
 import zSwitch from './components/Switch'
@@ -361,7 +380,6 @@ export default {
     zButton,
     zDropmenu,
     zImageinput,
-    zMenu,
     zModal,
     zNavbar,
     zSwitch,
@@ -397,7 +415,9 @@ html,body,h1,h2,ul {
   margin: 0;
   padding: 0;
 }
-
+.section {
+  padding-top: 60px
+}
 body {
   font-size: 0;
 }
@@ -442,6 +462,10 @@ a {
   #app {
     font-size: 14px;
   }
+
+  .z-navbar>ul {
+    padding: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -453,6 +477,11 @@ a {
     display: inline-block;
     text-align: left;
   }
+
+  .z-navbar>ul {
+    padding: 10px 60px;
+  }
+
 }
 
 .footer {
@@ -487,23 +516,23 @@ a {
   margin: 10px 0 0;
 }
 
-.z-nav>ul {
+.z-navbar>ul {
   height: 40px;
   line-height: 40px;
 }
-.z-nav>ul>li {
+.z-navbar>ul>li {
   list-style: none;
   float: right;
   margin: 0 0.6em;
 }
-.z-nav>ul>li>a {
+.z-navbar>ul>li>a {
   color: #34495e;
   padding-bottom: 3px;
 }
-.z-nav>ul>li>a:hover {
+.z-navbar>ul>li>a:hover {
   border-bottom: 3px solid rgb(65, 184, 131);
 }
-.z-nav .z-guide {
+.z-navbar .z-guide {
   float: left;
   position: relative;
 }
