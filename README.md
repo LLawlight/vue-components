@@ -1,6 +1,30 @@
 # vue-components
 
-> Components for Vue.js.
+> Components for VueJS2.0
+
+## Installation
+```$ npm install z-vue-components```
+
+## How to use
+``` bash
+import zButton from 'z-vue-components/src/components/Button.vue'
+// or
+import { zButton } from 'z-vue-components'
+// or
+var zButton = require('z-vue-components/src/components/Button.vue')
+// or
+var zButton = require('z-vue-components').zButton
+
+new Vue({
+  components: {
+    zButton
+  }
+})
+
+<z-button
+:text="'Hello world!'">
+</z-button>
+```
 
 ## Documentation
 [http://zhaoyuxiang.cn/vue-components/](http://zhaoyuxiang.cn/vue-components/)
