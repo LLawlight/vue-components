@@ -130,7 +130,7 @@
 
           <div class="introduce-block">
             <p>备注：组件标签内可以自定义HTML结构。</p>
-            <p>组件标签须写上<code>@closeAside="xxx.show"</code>来通知父组件改变<code>show</code>值。</p>
+            <p>组件标签须写上<code>@closeAside="xxx.show=false"</code>来通知父组件改变<code>show</code>值。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -287,7 +287,7 @@
           </div>
 
           <div class="introduce-block">
-            <p>组件标签须写上<code>@closeModal="xxx.show"</code>来通知父组件改变<code>show</code>值。</p>
+            <p>组件标签须写上<code>@closeModal="xxx.show=false"</code>来通知父组件改变<code>show</code>值。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
