@@ -3,10 +3,14 @@
 > Components for VueJS2.0
 
 ## Installation
-```$ npm install z-vue-components```
+```bash
+$ npm install z-vue-components
+```
 
-## How to use
-``` bash
+## Usage
+
+#### ES6 or CommonJS
+```js
 import zButton from 'z-vue-components/src/components/Button.vue'
 // or
 import { zButton } from 'z-vue-components'
@@ -20,6 +24,24 @@ new Vue({
     zButton
   }
 })
+
+<z-button
+:text="'Hello world!'">
+</z-button>
+```
+
+#### Browser globals
+```html
+<script src="path/to/vue.js"></script>
+<script src="path/to/z-vue-components.js"></script>
+<script>
+  var vm = new Vue({
+    components: {
+      zButton: ZVueComponents.zButton
+    },
+    el: "#app"
+  })
+</script>
 
 <z-button
 :text="'Hello world!'">
