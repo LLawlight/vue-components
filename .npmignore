@@ -8,3 +8,11 @@ dist
 static
 build
 config
+src/assets
+src/docs
+src/App.vue
+src/main.js
+index.html
+webpack.build.js
+webpack.build.min.js
+weboack.config.js
