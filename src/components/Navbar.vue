@@ -37,6 +37,6 @@ export default {
 .z-navbar-fix {
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 </style>

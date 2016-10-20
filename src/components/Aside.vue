@@ -48,7 +48,7 @@ export default {
 <style lang="css" scoped>
 .z-supernatant {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;

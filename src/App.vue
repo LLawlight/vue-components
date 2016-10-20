@@ -130,7 +130,7 @@
 
           <div class="introduce-block">
             <p>备注：组件标签内可以自定义HTML结构。</p>
-            <p>组件标签须写上<code>@closeAside="xxx.show=false"</code>来通知父组件改变<code>show</code>值。</p>
+            <p>组件标签须写上<code class="z-code">@closeAside="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -141,6 +141,7 @@
                   ]">
             </z-table>
           </div>
+          <aside-md></aside-md>
         </div>
 
         <div id="button" class="section">
@@ -196,6 +197,8 @@
                   ]">
             </z-table>
           </div>
+
+          <button-md></button-md>
         </div>
 
         <div id="dropmenu" class="section">
@@ -231,6 +234,8 @@
                   ]">
             </z-table>
           </div>
+
+          <dropmenu-md></dropmenu-md>
         </div>
 
         <div id="ImageInput" class="section">
@@ -255,6 +260,8 @@
                   ]">
             </z-table>
           </div>
+
+          <imageinput-md></imageinput-md>
         </div>
 
         <div id="modal" class="section">
@@ -267,7 +274,7 @@
             @click.native="alert.show = true">
             </z-button>
             <z-modal
-            :show.sync="alert.show"
+            :show="alert.show"
             :content="'这是一个alert！'"
             @closeModal="alert.show = false">
             </z-modal>
@@ -287,7 +294,7 @@
           </div>
 
           <div class="introduce-block">
-            <p>组件标签须写上<code>@closeModal="xxx.show=false"</code>来通知父组件改变<code>show</code>值。</p>
+            <p>组件标签须写上<code class="z-code">@closeModal="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -302,6 +309,8 @@
                   ]">
             </z-table>
           </div>
+
+          <modal-md></modal-md>
         </div>
 
         <div id="navbar" class="section">
@@ -317,6 +326,8 @@
                   ]">
             </z-table>
           </div>
+
+          <navbar-md></navbar-md>
         </div>
 
         <div id="switch" class="section">
@@ -337,6 +348,8 @@
                   ]">
             </z-table>
           </div>
+
+          <switch-md></switch-md>
         </div>
 
         <div id="table" class="section">
@@ -349,6 +362,8 @@
             :trs="[['title','字符串','否','表格标题'],['ths','一维数组','是','表头的数据'],['trs','二维数组','是','表体的数据']]">
             </z-table>
           </div>
+
+          <table-md></table-md>
         </div>
 
       </div>
@@ -363,6 +378,10 @@
 </template>
 
 <script>
+import hljs from '../node_modules/highlightjs/highlight.pack.min.js';
+hljs.initHighlightingOnLoad()
+import '../node_modules/highlightjs/styles/github.css';
+
 import Hello from './components/Hello'
 import zAside from './components/Aside'
 import zButton from './components/Button'
@@ -372,6 +391,15 @@ import zModal from './components/Modal'
 import zNavbar from './components/Navbar'
 import zSwitch from './components/Switch'
 import zTable from './components/Table'
+
+import asideMd from 'src/docs/Aside.md'
+import buttonMd from 'src/docs/Button.md'
+import dropmenuMd from 'src/docs/Dropmenu.md'
+import imageinputMd from 'src/docs/ImageInput.md'
+import modalMd from 'src/docs/Modal.md'
+import navbarMd from 'src/docs/Navbar.md'
+import switchMd from 'src/docs/Switch.md'
+import tableMd from 'src/docs/Table.md'
 
 export default {
   components: {
@@ -383,7 +411,15 @@ export default {
     zModal,
     zNavbar,
     zSwitch,
-    zTable
+    zTable,
+    asideMd,
+    buttonMd,
+    dropmenuMd,
+    imageinputMd,
+    modalMd,
+    navbarMd,
+    switchMd,
+    tableMd
   },
   data() {
     return {
@@ -429,16 +465,18 @@ body {
 }
 
 code {
+  border-radius: 2px;
+  font-family: Menlo,Monaco,Consolas,Courier,monospace;
+  font-size: 0.9em;
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: initial;
+}
+
+code.z-code {
   color: #e96900;
   padding: 3px 5px;
   margin: 0 2px;
-  border-radius: 2px;
-  white-space: nowrap;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-  font-size: 0.9em;
   background-color: #f8f8f8;
-  -webkit-font-smoothing: initial;
-  -moz-osx-font-smoothing: initial;
 }
 
 .heart {
