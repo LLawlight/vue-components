@@ -7,6 +7,9 @@
 $ npm install z-vue-components
 ```
 
+## Documentation
+[http://zhaoyuxiang.cn/vue-components/](http://zhaoyuxiang.cn/vue-components/)
+
 ## Usage
 
 #### ES6 or CommonJS
@@ -48,11 +51,7 @@ new Vue({
 </z-button>
 ```
 
-## Documentation
-[http://zhaoyuxiang.cn/vue-components/](http://zhaoyuxiang.cn/vue-components/)
-
 ## Build Setup
-
 ``` bash
 # install dependencies
 npm install

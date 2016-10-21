@@ -30,6 +30,19 @@
       ]
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clark-Zhao/vue-components.git"
+  },
+  "keywords": [
+    "vue",
+    "components"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Clark-Zhao/vue-components/issues"
+  },
+  "homepage": "https://github.com/Clark-Zhao/vue-components#readme",
   "dependencies": {
     "vue": "^2.0.0-rc.8"
   },
@@ -60,6 +73,7 @@
     "vue-loader": "^9.5.1",
     "vue-style-loader": "^1.0.0",
     "vue-markdown-loader": "^0.5.1",
+    "vue-router": "^2.0.1",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
