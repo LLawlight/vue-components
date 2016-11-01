@@ -246,6 +246,8 @@
             :width="200"
             :height="150"
             :src="'http://placehold.it/500x500'"
+            :alt="'测试图片'"
+            :radius="'50%'"
             ></z-imageinput>
           </div>
 
@@ -256,7 +258,9 @@
             :trs="[
                     ['width','Number','是','-','容器宽度'],
                     ['height','Number','是','-','容器高度'],
-                    ['src','String','是','-','图片路径']
+                    ['src','String','是','-','图片路径'],
+                    ['alt','String','否','-','图片加载失败时显示的文字信息'],
+                    ['radius','String','否','-','容器圆角程度']
                   ]">
             </z-table>
           </div>

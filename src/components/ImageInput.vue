@@ -1,6 +1,6 @@
 <template lang="html">
-  <div :style="{width:width+'px',height:height+'px'}" class="z-image-wraper">
-    <img :src="src" :style="{width:imageWidth+'px',height:imageHeight+'px',top:imageTop+'px',left:imageLeft+'px'}" />
+  <div :style="{width:width+'px',height:height+'px',borderRadius: radius}" class="z-image-wraper">
+    <img :src="src" :style="{width:imageWidth+'px',height:imageHeight+'px',top:imageTop+'px',left:imageLeft+'px'}" :alt="alt" />
   </div>
 </template>
 
@@ -27,6 +27,12 @@ export default {
     src: {
       type: String,
       required: true
+    },
+    alt: {
+      type: String
+    },
+    radius: {
+      type: String
     }
   },
   mounted() {
