@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <z-progress
+    :bgc="'rgb(65, 184, 131)'"
+    :type="'bottom'"
+    ></z-progress>
     <z-navbar
     :isFixed="true">
       <ul>
@@ -34,6 +38,10 @@
             {
               href: '#navbar',
               text: 'Navbar'
+            },
+            {
+              href: '#progress',
+              text: 'Progress'
             },
             {
               href: '#switch',
@@ -334,6 +342,23 @@
           <navbar-md></navbar-md>
         </div>
 
+        <div id="progress" class="section">
+          <h2><a href="#progress">Progress</a></h2>
+
+          <div class="introduce-block">
+            <p>效果见本页载入时的底部进度条。</p>
+            <z-table
+            :ths="['参数','类型','必填','默认值','说明']"
+            :trs="[
+                    ['bgc','String','否','#0080ff','进度条颜色'],
+                    ['type','String','否','top','进度条显示位置(top,bottom)']
+                  ]">
+            </z-table>
+          </div>
+
+          <progress-md></progress-md>
+        </div>
+
         <div id="switch" class="section">
           <h2><a href="#switch">Switch</a></h2>
 
@@ -393,6 +418,7 @@ import zDropmenu from './components/Dropmenu'
 import zImageinput from './components/ImageInput'
 import zModal from './components/Modal'
 import zNavbar from './components/Navbar'
+import zProgress from './components/Progress'
 import zSwitch from './components/Switch'
 import zTable from './components/Table'
 
@@ -402,6 +428,7 @@ import dropmenuMd from 'src/docs/Dropmenu.md'
 import imageinputMd from 'src/docs/ImageInput.md'
 import modalMd from 'src/docs/Modal.md'
 import navbarMd from 'src/docs/Navbar.md'
+import progressMd from 'src/docs/Progress.md'
 import switchMd from 'src/docs/Switch.md'
 import tableMd from 'src/docs/Table.md'
 
@@ -414,6 +441,7 @@ export default {
     zImageinput,
     zModal,
     zNavbar,
+    zProgress,
     zSwitch,
     zTable,
     asideMd,
@@ -422,6 +450,7 @@ export default {
     imageinputMd,
     modalMd,
     navbarMd,
+    progressMd,
     switchMd,
     tableMd
   },
