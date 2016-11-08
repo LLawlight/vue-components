@@ -3,6 +3,7 @@
     <z-progress
     :bgc="'rgb(65, 184, 131)'"
     :type="'bottom'"
+    ref="progress"
     ></z-progress>
     <z-navbar
     :isFixed="true">
@@ -249,7 +250,7 @@
         <div id="ImageInput" class="section">
           <h2><a href="#ImageInput">ImageInput</a></h2>
 
-          <div class="introduce">
+          <!-- <div class="introduce">
             <z-imageinput
             :width="200"
             :height="150"
@@ -257,7 +258,7 @@
             :alt="'测试图片'"
             :radius="'50%'"
             ></z-imageinput>
-          </div>
+          </div> -->
 
           <div class="introduce-block">
             <p>自动根据容器尺寸缩放图片并展示中心位置。</p>
@@ -345,8 +346,15 @@
         <div id="progress" class="section">
           <h2><a href="#progress">Progress</a></h2>
 
+          <div class="introduce">
+            <z-button
+            :text="'点击感受进度条 ↓'"
+            :type="'info'"
+            @click.native="startProgress"
+            ></z-button>
+          </div>
+
           <div class="introduce-block">
-            <p>效果见本页载入时的底部进度条。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -474,6 +482,14 @@ export default {
       asideBottom: {
         show: false
       }
+    }
+  },
+  mounted() {
+    this.startProgress()
+  },
+  methods: {
+    startProgress: function() {
+      this.$refs.progress.startProgress()
     }
   }
 }

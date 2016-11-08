@@ -135,7 +135,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-1"
+	__vue_options__._scopeId = "data-v-3"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -144,9 +144,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-1", __vue_options__)
+	    hotAPI.createRecord("data-v-3", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-1", __vue_options__)
+	    hotAPI.reload("data-v-3", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Aside.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -170,8 +170,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-1&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-1&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-3&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-3&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -189,7 +189,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-supernatant[data-v-1] {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n.z-aside-slide-enter[data-v-1], .z-aside-slide-leave-active[data-v-1] {\n  opacity: 0;\n}\n.z-aside[data-v-1] {\n  background-color: white;\n  position: fixed;\n  transition: all .3s ease;\n}\n.z-aside-left[data-v-1] {\n  height: 100%;\n  left: 0;\n}\n.z-aside-right[data-v-1] {\n  height: 100%;\n  right: 0;\n}\n.z-aside-top[data-v-1] {\n  width: 100%;\n  top: 0;\n}\n.z-aside-bottom[data-v-1] {\n  width: 100%;\n  bottom: 0;\n}\n@media screen and (max-width: 768px) {\n.z-aside-left[data-v-1] {\n    width: 100%;\n}\n.z-aside-slide-enter .z-aside-left[data-v-1], .z-aside-slide-leave-active .z-aside-left[data-v-1] {\n    left: -100%;\n}\n.z-aside-right[data-v-1] {\n    width: 100%;\n}\n.z-aside-slide-enter .z-aside-right[data-v-1], .z-aside-slide-leave-active .z-aside-right[data-v-1] {\n    right: -100%;\n}\n.z-aside-top[data-v-1] {\n    height: 100%;\n}\n.z-aside-slide-enter .z-aside-top[data-v-1], .z-aside-slide-leave-active .z-aside-top[data-v-1] {\n    top: -100%;\n}\n.z-aside-bottom[data-v-1] {\n    height: 100%;\n}\n.z-aside-slide-enter .z-aside-bottom[data-v-1], .z-aside-slide-leave-active .z-aside-bottom[data-v-1] {\n    bottom: -100%;\n}\n}\n@media screen and (min-width: 768px) {\n.z-aside-left[data-v-1] {\n    width: 300px;\n}\n.z-aside-slide-enter .z-aside-left[data-v-1], .z-aside-slide-leave-active .z-aside-left[data-v-1] {\n    left: -300px;\n}\n.z-aside-right[data-v-1] {\n    width: 300px;\n}\n.z-aside-slide-enter .z-aside-right[data-v-1], .z-aside-slide-leave-active .z-aside-right[data-v-1] {\n    right: -300px;\n}\n.z-aside-top[data-v-1] {\n    height: 300px;\n}\n.z-aside-slide-enter .z-aside-top[data-v-1], .z-aside-slide-leave-active .z-aside-top[data-v-1] {\n    top: -300px;\n}\n.z-aside-bottom[data-v-1] {\n    height: 300px;\n}\n.z-aside-slide-enter .z-aside-bottom[data-v-1], .z-aside-slide-leave-active .z-aside-bottom[data-v-1] {\n    bottom: -300px;\n}\n}\n.z-aside-title[data-v-1] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.z-aside-content[data-v-1] {\n  width: 100%;\n  overflow: auto;\n  position: absolute;\n  top: 44px;\n  bottom: 44px;\n  padding: 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n.z-aside-footer[data-v-1] {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n.z-btn-aside[data-v-1] {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/components/Aside.vue?528641e2"],"names":[],"mappings":";AAgDA;EACA,gBAAA;EACA,cAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,oCAAA;EACA,eAAA;EACA,6BAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,wBAAA;EACA,gBAAA;EACA,yBAAA;CACA;AAEA;EACA,aAAA;EACA,QAAA;CACA;AAEA;EACA,aAAA;EACA,SAAA;CACA;AAEA;EACA,YAAA;EACA,OAAA;CACA;AAEA;EACA,YAAA;EACA,UAAA;CACA;AACA;AACA;IACA,YAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,YAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;CACA;AAEA;AACA;IACA,aAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,eAAA;CACA;CACA;AAEA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,OAAA;EACA,YAAA;CACA;AAEA;EACA,YAAA;EACA,eAAA;EACA,mBAAA;EACA,UAAA;EACA,aAAA;EACA,cAAA;EACA,gBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,UAAA;EACA,2BAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;CACA","file":"Aside.vue","sourcesContent":["<template lang=\"html\">\n  <transition name=\"z-aside-slide\">\n    <div class=\"z-supernatant\" v-show=\"show\">\n      <transition>\n        <div class=\"z-aside\" v-show=\"show\" :class=\"'z-aside-' + type\">\n          <div class=\"z-aside-title\" v-if=\"title\">\n            {{title}}\n          </div>\n          <div class=\"z-aside-content\">\n            <slot></slot>\n          </div>\n          <div class=\"z-aside-footer\">\n            <a class=\"z-btn-aside\" @click=\"closeAside\">{{close}}</a>\n          </div>\n        </div>\n      </transition>\n    </div>\n  </transition>\n</template>\n\n<script>\nexport default {\n  props: {\n    show: {\n      type: Boolean,\n      required: true\n    },\n    close: {\n      type: String,\n      default: \"关闭\"\n    },\n    title: {\n      type: String\n    },\n    type: {\n      type: String,\n      default: \"left\"\n    }\n  },\n  methods: {\n    closeAside: function() {\n      this.$emit('closeAside')\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-supernatant {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n\n.z-aside-slide-enter, .z-aside-slide-leave-active {\n  opacity: 0;\n}\n\n.z-aside {\n  background-color: white;\n  position: fixed;\n  transition: all .3s ease;\n}\n\n.z-aside-left {\n  height: 100%;\n  left: 0;\n}\n\n.z-aside-right {\n  height: 100%;\n  right: 0;\n}\n\n.z-aside-top {\n  width: 100%;\n  top: 0;\n}\n\n.z-aside-bottom {\n  width: 100%;\n  bottom: 0;\n}\n@media screen and (max-width: 768px) {\n  .z-aside-left {\n    width: 100%;\n  }\n  .z-aside-slide-enter .z-aside-left, .z-aside-slide-leave-active .z-aside-left {\n    left: -100%;\n  }\n\n  .z-aside-right {\n    width: 100%;\n  }\n  .z-aside-slide-enter .z-aside-right, .z-aside-slide-leave-active .z-aside-right {\n    right: -100%;\n  }\n\n  .z-aside-top {\n    height: 100%;\n  }\n  .z-aside-slide-enter .z-aside-top, .z-aside-slide-leave-active .z-aside-top {\n    top: -100%;\n  }\n\n  .z-aside-bottom {\n    height: 100%;\n  }\n  .z-aside-slide-enter .z-aside-bottom, .z-aside-slide-leave-active .z-aside-bottom {\n    bottom: -100%;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .z-aside-left {\n    width: 300px;\n  }\n  .z-aside-slide-enter .z-aside-left, .z-aside-slide-leave-active .z-aside-left {\n    left: -300px;\n  }\n\n  .z-aside-right {\n    width: 300px;\n  }\n  .z-aside-slide-enter .z-aside-right, .z-aside-slide-leave-active .z-aside-right {\n    right: -300px;\n  }\n\n  .z-aside-top {\n    height: 300px;\n  }\n  .z-aside-slide-enter .z-aside-top, .z-aside-slide-leave-active .z-aside-top {\n    top: -300px;\n  }\n\n  .z-aside-bottom {\n    height: 300px;\n  }\n  .z-aside-slide-enter .z-aside-bottom, .z-aside-slide-leave-active .z-aside-bottom {\n    bottom: -300px;\n  }\n}\n\n.z-aside-title {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n\n.z-aside-content {\n  width: 100%;\n  overflow: auto;\n  position: absolute;\n  top: 44px;\n  bottom: 44px;\n  padding: 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n\n.z-aside-footer {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n\n.z-btn-aside {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-supernatant[data-v-3] {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n.z-aside-slide-enter[data-v-3], .z-aside-slide-leave-active[data-v-3] {\n  opacity: 0;\n}\n.z-aside[data-v-3] {\n  background-color: white;\n  position: fixed;\n  transition: all .3s ease;\n}\n.z-aside-left[data-v-3] {\n  height: 100%;\n  left: 0;\n}\n.z-aside-right[data-v-3] {\n  height: 100%;\n  right: 0;\n}\n.z-aside-top[data-v-3] {\n  width: 100%;\n  top: 0;\n}\n.z-aside-bottom[data-v-3] {\n  width: 100%;\n  bottom: 0;\n}\n@media screen and (max-width: 768px) {\n.z-aside-left[data-v-3] {\n    width: 100%;\n}\n.z-aside-slide-enter .z-aside-left[data-v-3], .z-aside-slide-leave-active .z-aside-left[data-v-3] {\n    left: -100%;\n}\n.z-aside-right[data-v-3] {\n    width: 100%;\n}\n.z-aside-slide-enter .z-aside-right[data-v-3], .z-aside-slide-leave-active .z-aside-right[data-v-3] {\n    right: -100%;\n}\n.z-aside-top[data-v-3] {\n    height: 100%;\n}\n.z-aside-slide-enter .z-aside-top[data-v-3], .z-aside-slide-leave-active .z-aside-top[data-v-3] {\n    top: -100%;\n}\n.z-aside-bottom[data-v-3] {\n    height: 100%;\n}\n.z-aside-slide-enter .z-aside-bottom[data-v-3], .z-aside-slide-leave-active .z-aside-bottom[data-v-3] {\n    bottom: -100%;\n}\n}\n@media screen and (min-width: 768px) {\n.z-aside-left[data-v-3] {\n    width: 300px;\n}\n.z-aside-slide-enter .z-aside-left[data-v-3], .z-aside-slide-leave-active .z-aside-left[data-v-3] {\n    left: -300px;\n}\n.z-aside-right[data-v-3] {\n    width: 300px;\n}\n.z-aside-slide-enter .z-aside-right[data-v-3], .z-aside-slide-leave-active .z-aside-right[data-v-3] {\n    right: -300px;\n}\n.z-aside-top[data-v-3] {\n    height: 300px;\n}\n.z-aside-slide-enter .z-aside-top[data-v-3], .z-aside-slide-leave-active .z-aside-top[data-v-3] {\n    top: -300px;\n}\n.z-aside-bottom[data-v-3] {\n    height: 300px;\n}\n.z-aside-slide-enter .z-aside-bottom[data-v-3], .z-aside-slide-leave-active .z-aside-bottom[data-v-3] {\n    bottom: -300px;\n}\n}\n.z-aside-title[data-v-3] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.z-aside-content[data-v-3] {\n  width: 100%;\n  overflow: auto;\n  position: absolute;\n  top: 44px;\n  bottom: 44px;\n  padding: 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n.z-aside-footer[data-v-3] {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n.z-btn-aside[data-v-3] {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/components/Aside.vue?528641e2"],"names":[],"mappings":";AAgDA;EACA,gBAAA;EACA,cAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,oCAAA;EACA,eAAA;EACA,6BAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,wBAAA;EACA,gBAAA;EACA,yBAAA;CACA;AAEA;EACA,aAAA;EACA,QAAA;CACA;AAEA;EACA,aAAA;EACA,SAAA;CACA;AAEA;EACA,YAAA;EACA,OAAA;CACA;AAEA;EACA,YAAA;EACA,UAAA;CACA;AACA;AACA;IACA,YAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,YAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;CACA;AAEA;AACA;IACA,aAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,eAAA;CACA;CACA;AAEA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,OAAA;EACA,YAAA;CACA;AAEA;EACA,YAAA;EACA,eAAA;EACA,mBAAA;EACA,UAAA;EACA,aAAA;EACA,cAAA;EACA,gBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,UAAA;EACA,2BAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;CACA","file":"Aside.vue","sourcesContent":["<template lang=\"html\">\n  <transition name=\"z-aside-slide\">\n    <div class=\"z-supernatant\" v-show=\"show\">\n      <transition>\n        <div class=\"z-aside\" v-show=\"show\" :class=\"'z-aside-' + type\">\n          <div class=\"z-aside-title\" v-if=\"title\">\n            {{title}}\n          </div>\n          <div class=\"z-aside-content\">\n            <slot></slot>\n          </div>\n          <div class=\"z-aside-footer\">\n            <a class=\"z-btn-aside\" @click=\"closeAside\">{{close}}</a>\n          </div>\n        </div>\n      </transition>\n    </div>\n  </transition>\n</template>\n\n<script>\nexport default {\n  props: {\n    show: {\n      type: Boolean,\n      required: true\n    },\n    close: {\n      type: String,\n      default: \"关闭\"\n    },\n    title: {\n      type: String\n    },\n    type: {\n      type: String,\n      default: \"left\"\n    }\n  },\n  methods: {\n    closeAside: function() {\n      this.$emit('closeAside')\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-supernatant {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n\n.z-aside-slide-enter, .z-aside-slide-leave-active {\n  opacity: 0;\n}\n\n.z-aside {\n  background-color: white;\n  position: fixed;\n  transition: all .3s ease;\n}\n\n.z-aside-left {\n  height: 100%;\n  left: 0;\n}\n\n.z-aside-right {\n  height: 100%;\n  right: 0;\n}\n\n.z-aside-top {\n  width: 100%;\n  top: 0;\n}\n\n.z-aside-bottom {\n  width: 100%;\n  bottom: 0;\n}\n@media screen and (max-width: 768px) {\n  .z-aside-left {\n    width: 100%;\n  }\n  .z-aside-slide-enter .z-aside-left, .z-aside-slide-leave-active .z-aside-left {\n    left: -100%;\n  }\n\n  .z-aside-right {\n    width: 100%;\n  }\n  .z-aside-slide-enter .z-aside-right, .z-aside-slide-leave-active .z-aside-right {\n    right: -100%;\n  }\n\n  .z-aside-top {\n    height: 100%;\n  }\n  .z-aside-slide-enter .z-aside-top, .z-aside-slide-leave-active .z-aside-top {\n    top: -100%;\n  }\n\n  .z-aside-bottom {\n    height: 100%;\n  }\n  .z-aside-slide-enter .z-aside-bottom, .z-aside-slide-leave-active .z-aside-bottom {\n    bottom: -100%;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .z-aside-left {\n    width: 300px;\n  }\n  .z-aside-slide-enter .z-aside-left, .z-aside-slide-leave-active .z-aside-left {\n    left: -300px;\n  }\n\n  .z-aside-right {\n    width: 300px;\n  }\n  .z-aside-slide-enter .z-aside-right, .z-aside-slide-leave-active .z-aside-right {\n    right: -300px;\n  }\n\n  .z-aside-top {\n    height: 300px;\n  }\n  .z-aside-slide-enter .z-aside-top, .z-aside-slide-leave-active .z-aside-top {\n    top: -300px;\n  }\n\n  .z-aside-bottom {\n    height: 300px;\n  }\n  .z-aside-slide-enter .z-aside-bottom, .z-aside-slide-leave-active .z-aside-bottom {\n    bottom: -300px;\n  }\n}\n\n.z-aside-title {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n\n.z-aside-content {\n  width: 100%;\n  overflow: auto;\n  position: absolute;\n  top: 44px;\n  bottom: 44px;\n  padding: 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n\n.z-aside-footer {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n\n.z-btn-aside {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -546,7 +546,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3", module.exports)
 	  }
 	}
 
@@ -577,7 +577,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-5"
+	__vue_options__._scopeId = "data-v-1"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -586,9 +586,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5", __vue_options__)
+	    hotAPI.createRecord("data-v-1", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-5", __vue_options__)
+	    hotAPI.reload("data-v-1", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Button.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -612,8 +612,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-5&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Button.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-5&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Button.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-1&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Button.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-1&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Button.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -631,7 +631,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-btn[data-v-5] {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.z-btn[data-v-5]:focus {\n  outline: none;\n}\n.z-btn[data-v-5]:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n.z-btn-default[data-v-5] {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default[data-v-5]:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.z-btn-primary[data-v-5] {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary[data-v-5]:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n.z-btn-success[data-v-5] {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success[data-v-5]:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n.z-btn-info[data-v-5] {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info[data-v-5]:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.z-btn-warning[data-v-5] {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning[data-v-5]:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.z-btn-danger[data-v-5] {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger[data-v-5]:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n", "", {"version":3,"sources":["/./src/components/Button.vue?b2346300"],"names":[],"mappings":";AAoBA;EACA,sBAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,iBAAA;EACA,wBAAA;EACA,mBAAA;EACA,oBAAA;EACA,uBAAA;EACA,+BAAA;EACA,2BAAA;EACA,gBAAA;EACA,0BAAA;EACA,uBAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,8BAAA;EACA,mBAAA;CACA;AACA;EACA,cAAA;CACA;AACA;EACA,qDAAA;EACA,6CAAA;CACA;AAEA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA","file":"Button.vue","sourcesContent":["<template lang=\"html\">\n  <a :class=\"'z-btn z-btn-' + type\">{{text}}</a>\n</template>\n\n<script>\nexport default {\n  props: {\n    text: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"default\"\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.z-btn:focus {\n  outline: none;\n}\n.z-btn:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n\n.z-btn-default {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n\n.z-btn-primary {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n\n.z-btn-success {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n\n.z-btn-info {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n\n.z-btn-warning {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n\n.z-btn-danger {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-btn[data-v-1] {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.z-btn[data-v-1]:focus {\n  outline: none;\n}\n.z-btn[data-v-1]:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n.z-btn-default[data-v-1] {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default[data-v-1]:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.z-btn-primary[data-v-1] {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary[data-v-1]:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n.z-btn-success[data-v-1] {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success[data-v-1]:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n.z-btn-info[data-v-1] {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info[data-v-1]:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.z-btn-warning[data-v-1] {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning[data-v-1]:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.z-btn-danger[data-v-1] {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger[data-v-1]:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n", "", {"version":3,"sources":["/./src/components/Button.vue?b2346300"],"names":[],"mappings":";AAoBA;EACA,sBAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,iBAAA;EACA,wBAAA;EACA,mBAAA;EACA,oBAAA;EACA,uBAAA;EACA,+BAAA;EACA,2BAAA;EACA,gBAAA;EACA,0BAAA;EACA,uBAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,8BAAA;EACA,mBAAA;CACA;AACA;EACA,cAAA;CACA;AACA;EACA,qDAAA;EACA,6CAAA;CACA;AAEA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA","file":"Button.vue","sourcesContent":["<template lang=\"html\">\n  <a :class=\"'z-btn z-btn-' + type\">{{text}}</a>\n</template>\n\n<script>\nexport default {\n  props: {\n    text: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"default\"\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.z-btn:focus {\n  outline: none;\n}\n.z-btn:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n\n.z-btn-default {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n\n.z-btn-primary {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n\n.z-btn-success {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n\n.z-btn-info {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n\n.z-btn-warning {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n\n.z-btn-danger {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -670,7 +670,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1", module.exports)
 	  }
 	}
 
@@ -701,7 +701,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-2"
+	__vue_options__._scopeId = "data-v-4"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -710,9 +710,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2", __vue_options__)
+	    hotAPI.createRecord("data-v-4", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2", __vue_options__)
+	    hotAPI.reload("data-v-4", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Dropmenu.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -736,8 +736,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-2&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-2&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-4&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-4&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -755,7 +755,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-dropmenu-title[data-v-2] {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a[data-v-2] {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow[data-v-2] {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu[data-v-2] {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  border-radius: 4px;\n  overflow: hidden;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active[data-v-2],.z-dropmenu-show-leave-active[data-v-2] {\n  top: 100%\n}\n.z-dropmenu-show-enter[data-v-2],.z-dropmenu-show-leave-active[data-v-2] {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li[data-v-2] {\n  list-style: none;\n  line-height: 1.8em;\n}\n.z-dropmenu li a[data-v-2] {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a[data-v-2]:hover {\n  color: rgb(65, 184, 131);\n}\n", "", {"version":3,"sources":["/./src/components/Dropmenu.vue?567feddf"],"names":[],"mappings":";AAgFA;EACA,gBAAA;EACA,mBAAA;CACA;AACA;EACA,eAAA;EACA,eAAA;CACA;AACA;EACA,sBAAA;EACA,uBAAA;EACA,iBAAA;EACA,iBAAA;EACA,SAAA;EACA,UAAA;EACA,mCAAA;EACA,oCAAA;EACA,2BAAA;CACA;AACA;EACA,mBAAA;EACA,cAAA;EACA,UAAA;EACA,QAAA;EACA,uBAAA;EACA,gBAAA;EACA,uBAAA;EACA,0BAAA;EACA,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBAAA;CACA;AACA;EACA,SAAA;CACA;AACA;EACA,SAAA;EACA,WAAA;CACA;AACA;EACA,iBAAA;EACA,mBAAA;CACA;AACA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;CACA;AACA;EACA,yBAAA;CACA","file":"Dropmenu.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-dropmenu-wraper\">\n    <div class=\"z-dropmenu-title\" v-if=\"type=='click'\">\n      <a @click=\"toggleDropMenu\">{{text}}<span class=\"z-dropmenu-arrow\"></span></a>\n      <transition name=\"z-dropmenu-show\">\n        <ul class=\"z-dropmenu\" v-show=\"isShow\">\n          <li v-for=\"li in lis\"><a :href=\"li.href\" @click=\"closeDropMenu\">{{li.text}}</a></li>\n        </ul>\n      </transition>\n    </div>\n    <div v-else class=\"z-dropmenu-title\" @mouseover=\"showDropMenu\" @mouseleave=\"closeDropMenu\">\n      <a>{{text}}<span class=\"z-dropmenu-arrow\"></span></a>\n      <transition name=\"z-dropmenu-show\">\n        <ul class=\"z-dropmenu\" v-show=\"isShow\">\n          <li v-for=\"li in lis\"><a :href=\"li.href\" @click=\"closeDropMenu\">{{li.text}}</a></li>\n        </ul>\n      </transition>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      isShow: false\n    }\n  },\n  props: {\n    type: {\n      type: String,\n      default: \"click\"\n    },\n    text: {\n      type: String,\n      required: true\n    },\n    lis: {\n      type: Array,\n      required: true\n    }\n  },\n  watch: {\n    \"isShow\": function(newVal,oldVal) {\n      newVal ? this.clickCloseBind() : this.clickCloseOff()\n    }\n  },\n  methods: {\n    toggleDropMenu() {\n      event.preventDefault()\n      event.stopPropagation()\n      this.isShow = !this.isShow\n    },\n    showDropMenu() {\n      this.isShow = true\n    },\n    closeDropMenu() {\n      this.isShow = false\n    },\n    clickClose(event) {\n\n      event.preventDefault()\n      event.stopPropagation()\n      if (event.target.parentNode !== this.$el && event.target.parentNode.parentNode !== this.$el) {\n        this.closeDropMenu()\n      }\n    },\n    clickCloseBind() {\n      let self = this\n      this.$root.$el.addEventListener(\"click\",self.clickClose)\n    },\n    clickCloseOff() {\n      let self = this\n      this.$root.$el.removeEventListener(\"click\",self.clickClose)\n    }\n  }\n}\n</script>\n\n<style lang=\"css\" scoped>\n.z-dropmenu-title {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  border-radius: 4px;\n  overflow: hidden;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active,.z-dropmenu-show-leave-active {\n  top: 100%\n}\n.z-dropmenu-show-enter,.z-dropmenu-show-leave-active {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li {\n  list-style: none;\n  line-height: 1.8em;\n}\n.z-dropmenu li a {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a:hover {\n  color: rgb(65, 184, 131);\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-dropmenu-title[data-v-4] {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a[data-v-4] {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow[data-v-4] {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu[data-v-4] {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  border-radius: 4px;\n  overflow: hidden;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active[data-v-4],.z-dropmenu-show-leave-active[data-v-4] {\n  top: 100%\n}\n.z-dropmenu-show-enter[data-v-4],.z-dropmenu-show-leave-active[data-v-4] {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li[data-v-4] {\n  list-style: none;\n  line-height: 1.8em;\n}\n.z-dropmenu li a[data-v-4] {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a[data-v-4]:hover {\n  color: rgb(65, 184, 131);\n}\n", "", {"version":3,"sources":["/./src/components/Dropmenu.vue?567feddf"],"names":[],"mappings":";AAgFA;EACA,gBAAA;EACA,mBAAA;CACA;AACA;EACA,eAAA;EACA,eAAA;CACA;AACA;EACA,sBAAA;EACA,uBAAA;EACA,iBAAA;EACA,iBAAA;EACA,SAAA;EACA,UAAA;EACA,mCAAA;EACA,oCAAA;EACA,2BAAA;CACA;AACA;EACA,mBAAA;EACA,cAAA;EACA,UAAA;EACA,QAAA;EACA,uBAAA;EACA,gBAAA;EACA,uBAAA;EACA,0BAAA;EACA,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBAAA;CACA;AACA;EACA,SAAA;CACA;AACA;EACA,SAAA;EACA,WAAA;CACA;AACA;EACA,iBAAA;EACA,mBAAA;CACA;AACA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;CACA;AACA;EACA,yBAAA;CACA","file":"Dropmenu.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-dropmenu-wraper\">\n    <div class=\"z-dropmenu-title\" v-if=\"type=='click'\">\n      <a @click=\"toggleDropMenu\">{{text}}<span class=\"z-dropmenu-arrow\"></span></a>\n      <transition name=\"z-dropmenu-show\">\n        <ul class=\"z-dropmenu\" v-show=\"isShow\">\n          <li v-for=\"li in lis\"><a :href=\"li.href\" @click=\"closeDropMenu\">{{li.text}}</a></li>\n        </ul>\n      </transition>\n    </div>\n    <div v-else class=\"z-dropmenu-title\" @mouseover=\"showDropMenu\" @mouseleave=\"closeDropMenu\">\n      <a>{{text}}<span class=\"z-dropmenu-arrow\"></span></a>\n      <transition name=\"z-dropmenu-show\">\n        <ul class=\"z-dropmenu\" v-show=\"isShow\">\n          <li v-for=\"li in lis\"><a :href=\"li.href\" @click=\"closeDropMenu\">{{li.text}}</a></li>\n        </ul>\n      </transition>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      isShow: false\n    }\n  },\n  props: {\n    type: {\n      type: String,\n      default: \"click\"\n    },\n    text: {\n      type: String,\n      required: true\n    },\n    lis: {\n      type: Array,\n      required: true\n    }\n  },\n  watch: {\n    \"isShow\": function(newVal,oldVal) {\n      newVal ? this.clickCloseBind() : this.clickCloseOff()\n    }\n  },\n  methods: {\n    toggleDropMenu() {\n      event.preventDefault()\n      event.stopPropagation()\n      this.isShow = !this.isShow\n    },\n    showDropMenu() {\n      this.isShow = true\n    },\n    closeDropMenu() {\n      this.isShow = false\n    },\n    clickClose(event) {\n\n      event.preventDefault()\n      event.stopPropagation()\n      if (event.target.parentNode !== this.$el && event.target.parentNode.parentNode !== this.$el) {\n        this.closeDropMenu()\n      }\n    },\n    clickCloseBind() {\n      let self = this\n      this.$root.$el.addEventListener(\"click\",self.clickClose)\n    },\n    clickCloseOff() {\n      let self = this\n      this.$root.$el.removeEventListener(\"click\",self.clickClose)\n    }\n  }\n}\n</script>\n\n<style lang=\"css\" scoped>\n.z-dropmenu-title {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  border-radius: 4px;\n  overflow: hidden;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active,.z-dropmenu-show-leave-active {\n  top: 100%\n}\n.z-dropmenu-show-enter,.z-dropmenu-show-leave-active {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li {\n  list-style: none;\n  line-height: 1.8em;\n}\n.z-dropmenu li a {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a:hover {\n  color: rgb(65, 184, 131);\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -896,7 +896,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4", module.exports)
 	  }
 	}
 
@@ -927,7 +927,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-3"
+	__vue_options__._scopeId = "data-v-5"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -936,9 +936,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-3", __vue_options__)
+	    hotAPI.createRecord("data-v-5", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-3", __vue_options__)
+	    hotAPI.reload("data-v-5", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] ImageInput.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -962,8 +962,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-3&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-3&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-5&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-5&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -981,7 +981,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-image-wraper[data-v-3] {\n  display: inline-block;\n  overflow: hidden;\n  position: relative;\n}\n.z-image-wraper img[data-v-3]{\n  display: inline-block;\n  overflow: hidden;\n  position: absolute;\n}\n", "", {"version":3,"sources":["/./src/components/ImageInput.vue?b14478a2"],"names":[],"mappings":";AAkEA;EACA,sBAAA;EACA,iBAAA;EACA,mBAAA;CACA;AACA;EACA,sBAAA;EACA,iBAAA;EACA,mBAAA;CACA","file":"ImageInput.vue","sourcesContent":["<template lang=\"html\">\n  <div :style=\"{width:width+'px',height:height+'px',borderRadius: radius}\" class=\"z-image-wraper\">\n    <img :src=\"src\" :style=\"{width:imageWidth+'px',height:imageHeight+'px',top:imageTop+'px',left:imageLeft+'px'}\" :alt=\"alt\" />\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      imageWidth: \"\",\n      imageHeight: \"\",\n      imageTop: \"\",\n      imageLeft: \"\",\n      imageRatio: \"\"\n    }\n  },\n  props: {\n    width: {\n      type: Number,\n      required: true\n    },\n    height: {\n      type: Number,\n      required: true\n    },\n    src: {\n      type: String,\n      required: true\n    },\n    alt: {\n      type: String\n    },\n    radius: {\n      type: String\n    }\n  },\n  mounted() {\n    this.getImage()\n  },\n  methods: {\n    getImage: function() {\n      var image = new Image()\n      image.src = this.src\n      var self = this\n      image.onload = function() {\n        self.imageRatio = image.width/image.height\n        self.resetImageSize()\n      }\n    },\n    resetImageSize: function() {\n      if (this.width/this.height>this.imageRatio) {\n        this.imageWidth = this.width\n        this.imageHeight = this.imageWidth / this.imageRatio\n        this.imageTop = -(this.imageHeight - this.height) / 2\n      } else {\n        this.imageHeight = this.height\n        this.imageWidth = this.imageHeight * this.imageRatio\n        this.imageLeft = -(this.imageWidth - this.width) / 2\n      }\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-image-wraper {\n    display: inline-block;\n    overflow: hidden;\n    position: relative;\n  }\n  .z-image-wraper img{\n    display: inline-block;\n    overflow: hidden;\n    position: absolute;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-image-wraper[data-v-5] {\n  display: inline-block;\n  overflow: hidden;\n  position: relative;\n}\n.z-image-wraper img[data-v-5]{\n  display: inline-block;\n  overflow: hidden;\n  position: absolute;\n}\n", "", {"version":3,"sources":["/./src/components/ImageInput.vue?b14478a2"],"names":[],"mappings":";AAkEA;EACA,sBAAA;EACA,iBAAA;EACA,mBAAA;CACA;AACA;EACA,sBAAA;EACA,iBAAA;EACA,mBAAA;CACA","file":"ImageInput.vue","sourcesContent":["<template lang=\"html\">\n  <div :style=\"{width:width+'px',height:height+'px',borderRadius: radius}\" class=\"z-image-wraper\">\n    <img :src=\"src\" :style=\"{width:imageWidth+'px',height:imageHeight+'px',top:imageTop+'px',left:imageLeft+'px'}\" :alt=\"alt\" />\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      imageWidth: \"\",\n      imageHeight: \"\",\n      imageTop: \"\",\n      imageLeft: \"\",\n      imageRatio: \"\"\n    }\n  },\n  props: {\n    width: {\n      type: Number,\n      required: true\n    },\n    height: {\n      type: Number,\n      required: true\n    },\n    src: {\n      type: String,\n      required: true\n    },\n    alt: {\n      type: String\n    },\n    radius: {\n      type: String\n    }\n  },\n  mounted() {\n    this.getImage()\n  },\n  methods: {\n    getImage: function() {\n      var image = new Image()\n      image.src = this.src\n      var self = this\n      image.onload = function() {\n        self.imageRatio = image.width/image.height\n        self.resetImageSize()\n      }\n    },\n    resetImageSize: function() {\n      if (this.width/this.height>this.imageRatio) {\n        this.imageWidth = this.width\n        this.imageHeight = this.imageWidth / this.imageRatio\n        this.imageTop = -(this.imageHeight - this.height) / 2\n      } else {\n        this.imageHeight = this.height\n        this.imageWidth = this.imageHeight * this.imageRatio\n        this.imageLeft = -(this.imageWidth - this.width) / 2\n      }\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-image-wraper {\n    display: inline-block;\n    overflow: hidden;\n    position: relative;\n  }\n  .z-image-wraper img{\n    display: inline-block;\n    overflow: hidden;\n    position: absolute;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -1082,7 +1082,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5", module.exports)
 	  }
 	}
 
@@ -1113,7 +1113,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-6"
+	__vue_options__._scopeId = "data-v-2"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -1122,9 +1122,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-6", __vue_options__)
+	    hotAPI.createRecord("data-v-2", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-6", __vue_options__)
+	    hotAPI.reload("data-v-2", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -1148,8 +1148,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-6&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-6&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-2&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-2&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1167,7 +1167,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-supernatant[data-v-6] {\n  position: fixed;\n  z-index: 9998;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n.z-modal-wrapper[data-v-6] {\n  display: table-cell;\n  vertical-align: middle;\n}\n.z-modal[data-v-6] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  border-radius: 4px;\n  overflow: hidden;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  transition: all .3s ease;\n}\n.z-modal-expand-enter[data-v-6], .z-modal-expand-leave-active[data-v-6] {\n  opacity: 0;\n}\n.z-modal-expand-enter .z-modal[data-v-6], .z-modal-expand-leave-active .z-modal[data-v-6]{\n  -webkit-transform: scale(0.5);\n  transform: scale(0.5);\n}\n.z-modal-title[data-v-6] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-6] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-6] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-6] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-6]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-6] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./src/components/Modal.vue?4bc5731b"],"names":[],"mappings":";AA2EA;EACA,gBAAA;EACA,cAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,oCAAA;EACA,eAAA;EACA,6BAAA;CACA;AAEA;EACA,oBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yCAAA;EACA,yBAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,8BAAA;EACA,sBAAA;CACA;AAEA;EACA,kBAAA;EACA,mBAAA;CACA;AAEA;EACA,qBAAA;EACA,iBAAA;CACA;AAEA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;CACA;AAEA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CACA;AAEA;EACA,4BAAA;CACA;AAEA;EACA,oCAAA;EACA,YAAA;CACA","file":"Modal.vue","sourcesContent":["<template lang=\"html\">\n  <transition name=\"z-modal-expand\">\n    <div class=\"z-supernatant\" v-show=\"show\">\n      <div class=\"z-modal-wrapper\">\n        <div class=\"z-modal\">\n          <div class=\"z-modal-title\">\n            {{title}}\n          </div>\n          <div class=\"z-modal-content\">\n            {{content}}\n          </div>\n          <div class=\"z-modal-footer\">\n            <a class=\"z-btn-modal\" @click=\"cancelFunc\" v-if=\"type=='confirm'\">{{cancel}}</a>\n            <a class=\"z-btn-modal\" :class=\"{'z-btn-modal-sure': type=='confirm'}\" @click=\"sureFunc\">{{sure}}</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </transition>\n</template>\n\n<script>\nexport default {\n  props: {\n    sure: {\n      type: String,\n      default: \"确定\"\n    },\n    cancel: {\n      type: String,\n      default: \"取消\"\n    },\n    show: {\n      type: Boolean,\n      required: true\n    },\n    title: {\n      type: String,\n      default: \"提示\"\n    },\n    content: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"alert\"\n    },\n    sureEvent: {\n      type: Function,\n      default: function() {\n        console.log(\"点击了确定\")\n      }\n    },\n    cancelEvent: {\n      type: Function,\n      default: function() {\n        console.log(\"点击了取消\")\n      }\n    }\n  },\n  methods: {\n    sureFunc: function() {\n      this.$emit(\"closeModal\")\n      this.sureEvent()\n    },\n    cancelFunc: function() {\n      this.$emit(\"closeModal\")\n      this.cancelEvent()\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-supernatant {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    transition: opacity .3s ease;\n  }\n\n  .z-modal-wrapper {\n    display: table-cell;\n    vertical-align: middle;\n  }\n\n  .z-modal {\n    width: 300px;\n    margin: 0px auto;\n    background-color: #fff;\n    border-radius: 4px;\n    overflow: hidden;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n  }\n\n  .z-modal-expand-enter, .z-modal-expand-leave-active {\n    opacity: 0;\n  }\n\n  .z-modal-expand-enter .z-modal, .z-modal-expand-leave-active .z-modal{\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n  }\n\n  .z-modal-title {\n    line-height: 44px;\n    text-align: center;\n  }\n\n  .z-modal-content {\n    padding: 0 12px 12px;\n    text-align: left;\n  }\n\n  .z-modal-footer {\n    border-top: 1px solid #ccc;\n    display: table;\n    width: 100%;\n  }\n\n  .z-btn-modal {\n    display: table-cell;\n    text-align: center;\n    cursor: pointer;\n    line-height: 44px;\n  }\n\n  .z-btn-modal:nth-child(2) {\n    border-left: 1px solid #ccc;\n  }\n\n  .z-btn-modal-sure {\n    background-color: rgb(65, 184, 131);\n    color: #fff;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-supernatant[data-v-2] {\n  position: fixed;\n  z-index: 9998;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n.z-modal-wrapper[data-v-2] {\n  display: table-cell;\n  vertical-align: middle;\n}\n.z-modal[data-v-2] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  border-radius: 4px;\n  overflow: hidden;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  transition: all .3s ease;\n}\n.z-modal-expand-enter[data-v-2], .z-modal-expand-leave-active[data-v-2] {\n  opacity: 0;\n}\n.z-modal-expand-enter .z-modal[data-v-2], .z-modal-expand-leave-active .z-modal[data-v-2]{\n  -webkit-transform: scale(0.5);\n  transform: scale(0.5);\n}\n.z-modal-title[data-v-2] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-2] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-2] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-2] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-2]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-2] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./src/components/Modal.vue?4bc5731b"],"names":[],"mappings":";AA2EA;EACA,gBAAA;EACA,cAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,oCAAA;EACA,eAAA;EACA,6BAAA;CACA;AAEA;EACA,oBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yCAAA;EACA,yBAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,8BAAA;EACA,sBAAA;CACA;AAEA;EACA,kBAAA;EACA,mBAAA;CACA;AAEA;EACA,qBAAA;EACA,iBAAA;CACA;AAEA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;CACA;AAEA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CACA;AAEA;EACA,4BAAA;CACA;AAEA;EACA,oCAAA;EACA,YAAA;CACA","file":"Modal.vue","sourcesContent":["<template lang=\"html\">\n  <transition name=\"z-modal-expand\">\n    <div class=\"z-supernatant\" v-show=\"show\">\n      <div class=\"z-modal-wrapper\">\n        <div class=\"z-modal\">\n          <div class=\"z-modal-title\">\n            {{title}}\n          </div>\n          <div class=\"z-modal-content\">\n            {{content}}\n          </div>\n          <div class=\"z-modal-footer\">\n            <a class=\"z-btn-modal\" @click=\"cancelFunc\" v-if=\"type=='confirm'\">{{cancel}}</a>\n            <a class=\"z-btn-modal\" :class=\"{'z-btn-modal-sure': type=='confirm'}\" @click=\"sureFunc\">{{sure}}</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </transition>\n</template>\n\n<script>\nexport default {\n  props: {\n    sure: {\n      type: String,\n      default: \"确定\"\n    },\n    cancel: {\n      type: String,\n      default: \"取消\"\n    },\n    show: {\n      type: Boolean,\n      required: true\n    },\n    title: {\n      type: String,\n      default: \"提示\"\n    },\n    content: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"alert\"\n    },\n    sureEvent: {\n      type: Function,\n      default: function() {\n        console.log(\"点击了确定\")\n      }\n    },\n    cancelEvent: {\n      type: Function,\n      default: function() {\n        console.log(\"点击了取消\")\n      }\n    }\n  },\n  methods: {\n    sureFunc: function() {\n      this.$emit(\"closeModal\")\n      this.sureEvent()\n    },\n    cancelFunc: function() {\n      this.$emit(\"closeModal\")\n      this.cancelEvent()\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-supernatant {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    transition: opacity .3s ease;\n  }\n\n  .z-modal-wrapper {\n    display: table-cell;\n    vertical-align: middle;\n  }\n\n  .z-modal {\n    width: 300px;\n    margin: 0px auto;\n    background-color: #fff;\n    border-radius: 4px;\n    overflow: hidden;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n  }\n\n  .z-modal-expand-enter, .z-modal-expand-leave-active {\n    opacity: 0;\n  }\n\n  .z-modal-expand-enter .z-modal, .z-modal-expand-leave-active .z-modal{\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n  }\n\n  .z-modal-title {\n    line-height: 44px;\n    text-align: center;\n  }\n\n  .z-modal-content {\n    padding: 0 12px 12px;\n    text-align: left;\n  }\n\n  .z-modal-footer {\n    border-top: 1px solid #ccc;\n    display: table;\n    width: 100%;\n  }\n\n  .z-btn-modal {\n    display: table-cell;\n    text-align: center;\n    cursor: pointer;\n    line-height: 44px;\n  }\n\n  .z-btn-modal:nth-child(2) {\n    border-left: 1px solid #ccc;\n  }\n\n  .z-btn-modal-sure {\n    background-color: rgb(65, 184, 131);\n    color: #fff;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -1276,7 +1276,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2", module.exports)
 	  }
 	}
 
@@ -1307,7 +1307,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-4"
+	__vue_options__._scopeId = "data-v-8"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -1316,9 +1316,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4", __vue_options__)
+	    hotAPI.createRecord("data-v-8", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-4", __vue_options__)
+	    hotAPI.reload("data-v-8", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Navbar.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -1342,8 +1342,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-4&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-4&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-8&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-8&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1361,7 +1361,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-navbar[data-v-4] {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-4] {\n  position: fixed;\n  top: 0;\n  z-index: 999;\n}\n", "", {"version":3,"sources":["/./src/components/Navbar.vue?49d8b552"],"names":[],"mappings":";AA8BA;EACA,uBAAA;EACA,uBAAA;EACA,qCAAA;EACA,YAAA;CACA;AACA;EACA,gBAAA;EACA,OAAA;EACA,aAAA;CACA","file":"Navbar.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-navbar-wraper\">\n    <div class=\"z-navbar-placeholder\" :style=\"{height: isFixed ? navbarHeight + 'px' : ''}\">\n    </div>\n    <div class=\"z-navbar\" :class=\"{'z-navbar-fix': isFixed}\">\n      <slot></slot>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      navbarHeight: \"\"\n    }\n  },\n  props: {\n    isFixed: {\n      type: Boolean,\n      default: false\n    }\n  },\n  mounted() {\n    this.navbarHeight = this.$el.lastChild.clientHeight\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-navbar {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix {\n  position: fixed;\n  top: 0;\n  z-index: 999;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-navbar[data-v-8] {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-8] {\n  position: fixed;\n  top: 0;\n  z-index: 999;\n}\n", "", {"version":3,"sources":["/./src/components/Navbar.vue?49d8b552"],"names":[],"mappings":";AA8BA;EACA,uBAAA;EACA,uBAAA;EACA,qCAAA;EACA,YAAA;CACA;AACA;EACA,gBAAA;EACA,OAAA;EACA,aAAA;CACA","file":"Navbar.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-navbar-wraper\">\n    <div class=\"z-navbar-placeholder\" :style=\"{height: isFixed ? navbarHeight + 'px' : ''}\">\n    </div>\n    <div class=\"z-navbar\" :class=\"{'z-navbar-fix': isFixed}\">\n      <slot></slot>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      navbarHeight: \"\"\n    }\n  },\n  props: {\n    isFixed: {\n      type: Boolean,\n      default: false\n    }\n  },\n  mounted() {\n    this.navbarHeight = this.$el.lastChild.clientHeight\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-navbar {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix {\n  position: fixed;\n  top: 0;\n  z-index: 999;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -1415,7 +1415,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8", module.exports)
 	  }
 	}
 
@@ -1454,9 +1454,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-7", __vue_options__)
+	    hotAPI.createRecord("data-v-6", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-7", __vue_options__)
+	    hotAPI.reload("data-v-6", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Progress.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -1480,8 +1480,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-7!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-7!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-6!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-6!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1519,7 +1519,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      width: 0,
 	      progress: 0,
 	      timer: null,
-	      isShowProgress: true
+	      outTimer: null,
+	      isShowProgress: false
 	    };
 	  },
 	
@@ -1533,11 +1534,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: 'top'
 	    }
 	  },
-	  mounted: function mounted() {
-	    this.progressing();
-	    this.timer = setInterval(this.runProgress, 500);
-	  },
-	
 	  methods: {
 	    progressing: function progressing() {
 	      this.progress = this.progress + Math.random() * (99 - this.width);
@@ -1553,11 +1549,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	          clearInterval(_this.timer);
 	          _this.progress = 100;
 	          var self = _this;
-	          setTimeout(function () {
+	          _this.outTimer = setTimeout(function () {
 	            self.isShowProgress = false;
+	            self.resetProgress();
 	          }, 500);
 	        })();
 	      }
+	    },
+	    resetProgress: function resetProgress() {
+	      this.progress = 0;
+	      this.width = 0;
+	    },
+	    startProgress: function startProgress() {
+	      clearInterval(this.timer);
+	      clearTimeout(this.outTimer);
+	      this.resetProgress();
+	      this.isShowProgress = true;
+	      this.progressing();
+	      this.timer = setInterval(this.runProgress, 500);
 	    }
 	  }
 	};
@@ -1588,7 +1597,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6", module.exports)
 	  }
 	}
 
@@ -1619,7 +1628,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-8"
+	__vue_options__._scopeId = "data-v-7"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -1628,9 +1637,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-8", __vue_options__)
+	    hotAPI.createRecord("data-v-7", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-8", __vue_options__)
+	    hotAPI.reload("data-v-7", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Switch.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -1654,8 +1663,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-8&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-8&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue");
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-7&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/style-rewriter.js?id=data-v-7&scoped=true!./../../node_modules/.npminstall/vue-loader/9.5.1/vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1673,7 +1682,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-switch[data-v-8] {\n  display: inline-block;\n  padding: 2px;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n}\n.z-switch-button[data-v-8] {\n  display: inline-block;\n  border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  left: 2px;\n}\n.z-switch-button-open[data-v-8] {\n  left: auto;\n  right: 2px;\n}\n", "", {"version":3,"sources":["/./src/components/Switch.vue?115c1866"],"names":[],"mappings":";AAoCA;EACA,sBAAA;EACA,aAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;CACA;AAEA;EACA,sBAAA;EACA,oBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;CACA;AAEA;EACA,WAAA;EACA,WAAA;CACA","file":"Switch.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-switch\" :style=\"{width: width+'px',height: height+'px',borderRadius: height+'px',backgroundColor: isOpen ? bgc : ''}\" @click=\"toggleSwitch\">\n    <div class=\"z-switch-button\" :class=\"{'z-switch-button-open': isOpen}\" :style=\"{width: height+'px',height: height+'px'}\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      isOpen: false\n    }\n  },\n  props: {\n    width: {\n      type: Number,\n      default: 50\n    },\n    height: {\n      type: Number,\n      default: 25\n    },\n    bgc: {\n      type: String,\n      default: \"rgb(65, 184, 131)\"\n    }\n  },\n  methods: {\n    toggleSwitch: function() {\n      this.isOpen = !this.isOpen\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-switch {\n  display: inline-block;\n  padding: 2px;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n}\n\n.z-switch-button {\n  display: inline-block;\n  border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  left: 2px;\n}\n\n.z-switch-button-open {\n  left: auto;\n  right: 2px;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-switch[data-v-7] {\n  display: inline-block;\n  padding: 2px;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n}\n.z-switch-button[data-v-7] {\n  display: inline-block;\n  border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  left: 2px;\n}\n.z-switch-button-open[data-v-7] {\n  left: auto;\n  right: 2px;\n}\n", "", {"version":3,"sources":["/./src/components/Switch.vue?115c1866"],"names":[],"mappings":";AAoCA;EACA,sBAAA;EACA,aAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;CACA;AAEA;EACA,sBAAA;EACA,oBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;CACA;AAEA;EACA,WAAA;EACA,WAAA;CACA","file":"Switch.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-switch\" :style=\"{width: width+'px',height: height+'px',borderRadius: height+'px',backgroundColor: isOpen ? bgc : ''}\" @click=\"toggleSwitch\">\n    <div class=\"z-switch-button\" :class=\"{'z-switch-button-open': isOpen}\" :style=\"{width: height+'px',height: height+'px'}\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      isOpen: false\n    }\n  },\n  props: {\n    width: {\n      type: Number,\n      default: 50\n    },\n    height: {\n      type: Number,\n      default: 25\n    },\n    bgc: {\n      type: String,\n      default: \"rgb(65, 184, 131)\"\n    }\n  },\n  methods: {\n    toggleSwitch: function() {\n      this.isOpen = !this.isOpen\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-switch {\n  display: inline-block;\n  padding: 2px;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n}\n\n.z-switch-button {\n  display: inline-block;\n  border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  left: 2px;\n}\n\n.z-switch-button-open {\n  left: auto;\n  right: 2px;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -1745,7 +1754,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7", module.exports)
 	  }
 	}
 

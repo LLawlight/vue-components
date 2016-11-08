@@ -11,7 +11,8 @@ export default {
       width: 0,
       progress: 0,
       timer: null,
-      isShowProgress: true
+      outTimer: null,
+      isShowProgress: false
     }
   },
   props: {
@@ -23,10 +24,6 @@ export default {
       type: String,
       default: 'top'
     }
-  },
-  mounted() {
-    this.progressing()
-    this.timer = setInterval(this.runProgress, 500)
   },
   methods: {
     progressing: function() {
@@ -40,10 +37,23 @@ export default {
         clearInterval(this.timer)
         this.progress = 100
         let self = this
-        setTimeout(function() {
+        this.outTimer = setTimeout(function() {
           self.isShowProgress = false
+          self.resetProgress()
         },500)
       }
+    },
+    resetProgress: function() {
+      this.progress = 0
+      this.width = 0
+    },
+    startProgress: function() {
+      clearInterval(this.timer)
+      clearTimeout(this.outTimer)
+      this.resetProgress()
+      this.isShowProgress = true
+      this.progressing()
+      this.timer = setInterval(this.runProgress, 500)
     }
   }
 };
