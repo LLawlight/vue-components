@@ -18,39 +18,48 @@
           :lis="[
             {
               href: '#aside',
-              text: 'Aside'
+              text: 'Aside 侧边栏'
             },
             {
               href: '#button',
-              text: 'Button'
+              text: 'Button 按钮'
             },
             {
               href: '#dropmenu',
-              text: 'Dropmenu'
+              text: 'Dropmenu 下拉菜单'
             },
             {
               href: '#ImageInput',
-              text: 'ImageInput'
+              text: 'ImageInput 图片放置'
+            },
+            {
+              href: '#InputNumber',
+              text: 'InputNumber 计数器'
             },
             {
               href: '#modal',
-              text: 'Modal'
+              text: 'Modal 模态窗'
             },
             {
               href: '#navbar',
-              text: 'Navbar'
+              text: 'Navbar 导航栏'
             },
             {
+              href: '#pagination',
+              text: 'pagination 分页器'
+            },
+
+            {
               href: '#progress',
-              text: 'Progress'
+              text: 'Progress 进度条'
             },
             {
               href: '#switch',
-              text: 'Switch'
+              text: 'Switch 开关'
             },
             {
               href: '#table',
-              text: 'Table'
+              text: 'Table 表格'
             }
           ]"
           ></z-dropmenu>
@@ -78,7 +87,7 @@
             :show="asideLeft.show"
             :title="'标题'"
             :type="'left'"
-            @closeAside="asideLeft.show = false">
+            @close-aside="asideLeft.show = false">
               <h3>我是Aside-Left</h3>
               <div>组件内部可以自定义HTML结构</div>
               <p>直接在&lt;aside&gt;标签中写即可</p>
@@ -95,7 +104,7 @@
             :show="asideTop.show"
             :title="'标题'"
             :type="'top'"
-            @closeAside="asideTop.show = false">
+            @close-aside="asideTop.show = false">
               <h3>我是Aside-Top</h3>
               <div>组件内部可以自定义HTML结构</div>
               <p>直接在&lt;aside&gt;标签中写即可</p>
@@ -112,7 +121,7 @@
             :show="asideRight.show"
             :title="'标题'"
             :type="'right'"
-            @closeAside="asideRight.show = false">
+            @close-aside="asideRight.show = false">
               <h3>我是Aside-Right</h3>
               <div>组件内部可以自定义HTML结构</div>
               <p>直接在&lt;aside&gt;标签中写即可</p>
@@ -129,7 +138,7 @@
             :show.sync="asideBottom.show"
             :title="'标题'"
             :type="'bottom'"
-            @closeAside="asideBottom.show = false">
+            @close-aside="asideBottom.show = false">
               <h3>我是Aside-Bottom</h3>
               <div>组件内部可以自定义HTML结构</div>
               <p>直接在&lt;aside&gt;标签中写即可</p>
@@ -139,7 +148,7 @@
 
           <div class="introduce-block">
             <p>备注：组件标签内可以自定义HTML结构。</p>
-            <p>组件标签须写上<code class="z-code">@closeAside="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
+            <p>组件标签须写上<code class="z-code">@close-aside="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -230,6 +239,7 @@
                 text: 'Blog'
               }
             ]"
+            :isShowArrow="true"
             ></z-dropmenu>
           </div>
 
@@ -239,7 +249,8 @@
             :trs="[
                     ['type','String','否','click','菜单显示方式(click,hover)'],
                     ['text','String','是','-','菜单文字'],
-                    ['lis','Array','是','-','列表的文字(text)和链接(href)']
+                    ['lis','Array','是','-','列表的文字(text)和链接(href)'],
+                    ['isShowArrow','Boolean','否','false','是否在右侧显示▲小箭头']
                   ]">
             </z-table>
           </div>
@@ -250,7 +261,7 @@
         <div id="ImageInput" class="section">
           <h2><a href="#ImageInput">ImageInput</a></h2>
 
-          <!-- <div class="introduce">
+          <div class="introduce">
             <z-imageinput
             :width="200"
             :height="150"
@@ -258,7 +269,7 @@
             :alt="'测试图片'"
             :radius="'50%'"
             ></z-imageinput>
-          </div> -->
+          </div>
 
           <div class="introduce-block">
             <p>自动根据容器尺寸缩放图片并展示中心位置。</p>
@@ -277,6 +288,11 @@
           <imageinput-md></imageinput-md>
         </div>
 
+        <div id="InputNumber" class="section">
+          <h2><a href="#InputNumber">InputNumber</a></h2>
+          <inputnumber-md></inputnumber-md>
+        </div>
+
         <div id="modal" class="section">
           <h2><a href="#modal">Modal</a></h2>
 
@@ -289,7 +305,7 @@
             <z-modal
             :show="alert.show"
             :content="'这是一个alert！'"
-            @closeModal="alert.show = false">
+            @close-modal="alert.show = false">
             </z-modal>
           </div>
 
@@ -302,12 +318,12 @@
             :show="confirm.show"
             :type="'confirm'"
             :content="'这是一个confirm！'"
-            @closeModal="confirm.show = false"
+            @close-modal="confirm.show = false"
             ></z-modal>
           </div>
 
           <div class="introduce-block">
-            <p>组件标签须写上<code class="z-code">@closeModal="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
+            <p>组件标签须写上<code class="z-code">@close-modal="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
             <z-table
             :ths="['参数','类型','必填','默认值','说明']"
             :trs="[
@@ -341,6 +357,11 @@
           </div>
 
           <navbar-md></navbar-md>
+        </div>
+
+        <div id="pagination" class="section">
+          <h2><a href="#pagination">Pagination</a></h2>
+          <pagination-md></pagination-md>
         </div>
 
         <div id="progress" class="section">
@@ -424,6 +445,7 @@ import zAside from './components/Aside'
 import zButton from './components/Button'
 import zDropmenu from './components/Dropmenu'
 import zImageinput from './components/ImageInput'
+import zInputnumber from './components/InputNumber'
 import zModal from './components/Modal'
 import zNavbar from './components/Navbar'
 import zProgress from './components/Progress'
@@ -434,8 +456,10 @@ import asideMd from 'src/docs/Aside.md'
 import buttonMd from 'src/docs/Button.md'
 import dropmenuMd from 'src/docs/Dropmenu.md'
 import imageinputMd from 'src/docs/ImageInput.md'
+import inputnumberMd from 'src/docs/InputNumber.md'
 import modalMd from 'src/docs/Modal.md'
 import navbarMd from 'src/docs/Navbar.md'
+import paginationMd from 'src/docs/Pagination.md'
 import progressMd from 'src/docs/Progress.md'
 import switchMd from 'src/docs/Switch.md'
 import tableMd from 'src/docs/Table.md'
@@ -447,6 +471,7 @@ export default {
     zButton,
     zDropmenu,
     zImageinput,
+    zInputnumber,
     zModal,
     zNavbar,
     zProgress,
@@ -456,8 +481,10 @@ export default {
     buttonMd,
     dropmenuMd,
     imageinputMd,
+    inputnumberMd,
     modalMd,
     navbarMd,
+    paginationMd,
     progressMd,
     switchMd,
     tableMd
@@ -481,21 +508,33 @@ export default {
       },
       asideBottom: {
         show: false
+      },
+      inputNumber: {
+        value: 5
       }
     }
   },
   mounted() {
     this.startProgress()
   },
+  watch: {
+    'inputNumber.value': function(val) {
+      console.log(val);
+    }
+  },
   methods: {
     startProgress: function() {
       this.$refs.progress.startProgress()
+    },
+
+    getValue: function(val) {
+      console.log(val)
     }
   }
 }
 </script>
 
-<style>
+<style lang="less">
 html,body,h1,h2,ul {
   margin: 0;
   padding: 0;
@@ -622,5 +661,10 @@ a {
 .z-navbar .z-guide {
   float: left;
   position: relative;
+
+  .z-dropmenu-title>a {
+    color: rgb(65, 184, 131);
+    font-weight: bold;
+  }
 }
 </style>

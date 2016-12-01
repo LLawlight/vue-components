@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'z-modal',
   props: {
     sure: {
       type: String,
@@ -61,11 +62,11 @@ export default {
   },
   methods: {
     sureFunc: function() {
-      this.$emit("closeModal")
+      this.$emit("close-modal")
       this.sureEvent()
     },
     cancelFunc: function() {
-      this.$emit("closeModal")
+      this.$emit("close-modal")
       this.cancelEvent()
     }
   }

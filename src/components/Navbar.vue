@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'z-navbar',
   data() {
     return {
       navbarHeight: ""

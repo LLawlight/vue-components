@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'z-imageinput',
   data() {
     return {
       imageWidth: "",

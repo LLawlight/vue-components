@@ -6,6 +6,8 @@
 
 <script>
 export default {
+  name: 'z-progress',
+
   data() {
     return {
       width: 0,

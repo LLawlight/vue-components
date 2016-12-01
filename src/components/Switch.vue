@@ -1,11 +1,12 @@
 <template lang="html">
   <div class="z-switch" :style="{width: width+'px',height: height+'px',borderRadius: height+'px',backgroundColor: isOpen ? bgc : ''}" @click="toggleSwitch">
-    <div class="z-switch-button" :class="{'z-switch-button-open': isOpen}" :style="{width: height+'px',height: height+'px'}"></div>
+    <div class="z-switch-button" :style="{width: height+'px', height: height+'px', left: isOpen ? ((width - height) + 'px') : (0 + 'px')}"></div>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'z-switch',
   data() {
     return {
       isOpen: false
@@ -36,10 +37,12 @@ export default {
 <style lang="css" scoped>
 .z-switch {
   display: inline-block;
-  padding: 2px;
   background-color: #ccc;
   cursor: pointer;
   position: relative;
+  border: 1px solid #999;
+  transition: background-color .2s;
+  box-sizing: content-box;
 }
 
 .z-switch-button {
@@ -47,11 +50,6 @@ export default {
   border-radius: 100%;
   background-color: #fff;
   position: absolute;
-  left: 2px;
-}
-
-.z-switch-button-open {
-  left: auto;
-  right: 2px;
+  transition: left .2s;
 }
 </style>

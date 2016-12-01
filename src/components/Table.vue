@@ -18,6 +18,7 @@
 
 <script>
 export default {
+  name: 'z-table',
   props: {
     title: {
       type: String

@@ -6,6 +6,6 @@
 <z-modal
 :show="alert.show"
 :content="'这是一个alert！'"
-@closeModal="alert.show = false">
+@close-modal="alert.show = false">
 </z-modal>
 ```

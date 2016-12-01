@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  name: 'z-aside',
   props: {
     show: {
       type: Boolean,
@@ -39,7 +40,7 @@ export default {
   },
   methods: {
     closeAside: function() {
-      this.$emit('closeAside')
+      this.$emit('close-aside')
     }
   }
 };
@@ -55,11 +56,11 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
   display: table;
-  transition: opacity .3s ease;
+  transition: all .3s ease;
 }
 
 .z-aside-slide-enter, .z-aside-slide-leave-active {
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .z-aside {

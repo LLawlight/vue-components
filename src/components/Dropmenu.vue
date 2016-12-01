@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="z-dropmenu-wraper">
     <div class="z-dropmenu-title" v-if="type=='click'">
-      <a @click="toggleDropMenu">{{text}}<span class="z-dropmenu-arrow"></span></a>
+      <a @click="toggleDropMenu">{{text}}<span class="z-dropmenu-arrow" v-if="isShowArrow"></span></a>
       <transition name="z-dropmenu-show">
         <ul class="z-dropmenu" v-show="isShow">
           <li v-for="li in lis"><a :href="li.href" @click="closeDropMenu">{{li.text}}</a></li>
@@ -9,7 +9,7 @@
       </transition>
     </div>
     <div v-else class="z-dropmenu-title" @mouseover="showDropMenu" @mouseleave="closeDropMenu">
-      <a>{{text}}<span class="z-dropmenu-arrow"></span></a>
+      <a>{{text}}<span class="z-dropmenu-arrow" v-if="isShowArrow"></span></a>
       <transition name="z-dropmenu-show">
         <ul class="z-dropmenu" v-show="isShow">
           <li v-for="li in lis"><a :href="li.href" @click="closeDropMenu">{{li.text}}</a></li>
@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'z-dropmenu',
   data() {
     return {
       isShow: false
@@ -38,6 +39,10 @@ export default {
     lis: {
       type: Array,
       required: true
+    },
+    isShowArrow: {
+      type: Boolean,
+      default: false
     }
   },
   watch: {
@@ -58,7 +63,6 @@ export default {
       this.isShow = false
     },
     clickClose(event) {
-
       event.preventDefault()
       event.stopPropagation()
       if (event.target.parentNode !== this.$el && event.target.parentNode.parentNode !== this.$el) {
@@ -121,6 +125,7 @@ export default {
 .z-dropmenu li {
   list-style: none;
   line-height: 1.8em;
+  white-space:nowrap;
 }
 .z-dropmenu li a {
   color: #7f8c8d;
