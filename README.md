@@ -8,7 +8,7 @@ $ npm install z-vue-components
 ```
 
 ## Documentation
-[http://zhaoyuxiang.cn/vue-components/](http://zhaoyuxiang.cn/vue-components/)
+[https://clark-zhao.github.io/vue-components/](https://clark-zhao.github.io/vue-components/)
 
 ## Usage
 

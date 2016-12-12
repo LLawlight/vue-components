@@ -103,8 +103,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var install = function install(Vue) {
-	  Vue.component(Alert.name, zAlert);
-	  Vue.component(Button.name, _Button2.default);
+	  Vue.component(_Aside2.default.name, _Aside2.default);
+	  Vue.component(_Button2.default.name, _Button2.default);
 	  Vue.component(_Dropmenu2.default.name, _Dropmenu2.default);
 	  Vue.component(_ImageInput2.default.name, _ImageInput2.default);
 	  Vue.component(_InputNumber2.default.name, _InputNumber2.default);

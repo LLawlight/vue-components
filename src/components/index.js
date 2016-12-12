@@ -11,8 +11,8 @@ import zSwitch from './Switch.vue'
 import zTable from './Table.vue'
 
 const install = (Vue) => {
-  Vue.component(Alert.name, zAlert)
-  Vue.component(Button.name, zButton)
+  Vue.component(zAside.name, zAside)
+  Vue.component(zButton.name, zButton)
   Vue.component(zDropmenu.name, zDropmenu)
   Vue.component(zImageinput.name, zImageinput)
   Vue.component(zInputnumber.name, zInputnumber)
