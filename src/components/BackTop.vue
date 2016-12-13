@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'z-top',
+  name: 'z-backtop',
 
   data() {
     return {

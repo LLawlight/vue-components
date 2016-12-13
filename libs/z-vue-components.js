@@ -689,7 +689,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  name: 'z-top',
+	  name: 'z-backtop',
 	
 	  data: function data() {
 	    return {
