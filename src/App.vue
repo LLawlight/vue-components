@@ -21,6 +21,10 @@
               text: 'Aside 侧边栏'
             },
             {
+              href: '#backtop',
+              text: 'Backtop 返回顶部'
+            },
+            {
               href: '#button',
               text: 'Button 按钮'
             },
@@ -46,7 +50,7 @@
             },
             {
               href: '#pagination',
-              text: 'pagination 分页器'
+              text: 'Pagination 分页器'
             },
 
             {
@@ -160,6 +164,11 @@
             </z-table>
           </div>
           <aside-md></aside-md>
+        </div>
+
+        <div id="backtop" class="section">
+          <h2><a href="#backtop">BackTop</a></h2>
+          <backtop-md></backtop-md>
         </div>
 
         <div id="button" class="section">
@@ -453,6 +462,7 @@ import zSwitch from './components/Switch'
 import zTable from './components/Table'
 
 import asideMd from 'src/docs/Aside.md'
+import backtopMd from 'src/docs/BackTop.md'
 import buttonMd from 'src/docs/Button.md'
 import dropmenuMd from 'src/docs/Dropmenu.md'
 import imageinputMd from 'src/docs/ImageInput.md'
@@ -477,7 +487,9 @@ export default {
     zProgress,
     zSwitch,
     zTable,
+
     asideMd,
+    backtopMd,
     buttonMd,
     dropmenuMd,
     imageinputMd,
@@ -558,6 +570,7 @@ code {
   font-size: 0.9em;
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
+  word-break: break-all;
 }
 
 code.z-code {
@@ -565,6 +578,10 @@ code.z-code {
   padding: 3px 5px;
   margin: 0 2px;
   background-color: #f8f8f8;
+}
+
+.z-backtop-wrapper {
+  color: #41b883;
 }
 
 .heart {
@@ -591,6 +608,11 @@ a {
 
   .z-navbar>ul {
     padding: 10px;
+  }
+
+  .z-backtop-wrapper.show-top {
+    right: 50px;
+    bottom: 50px;
   }
 }
 

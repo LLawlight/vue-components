@@ -60,50 +60,55 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Aside2 = _interopRequireDefault(_Aside);
 	
-	var _Button = __webpack_require__(8);
+	var _BackTop = __webpack_require__(8);
+	
+	var _BackTop2 = _interopRequireDefault(_BackTop);
+	
+	var _Button = __webpack_require__(13);
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _Dropmenu = __webpack_require__(13);
+	var _Dropmenu = __webpack_require__(18);
 	
 	var _Dropmenu2 = _interopRequireDefault(_Dropmenu);
 	
-	var _ImageInput = __webpack_require__(18);
+	var _ImageInput = __webpack_require__(23);
 	
 	var _ImageInput2 = _interopRequireDefault(_ImageInput);
 	
-	var _InputNumber = __webpack_require__(23);
+	var _InputNumber = __webpack_require__(28);
 	
 	var _InputNumber2 = _interopRequireDefault(_InputNumber);
 	
-	var _Modal = __webpack_require__(28);
+	var _Modal = __webpack_require__(33);
 	
 	var _Modal2 = _interopRequireDefault(_Modal);
 	
-	var _Navbar = __webpack_require__(33);
+	var _Navbar = __webpack_require__(38);
 	
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 	
-	var _Pagination = __webpack_require__(38);
+	var _Pagination = __webpack_require__(43);
 	
 	var _Pagination2 = _interopRequireDefault(_Pagination);
 	
-	var _Progress = __webpack_require__(43);
+	var _Progress = __webpack_require__(48);
 	
 	var _Progress2 = _interopRequireDefault(_Progress);
 	
-	var _Switch = __webpack_require__(48);
+	var _Switch = __webpack_require__(53);
 	
 	var _Switch2 = _interopRequireDefault(_Switch);
 	
-	var _Table = __webpack_require__(53);
+	var _Table = __webpack_require__(58);
 	
 	var _Table2 = _interopRequireDefault(_Table);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var install = function install(Vue) {
+	var zyx = function zyx(Vue) {
 	  Vue.component(_Aside2.default.name, _Aside2.default);
+	  Vue.component(_BackTop2.default.name, _BackTop2.default);
 	  Vue.component(_Button2.default.name, _Button2.default);
 	  Vue.component(_Dropmenu2.default.name, _Dropmenu2.default);
 	  Vue.component(_ImageInput2.default.name, _ImageInput2.default);
@@ -117,13 +122,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	if (typeof window !== 'undefined' && window.Vue) {
-	  install(window.Vue);
+	  zyx(window.Vue);
 	};
 	
 	var ZVueComponents = {
-	  install: install,
+	  zyx: zyx,
 	
 	  zAside: _Aside2.default,
+	  zBacktop: _BackTop2.default,
 	  zButton: _Button2.default,
 	  zDropmenu: _Dropmenu2.default,
 	  zImageinput: _ImageInput2.default,
@@ -612,6 +618,212 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
+	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\BackTop.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-c7611608", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-c7611608", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] BackTop.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(10);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/style-rewriter.js?id=data-v-c7611608!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/selector.js?type=styles&index=0!./BackTop.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/style-rewriter.js?id=data-v-c7611608!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/selector.js?type=styles&index=0!./BackTop.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  right: 100px;\n  bottom: 100px;\n  z-index: 99999;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", "", {"version":3,"sources":["/./src/components/BackTop.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,aAAa;EACb,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,WAAW;EACX,mBAAmB;CACpB;AACD;EACE,gBAAgB;CACjB;AACD;EACE,WAAW;EACX,oBAAoB;CACrB","file":"BackTop.vue","sourcesContent":[".z-backtop-wrapper {\n  position: fixed;\n  right: 100px;\n  bottom: 100px;\n  z-index: 99999;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  name: 'z-top',
+	
+	  data: function data() {
+	    return {
+	      isShowTop: false
+	    };
+	  },
+	
+	
+	  props: {
+	    acceleration: {
+	      type: Number,
+	      default: 0.5
+	    },
+	
+	    stime: {
+	      type: Number,
+	      default: 10
+	    },
+	
+	    scrollTop: {
+	      type: Number,
+	      default: 0
+	    }
+	  },
+	
+	  mounted: function mounted() {
+	    var _this = this;
+	
+	    if (this.scrollTop <= 0) {
+	      this.isShowTop = true;
+	      return false;
+	    } else {
+	      (function () {
+	        var self = _this;
+	        addEventListener('scroll', function () {
+	          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop || window.scrollY;
+	          if (scrollTop >= self.scrollTop) {
+	            self.isShowTop = true;
+	          } else {
+	            self.isShowTop = false;
+	          }
+	        });
+	      })();
+	    }
+	  },
+	
+	
+	  methods: {
+	    goTop: function goTop() {
+	      var self = this;
+	      var acceleration = self.acceleration;
+	      var stime = self.stime;
+	      var x1 = 0;
+	      var y1 = 0;
+	      var x2 = 0;
+	      var y2 = 0;
+	      var x3 = 0;
+	      var y3 = 0;
+	      if (document.documentElement) {
+	        x1 = document.documentElement.scrollLeft || 0;
+	        y1 = document.documentElement.scrollTop || 0;
+	      }
+	      if (document.body) {
+	        x2 = document.body.scrollLeft || 0;
+	        y2 = document.body.scrollTop || 0;
+	      }
+	      x3 = window.scrollX || 0;
+	      y3 = window.scrollY || 0;
+	
+	      var x = Math.max(x1, Math.max(x2, x3));
+	
+	      var y = Math.max(y1, Math.max(y2, y3));
+	
+	      var speeding = 1 + acceleration;
+	      window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+	
+	      if (x > 0 || y > 0) {
+	        window.setTimeout(self.goTop, stime);
+	      }
+	    }
+	  }
+	};
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;
+	  return _vm._h('div', {
+	    staticClass: "z-backtop-wrapper",
+	    class: {
+	      'show-top': _vm.isShowTop
+	    },
+	    on: {
+	      "click": _vm.goTop
+	    }
+	  }, [_vm._t("default", [_vm._h('i', {
+	    staticClass: "iconfont icon-top"
+	  })])])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c7611608", module.exports)
+	  }
+	}
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* styles */
+	__webpack_require__(14)
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(16)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(17)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Button.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
@@ -635,13 +847,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 9 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(10);
+	var content = __webpack_require__(15);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -661,7 +873,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 10 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -675,7 +887,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 11 */
+/* 16 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -698,7 +910,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 12 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -715,20 +927,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 13 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(14)
+	__webpack_require__(19)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(16)
+	__vue_exports__ = __webpack_require__(21)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(17)
+	var __vue_template__ = __webpack_require__(22)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -763,13 +975,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 14 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(15);
+	var content = __webpack_require__(20);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -789,7 +1001,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 15 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -803,7 +1015,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 16 */
+/* 21 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -873,7 +1085,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 17 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -948,20 +1160,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 18 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(19)
+	__webpack_require__(24)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(21)
+	__vue_exports__ = __webpack_require__(26)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(22)
+	var __vue_template__ = __webpack_require__(27)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -996,13 +1208,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 19 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(20);
+	var content = __webpack_require__(25);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1022,7 +1234,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 20 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1036,7 +1248,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 21 */
+/* 26 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1105,7 +1317,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 22 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1138,20 +1350,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 23 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(24)
+	__webpack_require__(29)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(26)
+	__vue_exports__ = __webpack_require__(31)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(27)
+	var __vue_template__ = __webpack_require__(32)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1186,13 +1398,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 24 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(25);
+	var content = __webpack_require__(30);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1212,7 +1424,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 25 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1226,7 +1438,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 26 */
+/* 31 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1332,7 +1544,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 27 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1387,20 +1599,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 28 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(29)
+	__webpack_require__(34)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(31)
+	__vue_exports__ = __webpack_require__(36)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(32)
+	var __vue_template__ = __webpack_require__(37)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1435,13 +1647,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 29 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(30);
+	var content = __webpack_require__(35);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1461,7 +1673,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 30 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1475,7 +1687,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 31 */
+/* 36 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1536,7 +1748,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 32 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1586,20 +1798,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 33 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(34)
+	__webpack_require__(39)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(36)
+	__vue_exports__ = __webpack_require__(41)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(37)
+	var __vue_template__ = __webpack_require__(42)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1634,13 +1846,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 34 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(35);
+	var content = __webpack_require__(40);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1660,7 +1872,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 35 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1674,7 +1886,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 36 */
+/* 41 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1702,7 +1914,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 37 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1729,20 +1941,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 38 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(39)
+	__webpack_require__(44)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(41)
+	__vue_exports__ = __webpack_require__(46)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(42)
+	var __vue_template__ = __webpack_require__(47)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1777,13 +1989,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 39 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(40);
+	var content = __webpack_require__(45);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1803,7 +2015,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 40 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1817,7 +2029,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 41 */
+/* 46 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2052,7 +2264,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 42 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -2178,20 +2390,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 43 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(44)
+	__webpack_require__(49)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(46)
+	__vue_exports__ = __webpack_require__(51)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(47)
+	var __vue_template__ = __webpack_require__(52)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2225,13 +2437,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 44 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(45);
+	var content = __webpack_require__(50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2251,7 +2463,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 45 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2265,7 +2477,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 46 */
+/* 51 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2334,7 +2546,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 47 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -2366,20 +2578,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 48 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(49)
+	__webpack_require__(54)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(51)
+	__vue_exports__ = __webpack_require__(56)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(52)
+	var __vue_template__ = __webpack_require__(57)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2414,13 +2626,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 49 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(50);
+	var content = __webpack_require__(55);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2440,7 +2652,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 50 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2454,7 +2666,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 51 */
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2492,7 +2704,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 52 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -2525,20 +2737,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 53 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(54)
+	__webpack_require__(59)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(56)
+	__vue_exports__ = __webpack_require__(61)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(57)
+	var __vue_template__ = __webpack_require__(62)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2573,13 +2785,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 54 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(55);
+	var content = __webpack_require__(60);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2599,7 +2811,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 55 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2613,7 +2825,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 56 */
+/* 61 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2639,7 +2851,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 57 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;

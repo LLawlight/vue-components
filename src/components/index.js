@@ -1,4 +1,5 @@
 import zAside from './Aside.vue'
+import zBacktop from './BackTop.vue'
 import zButton from './Button.vue'
 import zDropmenu from './Dropmenu.vue'
 import zImageinput from './ImageInput.vue'
@@ -10,8 +11,9 @@ import zProgress from './Progress.vue'
 import zSwitch from './Switch.vue'
 import zTable from './Table.vue'
 
-const install = (Vue) => {
+const zyx = (Vue) => {
   Vue.component(zAside.name, zAside)
+  Vue.component(zBacktop.name, zBacktop)
   Vue.component(zButton.name, zButton)
   Vue.component(zDropmenu.name, zDropmenu)
   Vue.component(zImageinput.name, zImageinput)
@@ -26,13 +28,14 @@ const install = (Vue) => {
 
 
 if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
+  zyx(window.Vue);
 };
 
 const ZVueComponents = {
-  install,
+  zyx,
 
   zAside,
+  zBacktop,
   zButton,
   zDropmenu,
   zImageinput,
