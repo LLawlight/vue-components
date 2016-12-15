@@ -4,6 +4,5 @@
 :height="150"
 :src="'http://placehold.it/500x500'"
 :alt="'测试图片'"
-:radius="'50%'"
 ></z-imageinput>
 ```

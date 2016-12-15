@@ -1,6 +1,7 @@
 import zAside from './Aside.vue'
 import zBacktop from './BackTop.vue'
 import zButton from './Button.vue'
+import zCarrousel from './Carrousel.vue'
 import zDropmenu from './Dropmenu.vue'
 import zImageinput from './ImageInput.vue'
 import zInputnumber from './InputNumber.vue'
@@ -15,6 +16,7 @@ const zyx = (Vue) => {
   Vue.component(zAside.name, zAside)
   Vue.component(zBacktop.name, zBacktop)
   Vue.component(zButton.name, zButton)
+  Vue.component(zCarrousel.name, zCarrousel)
   Vue.component(zDropmenu.name, zDropmenu)
   Vue.component(zImageinput.name, zImageinput)
   Vue.component(zInputnumber.name, zInputnumber)
@@ -37,6 +39,7 @@ const ZVueComponents = {
   zAside,
   zBacktop,
   zButton,
+  zCarrousel,
   zDropmenu,
   zImageinput,
   zInputnumber,
