@@ -1,5 +1,5 @@
 <template lang="html">
-  <div :style="{width:width+'px',height:height+'px',borderRadius: radius}" class="z-image-wraper">
+  <div :style="{width:width+'px',height:height+'px'}" class="z-image-wraper">
     <img :src="src" :style="{width:imageWidth+'px',height:imageHeight+'px',top:imageTop+'px',left:imageLeft+'px'}" :alt="alt" />
   </div>
 </template>
@@ -30,9 +30,6 @@ export default {
       required: true
     },
     alt: {
-      type: String
-    },
-    radius: {
       type: String
     }
   },
@@ -72,7 +69,6 @@ export default {
   }
   .z-image-wraper img{
     display: inline-block;
-    overflow: hidden;
     position: absolute;
   }
 </style>

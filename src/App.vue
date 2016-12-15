@@ -29,6 +29,10 @@
               text: 'Button 按钮'
             },
             {
+              href: '#carrousel',
+              text: 'Carrousel 轮播图'
+            },
+            {
               href: '#dropmenu',
               text: 'Dropmenu 下拉菜单'
             },
@@ -228,6 +232,11 @@
           <button-md></button-md>
         </div>
 
+        <div id="carrousel" class="section">
+          <h2><a href="#carrousel">Carrousel</a></h2>
+          <carrousel-md></carrousel-md>
+        </div>
+
         <div id="dropmenu" class="section">
           <h2><a href="#dropmenu">Dropmenu</a></h2>
 
@@ -276,7 +285,6 @@
             :height="150"
             :src="'http://placehold.it/500x500'"
             :alt="'测试图片'"
-            :radius="'50%'"
             ></z-imageinput>
           </div>
 
@@ -288,8 +296,7 @@
                     ['width','Number','是','-','容器宽度'],
                     ['height','Number','是','-','容器高度'],
                     ['src','String','是','-','图片路径'],
-                    ['alt','String','否','-','图片加载失败时显示的文字信息'],
-                    ['radius','String','否','-','容器圆角程度']
+                    ['alt','String','否','-','图片加载失败时显示的文字信息']
                   ]">
             </z-table>
           </div>
@@ -452,6 +459,7 @@ import '../node_modules/highlightjs/styles/github.css';
 import Hello from './components/Hello'
 import zAside from './components/Aside'
 import zButton from './components/Button'
+import zCarrousel from './components/Carrousel'
 import zDropmenu from './components/Dropmenu'
 import zImageinput from './components/ImageInput'
 import zInputnumber from './components/InputNumber'
@@ -464,6 +472,7 @@ import zTable from './components/Table'
 import asideMd from 'src/docs/Aside.md'
 import backtopMd from 'src/docs/BackTop.md'
 import buttonMd from 'src/docs/Button.md'
+import carrouselMd from 'src/docs/Carrousel.md'
 import dropmenuMd from 'src/docs/Dropmenu.md'
 import imageinputMd from 'src/docs/ImageInput.md'
 import inputnumberMd from 'src/docs/InputNumber.md'
@@ -479,6 +488,7 @@ export default {
     Hello,
     zAside,
     zButton,
+    zCarrousel,
     zDropmenu,
     zImageinput,
     zInputnumber,
@@ -491,6 +501,7 @@ export default {
     asideMd,
     backtopMd,
     buttonMd,
+    carrouselMd,
     dropmenuMd,
     imageinputMd,
     inputnumberMd,
@@ -611,8 +622,8 @@ a {
   }
 
   .z-backtop-wrapper.show-top {
-    right: 50px;
-    bottom: 50px;
+    right: 10px;
+    bottom: 10px;
   }
 }
 
