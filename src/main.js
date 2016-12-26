@@ -1,3 +1,7 @@
+if(!window && global) {
+  var window = global
+}
+
 import Vue from 'vue'
 import App from './App'
 
