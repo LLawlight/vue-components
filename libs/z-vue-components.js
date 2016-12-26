@@ -1181,7 +1181,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.startCarrousel();
 	    },
 	    startCarrousel: function startCarrousel(type) {
-	      console.log("start");
 	      var that = this;
 	      that.timer = setInterval(function () {
 	        that.isTransition = true;
@@ -1193,7 +1192,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }, that.delay);
 	    },
 	    stopCarrousel: function stopCarrousel() {
-	      console.log("stop");
 	      clearInterval(this.timer);
 	      this.timer = null;
 	    },

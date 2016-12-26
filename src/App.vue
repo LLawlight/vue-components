@@ -8,9 +8,9 @@
     <z-navbar
     :isFixed="true">
       <ul>
-        <li><a href="http://www.zhaoyuxiang.cn" target="_blank">Blog</a></li>
-        <li><a href="https://github.com/Clark-Zhao/vue-components/archive/master.zip" target="_blank">Download</a></li>
+        <li><a href="https://github.com/Clark-Zhao/vue-components/archive/dev.zip" target="_blank">Download</a></li>
         <li><a href="https://github.com/Clark-Zhao/vue-components" target="_blank">Github</a></li>
+        <li><a href="http://zhaoyuxiang.cn" target="_blank">Home</a></li>
         <li class="z-guide">
           <z-dropmenu
           :type="'hover'"

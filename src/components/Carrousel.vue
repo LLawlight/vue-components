@@ -185,7 +185,6 @@ export default {
     },
 
     startCarrousel(type) {
-      console.log("start");
       let that = this
       that.timer = setInterval(function() {
         that.isTransition = true
@@ -198,7 +197,6 @@ export default {
     },
 
     stopCarrousel() {
-      console.log("stop");
       clearInterval(this.timer)
       this.timer = null
     },
