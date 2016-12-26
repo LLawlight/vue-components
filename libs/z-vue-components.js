@@ -54,7 +54,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
 	var _Aside = __webpack_require__(1);
 	
@@ -110,6 +110,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	if (!window && global) {
+	  var window = global;
+	}
+	
 	var zyx = function zyx(Vue) {
 	  Vue.component(_Aside2.default.name, _Aside2.default);
 	  Vue.component(_BackTop2.default.name, _BackTop2.default);
@@ -149,6 +153,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	module.exports = ZVueComponents;
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 1 */

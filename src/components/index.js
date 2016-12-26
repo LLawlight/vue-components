@@ -1,3 +1,7 @@
+if(!window && global) {
+  var window = global
+}
+
 import zAside from './Aside.vue'
 import zBacktop from './BackTop.vue'
 import zButton from './Button.vue'

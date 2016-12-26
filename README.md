@@ -8,9 +8,23 @@ $ npm install z-vue-components
 ```
 
 ## Documentation
-[https://clark-zhao.github.io/vue-components/dist](https://clark-zhao.github.io/vue-components/dist)
+[http://vue-components.zhaoyuxiang.cn](http://vue-components.zhaoyuxiang.cn)
 
 ## Usage
+
+### 全局使用
+
+```js
+Vue.use(zyx)
+```
+
+```html
+<z-button
+:text="'Hello world!'">
+</z-button>
+```
+
+### 单组件使用
 
 #### ES6 or CommonJS
 ```js
