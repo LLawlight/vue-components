@@ -67,7 +67,7 @@ export default {
   z-index: 99999;
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: transparent;
 
   .z-progress {
     height: 100%;

@@ -1,4 +1,6 @@
 <template>
+  <h2><a href="#carrousel">Carrousel 轮播图</a></h2>
+
   <z-carrousel
   :width="350"
   :height="350"

@@ -12,7 +12,7 @@ import zProgress from './Progress.vue'
 import zSwitch from './Switch.vue'
 import zTable from './Table.vue'
 
-const zyx = (Vue) => {
+const install = (Vue) => {
   Vue.component(zAside.name, zAside)
   Vue.component(zBacktop.name, zBacktop)
   Vue.component(zButton.name, zButton)
@@ -30,11 +30,11 @@ const zyx = (Vue) => {
 
 
 if (typeof window !== 'undefined' && window.Vue) {
-  zyx(window.Vue);
+  install(window.Vue);
 };
 
-const ZVueComponents = {
-  zyx,
+module.exports = {
+  install,
 
   zAside,
   zBacktop,
@@ -50,5 +50,3 @@ const ZVueComponents = {
   zSwitch,
   zTable
 }
-
-module.exports = ZVueComponents

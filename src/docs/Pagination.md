@@ -1,4 +1,6 @@
 <template>
+  <h2><a href="#pagination">Pagination 分页器</a></h2>
+
   <div class="introduce-block">
     <z-pagination
     :total="11"

@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var zyx = function zyx(Vue) {
+	var install = function install(Vue) {
 	  Vue.component(_Aside2.default.name, _Aside2.default);
 	  Vue.component(_BackTop2.default.name, _BackTop2.default);
 	  Vue.component(_Button2.default.name, _Button2.default);
@@ -127,11 +127,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	if (typeof window !== 'undefined' && window.Vue) {
-	  zyx(window.Vue);
+	  install(window.Vue);
 	};
 	
-	var ZVueComponents = {
-	  zyx: zyx,
+	module.exports = {
+	  install: install,
 	
 	  zAside: _Aside2.default,
 	  zBacktop: _BackTop2.default,
@@ -147,8 +147,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  zSwitch: _Switch2.default,
 	  zTable: _Table2.default
 	};
-	
-	module.exports = ZVueComponents;
 
 /***/ },
 /* 1 */
@@ -2849,7 +2847,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: #fff;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Progress.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,uBAAuB;CACxB;AACD;EACE,aAAa;EACb,8BAA8B;CAC/B;AACD;EACE,OAAO;CACR;AACD;EACE,UAAU;CACX","file":"Progress.vue","sourcesContent":[".z-progress-wraper {\n  position: fixed;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: #fff;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Progress.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,8BAA8B;CAC/B;AACD;EACE,aAAa;EACb,8BAA8B;CAC/B;AACD;EACE,OAAO;CACR;AACD;EACE,UAAU;CACX","file":"Progress.vue","sourcesContent":[".z-progress-wraper {\n  position: fixed;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 

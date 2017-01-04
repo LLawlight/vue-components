@@ -1,4 +1,6 @@
 <template>
+  <h2><a href="#InputNumber">InputNumber 计数器</a></h2>
+
   <div class="introduce-block">
     <z-inputnumber
     :initial-value="5"
@@ -62,14 +64,7 @@ methods: {
 </template>
 
 <script>
-import zInputnumber from 'src/components/InputNumber'
-import zTable from 'src/components/Table'
-
 export default {
-  components: {
-    zInputnumber,
-    zTable
-  },
   methods: {
     getValue: function(val) {
       console.log(val)

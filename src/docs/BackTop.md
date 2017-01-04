@@ -1,14 +1,16 @@
 <template>
+  <h2><a href="#backtop">BackTop 返回顶部</a></h2>
+
   <div class="introduce-block">
     <z-backtop
-    :scroll-top="800"
+    :scroll-top="100"
     ></z-backtop>
   </div>
 </template>
 
 ```html
 <z-backtop
-:scroll-top="800"
+:scroll-top="100"
 ></z-backtop>
 ```
 效果见本页返回顶部按钮。
