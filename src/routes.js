@@ -1,5 +1,8 @@
 import Hello from './components/Hello'
+
 import installMd from 'src/docs/Install.md'
+import gridMd from 'src/docs/Grid.md'
+
 import asideMd from 'src/docs/Aside.md'
 import backtopMd from 'src/docs/BackTop.md'
 import buttonMd from 'src/docs/Button.md'
@@ -16,7 +19,10 @@ import tableMd from 'src/docs/Table.md'
 
 const routes = [
   { path: '/', component: Hello},
+
   { path: '/install', component: installMd},
+  { path: '/grid', component: gridMd},
+
   { path: '/aside', component: asideMd},
   { path: '/backtop', component: backtopMd},
   { path: '/button', component: buttonMd},

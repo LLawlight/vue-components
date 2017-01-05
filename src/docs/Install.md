@@ -3,7 +3,7 @@
 ### npm 安装
 
 ```bash
-$ npm install master --save
+$ npm install z-vue-components --save
 ```
 
 ### 全局使用
@@ -30,11 +30,57 @@ Vue.component(zButton.name, zButton)
 </z-button>
 ```
 
+### 单文件使用
+
+```js
+import zButton from 'z-vue-components/src/components/Button.vue'
+// or
+import { zButton } from 'z-vue-components'
+// or
+var zButton = require('z-vue-components/src/components/Button.vue')
+// or
+var zButton = require('z-vue-components').zButton
+
+new Vue({
+  components: {
+    zButton: zButton
+  }
+})
+```
+
+```html
+<z-button
+:text="'Hello world!'">
+</z-button>
+```
+
+### 浏览器引入
+
+```js
+<script src="path/to/vue.js"></script>
+<script src="path/to/z-vue-components.min.js"></script>
+<script>
+  var vm = new Vue({
+    components: {
+      zButton: ZVueComponents.zButton
+    },
+    el: "#app"
+  })
+</script>
+```
+
+```html
+<z-button
+:text="'Hello world!'">
+</z-button>
+```
+
 <template>
 <z-table
 :title="'组件名称与标签一览表'"
 :ths="['组件名称','name','标签']"
 :trs="[
+        ['Grid 栅格','zRow, zCol','<z-row>, <z-col>'],
         ['Aside 侧边栏','zAside','<z-aside>'],
         ['BackTop 返回顶部','zBacktop','<z-backtop>'],
         ['Button 按钮','zButton','<z-button>'],

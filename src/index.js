@@ -1,18 +1,26 @@
-import zAside from './Aside.vue'
-import zBacktop from './BackTop.vue'
-import zButton from './Button.vue'
-import zCarrousel from './Carrousel.vue'
-import zDropmenu from './Dropmenu.vue'
-import zImageinput from './ImageInput.vue'
-import zInputnumber from './InputNumber.vue'
-import zModal from './Modal.vue'
-import zNavbar from './Navbar.vue'
-import zPagination from './Pagination.vue'
-import zProgress from './Progress.vue'
-import zSwitch from './Switch.vue'
-import zTable from './Table.vue'
+import zRow from './components/Row.vue'
+import zCol from './components/Col.vue'
+
+import zAside from './components/Aside.vue'
+import zBacktop from './components/BackTop.vue'
+import zButton from './components/Button.vue'
+import zCarrousel from './components/Carrousel.vue'
+import zDropmenu from './components/Dropmenu.vue'
+import zImageinput from './components/ImageInput.vue'
+import zInputnumber from './components/InputNumber.vue'
+import zModal from './components/Modal.vue'
+import zNavbar from './components/Navbar.vue'
+import zPagination from './components/Pagination.vue'
+import zProgress from './components/Progress.vue'
+import zSwitch from './components/Switch.vue'
+import zTable from './components/Table.vue'
 
 const install = (Vue) => {
+  if (install.installed) return;
+
+  Vue.component(zRow.name, zRow)
+  Vue.component(zCol.name, zCol)
+
   Vue.component(zAside.name, zAside)
   Vue.component(zBacktop.name, zBacktop)
   Vue.component(zButton.name, zButton)
@@ -35,6 +43,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 module.exports = {
   install,
+
+  zCol,
+  zRow,
 
   zAside,
   zBacktop,

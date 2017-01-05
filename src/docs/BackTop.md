@@ -1,11 +1,5 @@
 <template>
   <h2><a href="#backtop">BackTop 返回顶部</a></h2>
-
-  <div class="introduce-block">
-    <z-backtop
-    :scroll-top="100"
-    ></z-backtop>
-  </div>
 </template>
 
 ```html
@@ -55,18 +49,6 @@
     </z-table>
   </div>
 </template>
-
-<script>
-import zBacktop from 'src/components/BackTop'
-import zTable from 'src/components/Table'
-
-export default {
-  components: {
-    zBacktop,
-    zTable
-  }
-}
-</script>
 
 <style>
 .z-backtop-wrapper.show-top.example {

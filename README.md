@@ -14,13 +14,25 @@ $ npm install z-vue-components
 
 ### 全局使用
 
+#### 所有组件
+
 ```js
+import zyx from 'z-vue-components'
+
 Vue.use(zyx)
+```
+
+#### 单组件
+
+```js
+import { zButton } from 'z-vue-components'
+
+Vue.component(zButton.name, zButton)
 ```
 
 ```html
 <z-button
-:text="'Hello world!'">
+:text="'Hello World!'">
 </z-button>
 ```
 

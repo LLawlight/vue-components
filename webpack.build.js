@@ -1,7 +1,7 @@
 var config = require('./webpack.config.js')
 
 config.entry = {
-  'z-vue-components': './src/components/index.js',
+  'z-vue-components': './src/index.js',
 }
 
 config.output = {

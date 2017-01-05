@@ -13,6 +13,14 @@
           :text="'Guide'"
           :lis="[
             {
+              href: '#install',
+              text: 'Install & Usage 安装与使用'
+            },
+            {
+              href: '#grid',
+              text: 'Grid 栅格'
+            },
+            {
               href: '#aside',
               text: 'Aside 侧边栏'
             },
@@ -77,6 +85,7 @@
 
         <div class="siderbar">
           <router-link to="/install"><span class="group-title">安装与使用</span></router-link>
+          <router-link to="/grid"><span class="group-title">栅格</span></router-link>
           <span class="group-title">组件</span>
           <ul>
             <li v-for="nav in navs" @click="getTitle(nav.text)"><router-link :to="nav.href">{{nav.text}}</router-link></li>
@@ -92,7 +101,7 @@
 
     <div class="footer">
       <p>Released under the <a href="https://github.com/Clark-Zhao/vue-components/blob/master/LICENSE">MIT License</a></p>
-      <p>Copyright &copy; 2016</p>
+      <p>Copyright &copy; 2016-2017</p>
       <p>made with <span class="heart">❤</span> by <a href="http://zhaoyuxiang.cn" target="_blank">Z<span style="display:none;">GOD_</span>YX</a></p>
     </div>
 
@@ -101,12 +110,16 @@
     :type="'bottom'"
     ref="progress"
     ></z-progress>
+
+    <z-backtop
+    :scroll-top="100"
+    ></z-backtop>
   </div>
 </template>
 
 <script>
-import '../node_modules/highlightjs/styles/github.css';
-import hljs from '../node_modules/highlightjs/highlight.pack.min.js';
+import 'highlight.js/styles/solarized-dark.css';
+import hljs from 'highlight.js';
 
 hljs.initHighlightingOnLoad()
 
@@ -177,6 +190,11 @@ export default {
   watch: {
     '$route.query': function() {
       this.startProgress()
+
+      this.$nextTick(function() {
+        hljs.initHighlighting.called = false
+        hljs.initHighlighting()
+      })
     }
   },
 
@@ -250,6 +268,11 @@ code.z-code {
 
 h2 {
   color: @primary-color;
+  margin-bottom: 24px;
+}
+
+h3 {
+  margin: 1.6em 0 0.6em 0;
 }
 
 a {
@@ -288,16 +311,24 @@ a {
       color: #35495e;
       height: 42px;
       line-height: 42px;
-      padding: 8px 16px 8px 32px;
+      padding: 0px 16px 0px 32px;
 
       .group-title {
         padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
     .group-title {
       display: inline-block;
       padding: 8px 16px 8px 32px;
+    }
+
+    >.group-title {
+      height: 26px;
+      line-height: 26px;
     }
 
     ul {
@@ -325,9 +356,26 @@ a {
   }
 
   .section {
-    padding: 10px 4%;
+    padding: 5px 4%;
     margin-left: 100%/6;
     border-left: 1px solid #eee;
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .content {
+
+    .siderbar {
+      width: 210px;
+    }
+
+    .section {
+      margin-left: 210px;
+    }
   }
 }
 
@@ -391,6 +439,7 @@ a {
   color: #fff;
   padding: 50px 0;
   background-color: #727f80;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .footer a {
