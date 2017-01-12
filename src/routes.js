@@ -3,10 +3,12 @@ import Hello from './components/Hello'
 import installMd from 'src/docs/Install.md'
 import gridMd from 'src/docs/Grid.md'
 
+import actionsheetMd from 'src/docs/ActionSheet.md'
 import asideMd from 'src/docs/Aside.md'
 import backtopMd from 'src/docs/BackTop.md'
 import buttonMd from 'src/docs/Button.md'
 import carrouselMd from 'src/docs/Carrousel.md'
+import dimmerMd from 'src/docs/Dimmer.md'
 import dropmenuMd from 'src/docs/Dropmenu.md'
 import imageinputMd from 'src/docs/ImageInput.md'
 import inputnumberMd from 'src/docs/InputNumber.md'
@@ -23,10 +25,12 @@ const routes = [
   { path: '/install', component: installMd},
   { path: '/grid', component: gridMd},
 
+  { path: '/actionsheet', component: actionsheetMd},
   { path: '/aside', component: asideMd},
   { path: '/backtop', component: backtopMd},
   { path: '/button', component: buttonMd},
   { path: '/carrousel', component: carrouselMd},
+  { path: '/dimmer', component: dimmerMd},
   { path: '/dropmenu', component: dropmenuMd},
   { path: '/imageinput', component: imageinputMd},
   { path: '/inputnumber', component: inputnumberMd},

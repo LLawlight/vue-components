@@ -1,8 +1,8 @@
 <template lang="html">
-  <transition name="z-modal-expand">
-    <div class="z-supernatant" v-show="show">
-      <div class="z-modal-wrapper">
-        <div class="z-modal">
+    <div class="z-modal-wrapper">
+      <z-dimmer :show="show"></z-dimmer>
+      <transition name="z-modal-expand">
+        <div class="z-modal" v-show="show">
           <div class="z-modal-title">
             {{title}}
           </div>
@@ -14,9 +14,9 @@
             <a class="z-btn-modal" :class="{'z-btn-modal-sure': type=='confirm'}" @click="sureFunc">{{sure}}</a>
           </div>
         </div>
-      </div>
+      </transition>
     </div>
-  </transition>
+
 </template>
 
 <script>
@@ -49,15 +49,11 @@ export default {
     },
     sureEvent: {
       type: Function,
-      default: function() {
-        console.log("点击了确定")
-      }
+      default: function() {}
     },
     cancelEvent: {
       type: Function,
-      default: function() {
-        console.log("点击了取消")
-      }
+      default: function() {}
     }
   },
   methods: {
@@ -74,23 +70,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  .z-supernatant {
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    display: table;
-    transition: opacity .3s ease;
-  }
-
-  .z-modal-wrapper {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
   .z-modal {
     width: 300px;
     margin: 0px auto;
@@ -99,15 +78,20 @@ export default {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
     transition: all .3s ease;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .z-modal-expand-enter, .z-modal-expand-leave-active {
     opacity: 0;
   }
 
-  .z-modal-expand-enter .z-modal, .z-modal-expand-leave-active .z-modal{
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+  .z-modal-expand-enter.z-modal, .z-modal-expand-leave-active.z-modal{
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
   }
 
   .z-modal-title {

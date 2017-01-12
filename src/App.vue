@@ -1,81 +1,14 @@
 <template>
   <div id="app">
     <z-navbar
-    :isFixed="true">
+    :isFixed="true"
+    @touchmove.prevent.native>
       <ul>
         <li><a href="https://github.com/Clark-Zhao/vue-components/archive/dev.zip" target="_blank">Download</a></li>
         <li><a href="https://github.com/Clark-Zhao/vue-components" target="_blank">Github</a></li>
         <li><a href="http://zhaoyuxiang.cn" target="_blank">Home</a></li>
         <li class="small-logo"><router-link to="/"><img src="static/favicon.ico" /><span>ZVueComponents</span></a></router-link></li>
-        <li class="z-guide">
-          <z-dropmenu
-          :type="'hover'"
-          :text="'Guide'"
-          :lis="[
-            {
-              href: '#install',
-              text: 'Install & Usage 安装与使用'
-            },
-            {
-              href: '#grid',
-              text: 'Grid 栅格'
-            },
-            {
-              href: '#aside',
-              text: 'Aside 侧边栏'
-            },
-            {
-              href: '#backtop',
-              text: 'Backtop 返回顶部'
-            },
-            {
-              href: '#button',
-              text: 'Button 按钮'
-            },
-            {
-              href: '#carrousel',
-              text: 'Carrousel 轮播图'
-            },
-            {
-              href: '#dropmenu',
-              text: 'Dropmenu 下拉菜单'
-            },
-            {
-              href: '#imageinput',
-              text: 'ImageInput 图片放置'
-            },
-            {
-              href: '#inputnumber',
-              text: 'InputNumber 计数器'
-            },
-            {
-              href: '#modal',
-              text: 'Modal 模态窗'
-            },
-            {
-              href: '#navbar',
-              text: 'Navbar 导航栏'
-            },
-            {
-              href: '#pagination',
-              text: 'Pagination 分页器'
-            },
-
-            {
-              href: '#progress',
-              text: 'Progress 进度条'
-            },
-            {
-              href: '#switch',
-              text: 'Switch 开关'
-            },
-            {
-              href: '#table',
-              text: 'Table 表格'
-            }
-          ]"
-          ></z-dropmenu>
-        </li>
+        <li class="z-guide" @click="isShowGuide = !isShowGuide">Guide</li>
       </ul>
     </z-navbar>
 
@@ -91,6 +24,17 @@
             <li v-for="nav in navs" @click="getTitle(nav.text)"><router-link :to="nav.href">{{nav.text}}</router-link></li>
           </ul>
         </div>
+
+        <z-aside :show="isShowGuide" @close-aside="isShowGuide = false" class="siderbar-wrapper">
+          <div class="siderbar">
+            <router-link to="/install"><span class="group-title">安装与使用</span></router-link>
+            <router-link to="/grid"><span class="group-title">栅格</span></router-link>
+            <span class="group-title">组件</span>
+            <ul>
+              <li v-for="nav in navs" @click="getTitle(nav.text)"><router-link :to="nav.href">{{nav.text}}</router-link></li>
+            </ul>
+          </div>
+        </z-aside>
 
         <div class="section">
           <router-view></router-view>
@@ -110,10 +54,6 @@
     :type="'bottom'"
     ref="progress"
     ></z-progress>
-
-    <z-backtop
-    :scroll-top="100"
-    ></z-backtop>
   </div>
 </template>
 
@@ -128,8 +68,13 @@ export default {
 
   data() {
     return {
+      isShowGuide: false,
       componentTitle: '',
       navs: [
+        {
+          href: '/actionsheet',
+          text: 'ActionSheet 动作面板'
+        },
         {
           href: '/aside',
           text: 'Aside 侧边栏'
@@ -145,6 +90,10 @@ export default {
         {
           href: '/carrousel',
           text: 'Carrousel 轮播图'
+        },
+        {
+          href: '/dimmer',
+          text: 'Dimmer 遮罩层'
         },
         {
           href: '/dropmenu',
@@ -292,6 +241,36 @@ a {
   border-radius: 6px;
   box-sizing: border-box;
 
+  .siderbar-wrapper .z-aside.z-aside-left {
+    width: 180px;
+
+    .z-aside-content {
+      padding: 60px 0 44px 0;
+
+      .siderbar {
+        width: 180px;
+        border-right: none;
+
+        &>a {
+          padding: 0 8px 0 16px;
+        }
+
+        >.group-title {
+          padding: 8px 8px 8px 16px;
+        }
+
+        ul {
+          li {
+            a {
+              padding-left: 24px;
+              padding-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .siderbar {
     width: 100%/6;
     float: left;
@@ -388,13 +367,42 @@ a {
     width: 100%;
     margin: 10px 0;
 
-    .siderbar {
+    &>.siderbar {
       display: none;
     }
 
     .section {
       margin-left: 0px;
       padding: 10px;
+    }
+
+    .siderbar-wrapper .z-aside.z-aside-left {
+      width: 180px;
+
+      .z-aside-content {
+        padding: 60px 0 44px 0;
+
+        .siderbar {
+          width: 180px;
+
+          &>a {
+            padding: 0 8px 0 16px;
+          }
+
+          >.group-title {
+            padding: 8px 8px 8px 16px;
+          }
+
+          ul {
+            li {
+              a {
+                padding-left: 24px;
+                padding-right: 8px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -405,6 +413,9 @@ a {
 
     .z-guide {
       display: block;
+      color: @primary-color;
+      font-weight: bold;
+      cursor: pointer;
     }
   }
 
@@ -426,6 +437,14 @@ a {
   .content {
     display: inline-block;
     text-align: left;
+
+    // .z-aside.z-aside-left {
+    //   .z-aside-content {
+    //     .siderbar {
+    //       display: none;
+    //     }
+    //   }
+    // }
   }
 
   .z-navbar>ul {

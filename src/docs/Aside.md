@@ -107,15 +107,15 @@ export default {
 
 ```html
 <z-button
-:text="'Left'"
-@click.native="asideLeft.show = true">
+:text="'Bottom'"
+@click.native="asideBottom.show = true">
 </z-button>
 
 <z-aside
-:show="asideLeft.show"
+:show="asideBottom.show"
 :title="'标题'"
-:type="'left'"
-@close-aside="asideLeft.show = false">
+:type="'bottom'"
+@close-aside="asideBottom.show = false">
   <!-- 自定义内容 -->
 </z-aside>
 ```

@@ -1,10 +1,12 @@
 import zRow from './components/Row.vue'
 import zCol from './components/Col.vue'
 
+import zActionsheet from './components/ActionSheet.vue'
 import zAside from './components/Aside.vue'
 import zBacktop from './components/BackTop.vue'
 import zButton from './components/Button.vue'
 import zCarrousel from './components/Carrousel.vue'
+import zDimmer from './components/Dimmer.vue'
 import zDropmenu from './components/Dropmenu.vue'
 import zImageinput from './components/ImageInput.vue'
 import zInputnumber from './components/InputNumber.vue'
@@ -21,10 +23,12 @@ const install = (Vue) => {
   Vue.component(zRow.name, zRow)
   Vue.component(zCol.name, zCol)
 
+  Vue.component(zActionsheet.name, zActionsheet)
   Vue.component(zAside.name, zAside)
   Vue.component(zBacktop.name, zBacktop)
   Vue.component(zButton.name, zButton)
   Vue.component(zCarrousel.name, zCarrousel)
+  Vue.component(zDimmer.name, zDimmer)
   Vue.component(zDropmenu.name, zDropmenu)
   Vue.component(zImageinput.name, zImageinput)
   Vue.component(zInputnumber.name, zInputnumber)
@@ -47,10 +51,12 @@ module.exports = {
   zCol,
   zRow,
 
+  zActionsheet,
   zAside,
   zBacktop,
   zButton,
   zCarrousel,
+  zDimmer,
   zDropmenu,
   zImageinput,
   zInputnumber,

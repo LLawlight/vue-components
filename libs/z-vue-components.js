@@ -64,55 +64,63 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Col2 = _interopRequireDefault(_Col);
 	
-	var _Aside = __webpack_require__(13);
+	var _ActionSheet = __webpack_require__(13);
+	
+	var _ActionSheet2 = _interopRequireDefault(_ActionSheet);
+	
+	var _Aside = __webpack_require__(18);
 	
 	var _Aside2 = _interopRequireDefault(_Aside);
 	
-	var _BackTop = __webpack_require__(18);
+	var _BackTop = __webpack_require__(23);
 	
 	var _BackTop2 = _interopRequireDefault(_BackTop);
 	
-	var _Button = __webpack_require__(23);
+	var _Button = __webpack_require__(28);
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _Carrousel = __webpack_require__(28);
+	var _Carrousel = __webpack_require__(33);
 	
 	var _Carrousel2 = _interopRequireDefault(_Carrousel);
 	
-	var _Dropmenu = __webpack_require__(38);
+	var _Dimmer = __webpack_require__(43);
+	
+	var _Dimmer2 = _interopRequireDefault(_Dimmer);
+	
+	var _Dropmenu = __webpack_require__(48);
 	
 	var _Dropmenu2 = _interopRequireDefault(_Dropmenu);
 	
-	var _ImageInput = __webpack_require__(32);
+	var _ImageInput = __webpack_require__(37);
 	
 	var _ImageInput2 = _interopRequireDefault(_ImageInput);
 	
-	var _InputNumber = __webpack_require__(43);
+	var _InputNumber = __webpack_require__(53);
 	
 	var _InputNumber2 = _interopRequireDefault(_InputNumber);
 	
-	var _Modal = __webpack_require__(48);
+	var _Modal = __webpack_require__(58);
 	
 	var _Modal2 = _interopRequireDefault(_Modal);
 	
-	var _Navbar = __webpack_require__(53);
+	var _Navbar = __webpack_require__(63);
 	
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 	
-	var _Pagination = __webpack_require__(58);
+	var _Pagination = __webpack_require__(68);
 	
 	var _Pagination2 = _interopRequireDefault(_Pagination);
 	
-	var _Progress = __webpack_require__(63);
+	var _Progress = __webpack_require__(73);
 	
 	var _Progress2 = _interopRequireDefault(_Progress);
 	
-	var _Switch = __webpack_require__(68);
+	var _Switch = __webpack_require__(78);
 	
 	var _Switch2 = _interopRequireDefault(_Switch);
 	
-	var _Table = __webpack_require__(73);
+	var _Table = __webpack_require__(83);
 	
 	var _Table2 = _interopRequireDefault(_Table);
 	
@@ -124,10 +132,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Vue.component(_Row2.default.name, _Row2.default);
 	  Vue.component(_Col2.default.name, _Col2.default);
 	
+	  Vue.component(_ActionSheet2.default.name, _ActionSheet2.default);
 	  Vue.component(_Aside2.default.name, _Aside2.default);
 	  Vue.component(_BackTop2.default.name, _BackTop2.default);
 	  Vue.component(_Button2.default.name, _Button2.default);
 	  Vue.component(_Carrousel2.default.name, _Carrousel2.default);
+	  Vue.component(_Dimmer2.default.name, _Dimmer2.default);
 	  Vue.component(_Dropmenu2.default.name, _Dropmenu2.default);
 	  Vue.component(_ImageInput2.default.name, _ImageInput2.default);
 	  Vue.component(_InputNumber2.default.name, _InputNumber2.default);
@@ -149,10 +159,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  zCol: _Col2.default,
 	  zRow: _Row2.default,
 	
+	  zActionsheet: _ActionSheet2.default,
 	  zAside: _Aside2.default,
 	  zBacktop: _BackTop2.default,
 	  zButton: _Button2.default,
 	  zCarrousel: _Carrousel2.default,
+	  zDimmer: _Dimmer2.default,
 	  zDropmenu: _Dropmenu2.default,
 	  zImageinput: _ImageInput2.default,
 	  zInputnumber: _InputNumber2.default,
@@ -741,6 +753,198 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
+	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\ActionSheet.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-5df07e57"
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-5df07e57", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-5df07e57", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] ActionSheet.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(15);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/style-rewriter.js?id=data-v-5df07e57&scoped=true!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/selector.js?type=styles&index=0!./ActionSheet.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/style-rewriter.js?id=data-v-5df07e57&scoped=true!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/selector.js?type=styles&index=0!./ActionSheet.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n.z-dimmer[data-v-5df07e57] {\n  position: fixed;\n  z-index: 9999;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.z-actionsheet-items[data-v-5df07e57] {\n  position: fixed;\n  z-index: 999;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items.z-actionsheet-items-enter[data-v-5df07e57],\n.z-actionsheet-items.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  bottom: -100%;\n  opacity: 0;\n}\n.z-actionsheet-items.z-actionsheet-items-enter-active[data-v-5df07e57],\n.z-actionsheet-items.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  transition: all .5s;\n  -webkit-transition: all .5s;\n  -moz-transition: all .5s;\n  -o-transition: all .5s;\n}\n.z-actionsheet-items li[data-v-5df07e57] {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57],\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li[data-v-5df07e57]:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57] {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button[data-v-5df07e57] {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n", "", {"version":3,"sources":["/./src/components/ActionSheet.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,QAAQ;EACR,OAAO;EACP,aAAa;EACb,YAAY;EACZ,qCAAqC;CACtC;AACD;EACE,gBAAgB;EAChB,aAAa;EACb,QAAQ;EACR,YAAY;EACZ,UAAU;CACX;AACD;;EAEE,cAAc;EACd,WAAW;CACZ;AACD;;EAEE,oBAAoB;EACpB,4BAA4B;EAC5B,yBAAyB;EACzB,uBAAuB;CACxB;AACD;EACE,YAAY;EACZ,mBAAmB;EACnB,iBAAiB;EACjB,uBAAuB;CACxB;AACD;EACE,kBAAkB;EAClB,qBAAqB;EACrB,eAAe;CAChB;AACD;EACE,kBAAkB;EAClB,qBAAqB;CACtB;AACD;;EAEE,8BAA8B;CAC/B;AACD;EACE,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;CACjB;AACD;EACE,gBAAgB;EAChB,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;EAClB,qBAAqB;CACtB","file":"ActionSheet.vue","sourcesContent":[".z-dimmer {\n  position: fixed;\n  z-index: 9999;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.z-actionsheet-items {\n  position: fixed;\n  z-index: 999;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items.z-actionsheet-items-enter,\n.z-actionsheet-items.z-actionsheet-items-leave-active {\n  bottom: -100%;\n  opacity: 0;\n}\n.z-actionsheet-items.z-actionsheet-items-enter-active,\n.z-actionsheet-items.z-actionsheet-items-leave-active {\n  transition: all .5s;\n  -webkit-transition: all .5s;\n  -moz-transition: all .5s;\n  -o-transition: all .5s;\n}\n.z-actionsheet-items li {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item,\n.z-actionsheet-items li.z-actionsheet-title {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  name: 'z-actionsheet',
+	
+	  props: {
+	    show: {
+	      type: Boolean,
+	      required: true
+	    },
+	
+	    lis: {
+	      type: Array,
+	      required: true
+	    },
+	
+	    title: String,
+	
+	    cancelButton: {
+	      type: String,
+	      default: '取消'
+	    }
+	  },
+	  methods: {
+	    closeActionSheet: function closeActionSheet() {
+	      this.$emit('after-close');
+	    },
+	    clickItem: function clickItem(id) {
+	      if (id) {
+	        this.$emit('click' + id);
+	      }
+	    }
+	  }
+	};
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;
+	  return _vm._h('div', {
+	    staticClass: "z-actionsheet-wrapper",
+	    on: {
+	      "touchmove": function($event) {
+	        $event.preventDefault();
+	      }
+	    }
+	  }, [_vm._h('z-dimmer', {
+	    attrs: {
+	      "show": _vm.show
+	    },
+	    on: {
+	      "click-event": _vm.closeActionSheet
+	    }
+	  }), " ", _vm._h('transition', {
+	    attrs: {
+	      "name": "z-actionsheet-items"
+	    }
+	  }, [_vm._h('ul', {
+	    directives: [{
+	      name: "show",
+	      rawName: "v-show",
+	      value: (_vm.show),
+	      expression: "show"
+	    }],
+	    staticClass: "z-actionsheet-items"
+	  }, [(_vm.title) ? _vm._h('li', {
+	    staticClass: "z-actionsheet-title"
+	  }, [_vm._s(_vm.title)]) : _vm._e(), " ", _vm._l((_vm.lis), function(li) {
+	    return _vm._h('li', {
+	      staticClass: "z-actionsheet-item",
+	      on: {
+	        "click": function($event) {
+	          _vm.clickItem(li.id)
+	        }
+	      }
+	    }, [_vm._h('a', {
+	      attrs: {
+	        "href": li.href,
+	        "target": "_blank"
+	      }
+	    }, [_vm._s(li.text)])])
+	  }), " ", _vm._h('li', {
+	    staticClass: "z-actionsheet-button",
+	    on: {
+	      "click": _vm.closeActionSheet
+	    }
+	  }, [_vm._s(_vm.cancelButton)])])])])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5df07e57", module.exports)
+	  }
+	}
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* styles */
+	__webpack_require__(19)
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(21)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(22)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Aside.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
@@ -764,13 +968,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 14 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(15);
+	var content = __webpack_require__(20);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -790,7 +994,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 15 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -798,13 +1002,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-supernatant[data-v-336463c6] {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: all .3s ease;\n}\n.z-aside-slide-enter[data-v-336463c6], .z-aside-slide-leave-active[data-v-336463c6] {\n  background-color: rgba(0, 0, 0, 0);\n}\n.z-aside[data-v-336463c6] {\n  background-color: white;\n  position: fixed;\n  transition: all .3s ease;\n}\n.z-aside-left[data-v-336463c6] {\n  height: 100%;\n  left: 0;\n}\n.z-aside-right[data-v-336463c6] {\n  height: 100%;\n  right: 0;\n}\n.z-aside-top[data-v-336463c6] {\n  width: 100%;\n  top: 0;\n}\n.z-aside-bottom[data-v-336463c6] {\n  width: 100%;\n  bottom: 0;\n}\n@media screen and (max-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter .z-aside-left[data-v-336463c6], .z-aside-slide-leave-active .z-aside-left[data-v-336463c6] {\n    left: -100%;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter .z-aside-right[data-v-336463c6], .z-aside-slide-leave-active .z-aside-right[data-v-336463c6] {\n    right: -100%;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter .z-aside-top[data-v-336463c6], .z-aside-slide-leave-active .z-aside-top[data-v-336463c6] {\n    top: -100%;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter .z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active .z-aside-bottom[data-v-336463c6] {\n    bottom: -100%;\n}\n}\n@media screen and (min-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter .z-aside-left[data-v-336463c6], .z-aside-slide-leave-active .z-aside-left[data-v-336463c6] {\n    left: -300px;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter .z-aside-right[data-v-336463c6], .z-aside-slide-leave-active .z-aside-right[data-v-336463c6] {\n    right: -300px;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter .z-aside-top[data-v-336463c6], .z-aside-slide-leave-active .z-aside-top[data-v-336463c6] {\n    top: -300px;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter .z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active .z-aside-bottom[data-v-336463c6] {\n    bottom: -300px;\n}\n}\n.z-aside-title[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.z-aside-content[data-v-336463c6] {\n  width: 100%;\n  overflow: auto;\n  position: absolute;\n  top: 44px;\n  bottom: 44px;\n  padding: 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n.z-aside-footer[data-v-336463c6] {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n.z-btn-aside[data-v-336463c6] {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/components/Aside.vue?28f08ef0"],"names":[],"mappings":";AAiDA;EACA,gBAAA;EACA,cAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,oCAAA;EACA,eAAA;EACA,yBAAA;CACA;AAEA;EACA,mCAAA;CACA;AAEA;EACA,wBAAA;EACA,gBAAA;EACA,yBAAA;CACA;AAEA;EACA,aAAA;EACA,QAAA;CACA;AAEA;EACA,aAAA;EACA,SAAA;CACA;AAEA;EACA,YAAA;EACA,OAAA;CACA;AAEA;EACA,YAAA;EACA,UAAA;CACA;AACA;AACA;IACA,YAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,YAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;CACA;AAEA;AACA;IACA,aAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,eAAA;CACA;CACA;AAEA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,OAAA;EACA,YAAA;CACA;AAEA;EACA,YAAA;EACA,eAAA;EACA,mBAAA;EACA,UAAA;EACA,aAAA;EACA,cAAA;EACA,gBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,UAAA;EACA,2BAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;CACA","file":"Aside.vue","sourcesContent":["<template lang=\"html\">\n  <transition name=\"z-aside-slide\">\n    <div class=\"z-supernatant\" v-show=\"show\">\n      <transition>\n        <div class=\"z-aside\" v-show=\"show\" :class=\"'z-aside-' + type\">\n          <div class=\"z-aside-title\" v-if=\"title\">\n            {{title}}\n          </div>\n          <div class=\"z-aside-content\">\n            <slot></slot>\n          </div>\n          <div class=\"z-aside-footer\">\n            <a class=\"z-btn-aside\" @click=\"closeAside\">{{close}}</a>\n          </div>\n        </div>\n      </transition>\n    </div>\n  </transition>\n</template>\n\n<script>\nexport default {\n  name: 'z-aside',\n  props: {\n    show: {\n      type: Boolean,\n      required: true\n    },\n    close: {\n      type: String,\n      default: \"关闭\"\n    },\n    title: {\n      type: String\n    },\n    type: {\n      type: String,\n      default: \"left\"\n    }\n  },\n  methods: {\n    closeAside: function() {\n      this.$emit('close-aside')\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-supernatant {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: all .3s ease;\n}\n\n.z-aside-slide-enter, .z-aside-slide-leave-active {\n  background-color: rgba(0, 0, 0, 0);\n}\n\n.z-aside {\n  background-color: white;\n  position: fixed;\n  transition: all .3s ease;\n}\n\n.z-aside-left {\n  height: 100%;\n  left: 0;\n}\n\n.z-aside-right {\n  height: 100%;\n  right: 0;\n}\n\n.z-aside-top {\n  width: 100%;\n  top: 0;\n}\n\n.z-aside-bottom {\n  width: 100%;\n  bottom: 0;\n}\n@media screen and (max-width: 768px) {\n  .z-aside-left {\n    width: 100%;\n  }\n  .z-aside-slide-enter .z-aside-left, .z-aside-slide-leave-active .z-aside-left {\n    left: -100%;\n  }\n\n  .z-aside-right {\n    width: 100%;\n  }\n  .z-aside-slide-enter .z-aside-right, .z-aside-slide-leave-active .z-aside-right {\n    right: -100%;\n  }\n\n  .z-aside-top {\n    height: 100%;\n  }\n  .z-aside-slide-enter .z-aside-top, .z-aside-slide-leave-active .z-aside-top {\n    top: -100%;\n  }\n\n  .z-aside-bottom {\n    height: 100%;\n  }\n  .z-aside-slide-enter .z-aside-bottom, .z-aside-slide-leave-active .z-aside-bottom {\n    bottom: -100%;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .z-aside-left {\n    width: 300px;\n  }\n  .z-aside-slide-enter .z-aside-left, .z-aside-slide-leave-active .z-aside-left {\n    left: -300px;\n  }\n\n  .z-aside-right {\n    width: 300px;\n  }\n  .z-aside-slide-enter .z-aside-right, .z-aside-slide-leave-active .z-aside-right {\n    right: -300px;\n  }\n\n  .z-aside-top {\n    height: 300px;\n  }\n  .z-aside-slide-enter .z-aside-top, .z-aside-slide-leave-active .z-aside-top {\n    top: -300px;\n  }\n\n  .z-aside-bottom {\n    height: 300px;\n  }\n  .z-aside-slide-enter .z-aside-bottom, .z-aside-slide-leave-active .z-aside-bottom {\n    bottom: -300px;\n  }\n}\n\n.z-aside-title {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n\n.z-aside-content {\n  width: 100%;\n  overflow: auto;\n  position: absolute;\n  top: 44px;\n  bottom: 44px;\n  padding: 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n\n.z-aside-footer {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n\n.z-btn-aside {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-aside[data-v-336463c6] {\n  background-color: white;\n  position: fixed;\n  z-index: 999;\n  transition: all .5s ease;\n}\n.z-aside-left[data-v-336463c6] {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n.z-aside-right[data-v-336463c6] {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n.z-aside-top[data-v-336463c6] {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n.z-aside-bottom[data-v-336463c6] {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n@media screen and (max-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n    left: -100%;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n    right: -100%;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n    top: -100%;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n    bottom: -100%;\n}\n}\n@media screen and (min-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n    left: -300px;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n    right: -300px;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n    top: -300px;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n    bottom: -300px;\n}\n}\n.z-aside-title[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  z-index: 1000;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n.z-aside-content[data-v-336463c6] {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  position: absolute;\n  padding: 44px 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n.z-aside-footer[data-v-336463c6] {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  z-index: 1000;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n.z-btn-aside[data-v-336463c6] {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/components/Aside.vue?0a7ab8b6"],"names":[],"mappings":";AAgDA;EACA,wBAAA;EACA,gBAAA;EACA,aAAA;EACA,yBAAA;CACA;AAEA;EACA,aAAA;EACA,QAAA;EACA,OAAA;CACA;AAEA;EACA,aAAA;EACA,SAAA;EACA,OAAA;CACA;AAEA;EACA,YAAA;EACA,OAAA;EACA,QAAA;CACA;AAEA;EACA,YAAA;EACA,UAAA;EACA,QAAA;CACA;AACA;AACA;IACA,YAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,YAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;CACA;AAEA;AACA;IACA,aAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,eAAA;CACA;CACA;AAEA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,cAAA;EACA,OAAA;EACA,YAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,aAAA;EACA,eAAA;EACA,kCAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,cAAA;EACA,UAAA;EACA,2BAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;CACA","file":"Aside.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-aside-wrapper\">\n    <z-dimmer :show=\"show\" @click-event=\"closeAside\"></z-dimmer>\n    <transition name=\"z-aside-slide\">\n      <div class=\"z-aside\" v-show=\"show\" :class=\"'z-aside-' + type\">\n        <div class=\"z-aside-title\" v-if=\"title\">\n          {{title}}\n        </div>\n        <div class=\"z-aside-content\">\n          <slot></slot>\n        </div>\n        <div class=\"z-aside-footer\">\n          <a class=\"z-btn-aside\" @click=\"closeAside\">{{close}}</a>\n        </div>\n      </div>\n    </transition>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-aside',\n  props: {\n    show: {\n      type: Boolean,\n      required: true\n    },\n    close: {\n      type: String,\n      default: \"关闭\"\n    },\n    title: {\n      type: String\n    },\n    type: {\n      type: String,\n      default: \"left\"\n    }\n  },\n  methods: {\n    closeAside: function() {\n      this.$emit('close-aside')\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-aside {\n  background-color: white;\n  position: fixed;\n  z-index: 999;\n  transition: all .5s ease;\n}\n\n.z-aside-left {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n\n.z-aside-right {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n\n.z-aside-top {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n\n.z-aside-bottom {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n@media screen and (max-width: 768px) {\n  .z-aside-left {\n    width: 100%;\n  }\n  .z-aside-slide-enter.z-aside-left, .z-aside-slide-leave-active.z-aside-left {\n    left: -100%;\n  }\n\n  .z-aside-right {\n    width: 100%;\n  }\n  .z-aside-slide-enter.z-aside-right, .z-aside-slide-leave-active.z-aside-right {\n    right: -100%;\n  }\n\n  .z-aside-top {\n    height: 100%;\n  }\n  .z-aside-slide-enter.z-aside-top, .z-aside-slide-leave-active.z-aside-top {\n    top: -100%;\n  }\n\n  .z-aside-bottom {\n    height: 100%;\n  }\n  .z-aside-slide-enter.z-aside-bottom, .z-aside-slide-leave-active.z-aside-bottom {\n    bottom: -100%;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .z-aside-left {\n    width: 300px;\n  }\n  .z-aside-slide-enter.z-aside-left, .z-aside-slide-leave-active.z-aside-left {\n    left: -300px;\n  }\n\n  .z-aside-right {\n    width: 300px;\n  }\n  .z-aside-slide-enter.z-aside-right, .z-aside-slide-leave-active.z-aside-right {\n    right: -300px;\n  }\n\n  .z-aside-top {\n    height: 300px;\n  }\n  .z-aside-slide-enter.z-aside-top, .z-aside-slide-leave-active.z-aside-top {\n    top: -300px;\n  }\n\n  .z-aside-bottom {\n    height: 300px;\n  }\n  .z-aside-slide-enter.z-aside-bottom, .z-aside-slide-leave-active.z-aside-bottom {\n    bottom: -300px;\n  }\n}\n\n.z-aside-title {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  z-index: 1000;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n\n.z-aside-content {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  position: absolute;\n  padding: 44px 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n\n.z-aside-footer {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  z-index: 1000;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n\n.z-btn-aside {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 16 */
+/* 21 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -839,11 +1043,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 17 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
-	  return _vm._h('transition', {
+	  return _vm._h('div', {
+	    staticClass: "z-aside-wrapper"
+	  }, [_vm._h('z-dimmer', {
+	    attrs: {
+	      "show": _vm.show
+	    },
+	    on: {
+	      "click-event": _vm.closeAside
+	    }
+	  }), " ", _vm._h('transition', {
 	    attrs: {
 	      "name": "z-aside-slide"
 	    }
@@ -854,19 +1067,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      value: (_vm.show),
 	      expression: "show"
 	    }],
-	    staticClass: "z-supernatant"
-	  }, [_vm._h('transition', [_vm._h('div', {
-	    directives: [{
-	      name: "show",
-	      rawName: "v-show",
-	      value: (_vm.show),
-	      expression: "show"
-	    }],
 	    staticClass: "z-aside",
 	    class: 'z-aside-' + _vm.type
 	  }, [(_vm.title) ? _vm._h('div', {
 	    staticClass: "z-aside-title"
-	  }, ["\n          " + _vm._s(_vm.title) + "\n        "]) : _vm._e(), " ", _vm._h('div', {
+	  }, ["\n        " + _vm._s(_vm.title) + "\n      "]) : _vm._e(), " ", _vm._h('div', {
 	    staticClass: "z-aside-content"
 	  }, [_vm._t("default")]), " ", _vm._h('div', {
 	    staticClass: "z-aside-footer"
@@ -875,7 +1080,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "click": _vm.closeAside
 	    }
-	  }, [_vm._s(_vm.close)])])])])])])
+	  }, [_vm._s(_vm.close)])])])])])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
@@ -886,20 +1091,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 18 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(19)
+	__webpack_require__(24)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(21)
+	__vue_exports__ = __webpack_require__(26)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(22)
+	var __vue_template__ = __webpack_require__(27)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -933,13 +1138,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 19 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(20);
+	var content = __webpack_require__(25);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -959,7 +1164,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 20 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -967,13 +1172,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  right: 100px;\n  bottom: 100px;\n  z-index: 99999;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", "", {"version":3,"sources":["/./src/components/BackTop.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,aAAa;EACb,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,WAAW;EACX,mBAAmB;CACpB;AACD;EACE,gBAAgB;CACjB;AACD;EACE,WAAW;EACX,oBAAoB;CACrB","file":"BackTop.vue","sourcesContent":[".z-backtop-wrapper {\n  position: fixed;\n  right: 100px;\n  bottom: 100px;\n  z-index: 99999;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  z-index: 9;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", "", {"version":3,"sources":["/./src/components/BackTop.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,WAAW;EACX,gBAAgB;EAChB,oBAAoB;EACpB,WAAW;EACX,mBAAmB;CACpB;AACD;EACE,gBAAgB;CACjB;AACD;EACE,WAAW;EACX,oBAAoB;CACrB","file":"BackTop.vue","sourcesContent":[".z-backtop-wrapper {\n  position: fixed;\n  z-index: 9;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 21 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1005,6 +1210,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	    scrollTop: {
 	      type: Number,
 	      default: 0
+	    },
+	
+	    right: {
+	      type: String,
+	      default: '5%'
+	    },
+	
+	    bottom: {
+	      type: String,
+	      default: '5%'
 	    }
 	  },
 	
@@ -1067,7 +1282,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 22 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1076,6 +1291,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    class: {
 	      'show-top': _vm.isShowTop
 	    },
+	    style: ({
+	      'right': _vm.right,
+	      'bottom': _vm.bottom
+	    }),
 	    on: {
 	      "click": _vm.goTop
 	    }
@@ -1092,20 +1311,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 23 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(24)
+	__webpack_require__(29)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(26)
+	__vue_exports__ = __webpack_require__(31)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(27)
+	var __vue_template__ = __webpack_require__(32)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1140,13 +1359,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 24 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(25);
+	var content = __webpack_require__(30);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1166,7 +1385,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 25 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1180,7 +1399,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 26 */
+/* 31 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1203,7 +1422,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 27 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1220,20 +1439,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 28 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(29)
+	__webpack_require__(34)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(31)
+	__vue_exports__ = __webpack_require__(36)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(37)
+	var __vue_template__ = __webpack_require__(42)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1267,13 +1486,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 29 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(30);
+	var content = __webpack_require__(35);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1293,7 +1512,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 30 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1307,7 +1526,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 31 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1316,7 +1535,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	var _ImageInput = __webpack_require__(32);
+	var _ImageInput = __webpack_require__(37);
 	
 	var _ImageInput2 = _interopRequireDefault(_ImageInput);
 	
@@ -1494,20 +1713,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 32 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(33)
+	__webpack_require__(38)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(35)
+	__vue_exports__ = __webpack_require__(40)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(36)
+	var __vue_template__ = __webpack_require__(41)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1542,13 +1761,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 33 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(34);
+	var content = __webpack_require__(39);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1568,7 +1787,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 34 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1582,7 +1801,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 35 */
+/* 40 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1648,7 +1867,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 36 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1680,7 +1899,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 37 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -1782,20 +2001,177 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 38 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(39)
+	__webpack_require__(44)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(41)
+	__vue_exports__ = __webpack_require__(46)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(42)
+	var __vue_template__ = __webpack_require__(47)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Dimmer.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-6adb3698"
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-6adb3698", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-6adb3698", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] Dimmer.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(45);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/style-rewriter.js?id=data-v-6adb3698&scoped=true!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/selector.js?type=styles&index=0!./Dimmer.vue", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js?sourceMap!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/style-rewriter.js?id=data-v-6adb3698&scoped=true!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./../../node_modules/.npminstall/vue-loader/10.0.1/vue-loader/lib/selector.js?type=styles&index=0!./Dimmer.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n.z-dimmer[data-v-6adb3698] {\n  position: fixed;\n  z-index: 99;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  transition: all .5s;\n  -webkit-transition: all .5s;\n  -moz-transition: all .5s;\n  -o-transition: all .5s;\n}\n", "", {"version":3,"sources":["/./src/components/Dimmer.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,YAAY;EACZ,QAAQ;EACR,OAAO;EACP,aAAa;EACb,YAAY;EACZ,wBAAwB;EACxB,aAAa;CACd;AACD;;EAEE,WAAW;CACZ;AACD;;EAEE,oBAAoB;EACpB,4BAA4B;EAC5B,yBAAyB;EACzB,uBAAuB;CACxB","file":"Dimmer.vue","sourcesContent":[".z-dimmer {\n  position: fixed;\n  z-index: 99;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter,\n.z-dimmer.z-dimmer-leave-active {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active,\n.z-dimmer.z-dimmer-leave-active {\n  transition: all .5s;\n  -webkit-transition: all .5s;\n  -moz-transition: all .5s;\n  -o-transition: all .5s;\n}\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 46 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  name: 'z-dimmer',
+	
+	  props: {
+	    show: {
+	      type: Boolean,
+	      required: true
+	    }
+	  },
+	
+	  watch: {
+	    show: function show(val) {
+	      if (val) {
+	        this.addStyleForBody();
+	      } else {
+	        this.removeStyleForBody();
+	      }
+	    }
+	  },
+	
+	  methods: {
+	    addStyleForBody: function addStyleForBody() {
+	      document.querySelector('body').style.overflow = 'hidden';
+	    },
+	    removeStyleForBody: function removeStyleForBody() {
+	      document.querySelector('body').style.overflow = '';
+	    },
+	    clickEvent: function clickEvent() {
+	      this.$emit('click-event');
+	    }
+	  }
+	};
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;
+	  return _vm._h('transition', {
+	    attrs: {
+	      "name": "z-dimmer"
+	    }
+	  }, [(_vm.show) ? _vm._h('div', {
+	    staticClass: "z-dimmer",
+	    on: {
+	      "touchmove": function($event) {
+	        $event.preventDefault();
+	      },
+	      "click": _vm.clickEvent
+	    }
+	  }) : _vm._e()])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6adb3698", module.exports)
+	  }
+	}
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* styles */
+	__webpack_require__(49)
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(51)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(52)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1830,13 +2206,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 39 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(40);
+	var content = __webpack_require__(50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -1856,7 +2232,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 40 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -1870,7 +2246,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 41 */
+/* 51 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1940,7 +2316,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 42 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -2015,20 +2391,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 43 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(44)
+	__webpack_require__(54)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(46)
+	__vue_exports__ = __webpack_require__(56)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(47)
+	var __vue_template__ = __webpack_require__(57)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2063,13 +2439,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 44 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(45);
+	var content = __webpack_require__(55);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2089,7 +2465,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 45 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2103,7 +2479,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 46 */
+/* 56 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2209,7 +2585,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 47 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -2264,20 +2640,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 48 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(49)
+	__webpack_require__(59)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(51)
+	__vue_exports__ = __webpack_require__(61)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(52)
+	var __vue_template__ = __webpack_require__(62)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2312,13 +2688,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 49 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(50);
+	var content = __webpack_require__(60);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2338,7 +2714,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 50 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2346,13 +2722,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-supernatant[data-v-79d9d6bb] {\n  position: fixed;\n  z-index: 9998;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, .5);\n  display: table;\n  transition: opacity .3s ease;\n}\n.z-modal-wrapper[data-v-79d9d6bb] {\n  display: table-cell;\n  vertical-align: middle;\n}\n.z-modal[data-v-79d9d6bb] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  border-radius: 4px;\n  overflow: hidden;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  transition: all .3s ease;\n}\n.z-modal-expand-enter[data-v-79d9d6bb], .z-modal-expand-leave-active[data-v-79d9d6bb] {\n  opacity: 0;\n}\n.z-modal-expand-enter .z-modal[data-v-79d9d6bb], .z-modal-expand-leave-active .z-modal[data-v-79d9d6bb]{\n  -webkit-transform: scale(0.5);\n  transform: scale(0.5);\n}\n.z-modal-title[data-v-79d9d6bb] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-79d9d6bb] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-79d9d6bb] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-79d9d6bb] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-79d9d6bb]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-79d9d6bb] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./src/components/Modal.vue?16b879bc"],"names":[],"mappings":";AA4EA;EACA,gBAAA;EACA,cAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,oCAAA;EACA,eAAA;EACA,6BAAA;CACA;AAEA;EACA,oBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yCAAA;EACA,yBAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,8BAAA;EACA,sBAAA;CACA;AAEA;EACA,kBAAA;EACA,mBAAA;CACA;AAEA;EACA,qBAAA;EACA,iBAAA;CACA;AAEA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;CACA;AAEA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CACA;AAEA;EACA,4BAAA;CACA;AAEA;EACA,oCAAA;EACA,YAAA;CACA","file":"Modal.vue","sourcesContent":["<template lang=\"html\">\n  <transition name=\"z-modal-expand\">\n    <div class=\"z-supernatant\" v-show=\"show\">\n      <div class=\"z-modal-wrapper\">\n        <div class=\"z-modal\">\n          <div class=\"z-modal-title\">\n            {{title}}\n          </div>\n          <div class=\"z-modal-content\">\n            {{content}}\n          </div>\n          <div class=\"z-modal-footer\">\n            <a class=\"z-btn-modal\" @click=\"cancelFunc\" v-if=\"type=='confirm'\">{{cancel}}</a>\n            <a class=\"z-btn-modal\" :class=\"{'z-btn-modal-sure': type=='confirm'}\" @click=\"sureFunc\">{{sure}}</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </transition>\n</template>\n\n<script>\nexport default {\n  name: 'z-modal',\n  props: {\n    sure: {\n      type: String,\n      default: \"确定\"\n    },\n    cancel: {\n      type: String,\n      default: \"取消\"\n    },\n    show: {\n      type: Boolean,\n      required: true\n    },\n    title: {\n      type: String,\n      default: \"提示\"\n    },\n    content: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"alert\"\n    },\n    sureEvent: {\n      type: Function,\n      default: function() {\n        console.log(\"点击了确定\")\n      }\n    },\n    cancelEvent: {\n      type: Function,\n      default: function() {\n        console.log(\"点击了取消\")\n      }\n    }\n  },\n  methods: {\n    sureFunc: function() {\n      this.$emit(\"close-modal\")\n      this.sureEvent()\n    },\n    cancelFunc: function() {\n      this.$emit(\"close-modal\")\n      this.cancelEvent()\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-supernatant {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    transition: opacity .3s ease;\n  }\n\n  .z-modal-wrapper {\n    display: table-cell;\n    vertical-align: middle;\n  }\n\n  .z-modal {\n    width: 300px;\n    margin: 0px auto;\n    background-color: #fff;\n    border-radius: 4px;\n    overflow: hidden;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n  }\n\n  .z-modal-expand-enter, .z-modal-expand-leave-active {\n    opacity: 0;\n  }\n\n  .z-modal-expand-enter .z-modal, .z-modal-expand-leave-active .z-modal{\n    -webkit-transform: scale(0.5);\n    transform: scale(0.5);\n  }\n\n  .z-modal-title {\n    line-height: 44px;\n    text-align: center;\n  }\n\n  .z-modal-content {\n    padding: 0 12px 12px;\n    text-align: left;\n  }\n\n  .z-modal-footer {\n    border-top: 1px solid #ccc;\n    display: table;\n    width: 100%;\n  }\n\n  .z-btn-modal {\n    display: table-cell;\n    text-align: center;\n    cursor: pointer;\n    line-height: 44px;\n  }\n\n  .z-btn-modal:nth-child(2) {\n    border-left: 1px solid #ccc;\n  }\n\n  .z-btn-modal-sure {\n    background-color: rgb(65, 184, 131);\n    color: #fff;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-modal[data-v-79d9d6bb] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  border-radius: 4px;\n  overflow: hidden;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  transition: all .3s ease;\n  position: fixed;\n  z-index: 999;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n.z-modal-expand-enter[data-v-79d9d6bb], .z-modal-expand-leave-active[data-v-79d9d6bb] {\n  opacity: 0;\n}\n.z-modal-expand-enter.z-modal[data-v-79d9d6bb], .z-modal-expand-leave-active.z-modal[data-v-79d9d6bb]{\n  -webkit-transform: translate(-50%, -50%) scale(0.5);\n  transform: translate(-50%, -50%) scale(0.5);\n}\n.z-modal-title[data-v-79d9d6bb] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-79d9d6bb] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-79d9d6bb] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-79d9d6bb] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-79d9d6bb]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-79d9d6bb] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./src/components/Modal.vue?77cc71d0"],"names":[],"mappings":";AAwEA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yCAAA;EACA,yBAAA;EACA,gBAAA;EACA,aAAA;EACA,UAAA;EACA,SAAA;EACA,iCAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,oDAAA;EACA,4CAAA;CACA;AAEA;EACA,kBAAA;EACA,mBAAA;CACA;AAEA;EACA,qBAAA;EACA,iBAAA;CACA;AAEA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;CACA;AAEA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CACA;AAEA;EACA,4BAAA;CACA;AAEA;EACA,oCAAA;EACA,YAAA;CACA","file":"Modal.vue","sourcesContent":["<template lang=\"html\">\n    <div class=\"z-modal-wrapper\">\n      <z-dimmer :show=\"show\"></z-dimmer>\n      <transition name=\"z-modal-expand\">\n        <div class=\"z-modal\" v-show=\"show\">\n          <div class=\"z-modal-title\">\n            {{title}}\n          </div>\n          <div class=\"z-modal-content\">\n            {{content}}\n          </div>\n          <div class=\"z-modal-footer\">\n            <a class=\"z-btn-modal\" @click=\"cancelFunc\" v-if=\"type=='confirm'\">{{cancel}}</a>\n            <a class=\"z-btn-modal\" :class=\"{'z-btn-modal-sure': type=='confirm'}\" @click=\"sureFunc\">{{sure}}</a>\n          </div>\n        </div>\n      </transition>\n    </div>\n\n</template>\n\n<script>\nexport default {\n  name: 'z-modal',\n  props: {\n    sure: {\n      type: String,\n      default: \"确定\"\n    },\n    cancel: {\n      type: String,\n      default: \"取消\"\n    },\n    show: {\n      type: Boolean,\n      required: true\n    },\n    title: {\n      type: String,\n      default: \"提示\"\n    },\n    content: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"alert\"\n    },\n    sureEvent: {\n      type: Function,\n      default: function() {}\n    },\n    cancelEvent: {\n      type: Function,\n      default: function() {}\n    }\n  },\n  methods: {\n    sureFunc: function() {\n      this.$emit(\"close-modal\")\n      this.sureEvent()\n    },\n    cancelFunc: function() {\n      this.$emit(\"close-modal\")\n      this.cancelEvent()\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-modal {\n    width: 300px;\n    margin: 0px auto;\n    background-color: #fff;\n    border-radius: 4px;\n    overflow: hidden;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n    position: fixed;\n    z-index: 999;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  .z-modal-expand-enter, .z-modal-expand-leave-active {\n    opacity: 0;\n  }\n\n  .z-modal-expand-enter.z-modal, .z-modal-expand-leave-active.z-modal{\n    -webkit-transform: translate(-50%, -50%) scale(0.5);\n    transform: translate(-50%, -50%) scale(0.5);\n  }\n\n  .z-modal-title {\n    line-height: 44px;\n    text-align: center;\n  }\n\n  .z-modal-content {\n    padding: 0 12px 12px;\n    text-align: left;\n  }\n\n  .z-modal-footer {\n    border-top: 1px solid #ccc;\n    display: table;\n    width: 100%;\n  }\n\n  .z-btn-modal {\n    display: table-cell;\n    text-align: center;\n    cursor: pointer;\n    line-height: 44px;\n  }\n\n  .z-btn-modal:nth-child(2) {\n    border-left: 1px solid #ccc;\n  }\n\n  .z-btn-modal-sure {\n    background-color: rgb(65, 184, 131);\n    color: #fff;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 51 */
+/* 61 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2389,15 +2765,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    sureEvent: {
 	      type: Function,
-	      default: function _default() {
-	        console.log("点击了确定");
-	      }
+	      default: function _default() {}
 	    },
 	    cancelEvent: {
 	      type: Function,
-	      default: function _default() {
-	        console.log("点击了取消");
-	      }
+	      default: function _default() {}
 	    }
 	  },
 	  methods: {
@@ -2413,11 +2785,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 52 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
-	  return _vm._h('transition', {
+	  return _vm._h('div', {
+	    staticClass: "z-modal-wrapper"
+	  }, [_vm._h('z-dimmer', {
+	    attrs: {
+	      "show": _vm.show
+	    }
+	  }), " ", _vm._h('transition', {
 	    attrs: {
 	      "name": "z-modal-expand"
 	    }
@@ -2428,16 +2806,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      value: (_vm.show),
 	      expression: "show"
 	    }],
-	    staticClass: "z-supernatant"
-	  }, [_vm._h('div', {
-	    staticClass: "z-modal-wrapper"
-	  }, [_vm._h('div', {
 	    staticClass: "z-modal"
 	  }, [_vm._h('div', {
 	    staticClass: "z-modal-title"
-	  }, ["\n          " + _vm._s(_vm.title) + "\n        "]), " ", _vm._h('div', {
+	  }, ["\n        " + _vm._s(_vm.title) + "\n      "]), " ", _vm._h('div', {
 	    staticClass: "z-modal-content"
-	  }, ["\n          " + _vm._s(_vm.content) + "\n        "]), " ", _vm._h('div', {
+	  }, ["\n        " + _vm._s(_vm.content) + "\n      "]), " ", _vm._h('div', {
 	    staticClass: "z-modal-footer"
 	  }, [(_vm.type == 'confirm') ? _vm._h('a', {
 	    staticClass: "z-btn-modal",
@@ -2452,7 +2826,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "click": _vm.sureFunc
 	    }
-	  }, [_vm._s(_vm.sure)])])])])])])
+	  }, [_vm._s(_vm.sure)])])])])])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
@@ -2463,20 +2837,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 53 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(54)
+	__webpack_require__(64)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(56)
+	__vue_exports__ = __webpack_require__(66)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(57)
+	var __vue_template__ = __webpack_require__(67)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2511,13 +2885,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 54 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(55);
+	var content = __webpack_require__(65);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2537,7 +2911,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 55 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2545,13 +2919,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-navbar[data-v-0d7ffd72] {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-0d7ffd72] {\n  position: fixed;\n  top: 0;\n  z-index: 999;\n}\n", "", {"version":3,"sources":["/./src/components/Navbar.vue?0ea13763"],"names":[],"mappings":";AA+BA;EACA,uBAAA;EACA,uBAAA;EACA,qCAAA;EACA,YAAA;CACA;AACA;EACA,gBAAA;EACA,OAAA;EACA,aAAA;CACA","file":"Navbar.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-navbar-wraper\">\n    <div class=\"z-navbar-placeholder\" :style=\"{height: isFixed ? navbarHeight + 'px' : ''}\">\n    </div>\n    <div class=\"z-navbar\" :class=\"{'z-navbar-fix': isFixed}\">\n      <slot></slot>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-navbar',\n  data() {\n    return {\n      navbarHeight: \"\"\n    }\n  },\n  props: {\n    isFixed: {\n      type: Boolean,\n      default: false\n    }\n  },\n  mounted() {\n    this.navbarHeight = this.$el.lastChild.clientHeight\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-navbar {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix {\n  position: fixed;\n  top: 0;\n  z-index: 999;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-navbar[data-v-0d7ffd72] {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-0d7ffd72] {\n  position: fixed;\n  top: 0;\n  z-index: 9999;\n}\n", "", {"version":3,"sources":["/./src/components/Navbar.vue?136b85c0"],"names":[],"mappings":";AA+BA;EACA,uBAAA;EACA,uBAAA;EACA,qCAAA;EACA,YAAA;CACA;AACA;EACA,gBAAA;EACA,OAAA;EACA,cAAA;CACA","file":"Navbar.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-navbar-wraper\">\n    <div class=\"z-navbar-placeholder\" :style=\"{height: isFixed ? navbarHeight + 'px' : ''}\">\n    </div>\n    <div class=\"z-navbar\" :class=\"{'z-navbar-fix': isFixed}\">\n      <slot></slot>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-navbar',\n  data() {\n    return {\n      navbarHeight: \"\"\n    }\n  },\n  props: {\n    isFixed: {\n      type: Boolean,\n      default: false\n    }\n  },\n  mounted() {\n    this.navbarHeight = this.$el.lastChild.clientHeight\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-navbar {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix {\n  position: fixed;\n  top: 0;\n  z-index: 9999;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 56 */
+/* 66 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2579,7 +2953,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 57 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -2606,20 +2980,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 58 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(59)
+	__webpack_require__(69)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(61)
+	__vue_exports__ = __webpack_require__(71)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(62)
+	var __vue_template__ = __webpack_require__(72)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -2654,13 +3028,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 59 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(60);
+	var content = __webpack_require__(70);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -2680,7 +3054,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 60 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -2694,7 +3068,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 61 */
+/* 71 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2929,7 +3303,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 62 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -3055,20 +3429,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 63 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(64)
+	__webpack_require__(74)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(66)
+	__vue_exports__ = __webpack_require__(76)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(67)
+	var __vue_template__ = __webpack_require__(77)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -3102,13 +3476,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 64 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(65);
+	var content = __webpack_require__(75);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3128,7 +3502,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 65 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3136,13 +3510,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Progress.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,8BAA8B;CAC/B;AACD;EACE,aAAa;EACb,8BAA8B;CAC/B;AACD;EACE,OAAO;CACR;AACD;EACE,UAAU;CACX","file":"Progress.vue","sourcesContent":[".z-progress-wraper {\n  position: fixed;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Progress.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,QAAQ;EACR,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,8BAA8B;CAC/B;AACD;EACE,aAAa;EACb,8BAA8B;CAC/B;AACD;EACE,OAAO;CACR;AACD;EACE,UAAU;CACX","file":"Progress.vue","sourcesContent":[".z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 66 */
+/* 76 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3211,7 +3585,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 67 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -3243,20 +3617,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 68 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(69)
+	__webpack_require__(79)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(71)
+	__vue_exports__ = __webpack_require__(81)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(72)
+	var __vue_template__ = __webpack_require__(82)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -3291,13 +3665,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 69 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(70);
+	var content = __webpack_require__(80);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3317,7 +3691,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 70 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3331,7 +3705,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 71 */
+/* 81 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3369,7 +3743,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 72 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
@@ -3402,20 +3776,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 73 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* styles */
-	__webpack_require__(74)
+	__webpack_require__(84)
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(76)
+	__vue_exports__ = __webpack_require__(86)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(77)
+	var __vue_template__ = __webpack_require__(87)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -3450,13 +3824,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 74 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(75);
+	var content = __webpack_require__(85);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3476,7 +3850,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 75 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3490,7 +3864,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 76 */
+/* 86 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3516,7 +3890,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 77 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;

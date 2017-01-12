@@ -1,10 +1,17 @@
+## BackTop 返回顶部
+
 <template>
-  <h2><a href="#backtop">BackTop 返回顶部</a></h2>
+  <z-backtop
+  :scroll-top="100"
+  :right="'5%'"
+  :bottom="'20px'"></z-backtop>
 </template>
 
 ```html
 <z-backtop
 :scroll-top="100"
+:right="'5%'"
+:bottom="'20px'"
 ></z-backtop>
 ```
 效果见本页返回顶部按钮。
@@ -40,11 +47,14 @@
 <template>
   <div class="introduce-block">
     <z-table
+    :title="'API'"
     :ths="['参数','类型','必填','默认值','说明']"
     :trs="[
             ['scrollTop','Number','否','0','页面滚动多少距离开始显示返回顶部按钮'],
             ['acceleration','Number','否','0.5','滚动的速度'],
-            ['stime','Number','否','10','每次滚动的时间间隔']
+            ['stime','Number','否','10','每次滚动的时间间隔'],
+            ['right','String','否','20','返回顶部按钮和窗口右侧的距离'],
+            ['bottom','String','否','20','返回顶部按钮和窗口底部的距离'],
           ]">
     </z-table>
   </div>

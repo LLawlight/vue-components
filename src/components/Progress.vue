@@ -64,6 +64,7 @@ export default {
 <style lang="less">
 .z-progress-wraper {
   position: fixed;
+  left: 0;
   z-index: 99999;
   width: 100%;
   height: 4px;
