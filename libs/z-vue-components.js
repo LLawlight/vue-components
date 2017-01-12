@@ -11,41 +11,41 @@
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-/******/
+
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/
+
 /******/ 		// Check if module is in cache
 /******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
-/******/
+
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 /******/ 		};
-/******/
+
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
+
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/
+
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
-/******/
+
+
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-/******/
+
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-/******/
+
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
-/******/
+
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
@@ -55,83 +55,83 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	var _Row = __webpack_require__(1);
-	
+
 	var _Row2 = _interopRequireDefault(_Row);
-	
+
 	var _Col = __webpack_require__(8);
-	
+
 	var _Col2 = _interopRequireDefault(_Col);
-	
+
 	var _ActionSheet = __webpack_require__(13);
-	
+
 	var _ActionSheet2 = _interopRequireDefault(_ActionSheet);
-	
+
 	var _Aside = __webpack_require__(18);
-	
+
 	var _Aside2 = _interopRequireDefault(_Aside);
-	
+
 	var _BackTop = __webpack_require__(23);
-	
+
 	var _BackTop2 = _interopRequireDefault(_BackTop);
-	
+
 	var _Button = __webpack_require__(28);
-	
+
 	var _Button2 = _interopRequireDefault(_Button);
-	
+
 	var _Carrousel = __webpack_require__(33);
-	
+
 	var _Carrousel2 = _interopRequireDefault(_Carrousel);
-	
+
 	var _Dimmer = __webpack_require__(43);
-	
+
 	var _Dimmer2 = _interopRequireDefault(_Dimmer);
-	
+
 	var _Dropmenu = __webpack_require__(48);
-	
+
 	var _Dropmenu2 = _interopRequireDefault(_Dropmenu);
-	
+
 	var _ImageInput = __webpack_require__(37);
-	
+
 	var _ImageInput2 = _interopRequireDefault(_ImageInput);
-	
+
 	var _InputNumber = __webpack_require__(53);
-	
+
 	var _InputNumber2 = _interopRequireDefault(_InputNumber);
-	
+
 	var _Modal = __webpack_require__(58);
-	
+
 	var _Modal2 = _interopRequireDefault(_Modal);
-	
+
 	var _Navbar = __webpack_require__(63);
-	
+
 	var _Navbar2 = _interopRequireDefault(_Navbar);
-	
+
 	var _Pagination = __webpack_require__(68);
-	
+
 	var _Pagination2 = _interopRequireDefault(_Pagination);
-	
+
 	var _Progress = __webpack_require__(73);
-	
+
 	var _Progress2 = _interopRequireDefault(_Progress);
-	
+
 	var _Switch = __webpack_require__(78);
-	
+
 	var _Switch2 = _interopRequireDefault(_Switch);
-	
+
 	var _Table = __webpack_require__(83);
-	
+
 	var _Table2 = _interopRequireDefault(_Table);
-	
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
+
 	var install = function install(Vue) {
 	  if (install.installed) return;
-	
+
 	  Vue.component(_Row2.default.name, _Row2.default);
 	  Vue.component(_Col2.default.name, _Col2.default);
-	
+
 	  Vue.component(_ActionSheet2.default.name, _ActionSheet2.default);
 	  Vue.component(_Aside2.default.name, _Aside2.default);
 	  Vue.component(_BackTop2.default.name, _BackTop2.default);
@@ -148,17 +148,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Vue.component(_Switch2.default.name, _Switch2.default);
 	  Vue.component(_Table2.default.name, _Table2.default);
 	};
-	
+
 	if (typeof window !== 'undefined' && window.Vue) {
 	  install(window.Vue);
 	};
-	
+
 	module.exports = {
 	  install: install,
-	
+
 	  zCol: _Col2.default,
 	  zRow: _Row2.default,
-	
+
 	  zActionsheet: _ActionSheet2.default,
 	  zAside: _Aside2.default,
 	  zBacktop: _BackTop2.default,
@@ -182,13 +182,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(2)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(6)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(7)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Row.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -219,7 +219,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Row.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -228,7 +228,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(3);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -239,8 +239,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-de308630!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Row.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-de308630!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Row.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-de308630!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Row.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-de308630!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Row.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -255,11 +255,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-row {\n  position: relative;\n  height: auto;\n  zoom: 1;\n  display: block;\n  box-sizing: border-box;\n  overflow: hidden;\n}\n", "", {"version":3,"sources":["/./src/components/Row.vue"],"names":[],"mappings":";AAAA;EACE,mBAAmB;EACnB,aAAa;EACb,QAAQ;EACR,eAAe;EACf,uBAAuB;EACvB,iBAAiB;CAClB","file":"Row.vue","sourcesContent":[".z-row {\n  position: relative;\n  height: auto;\n  zoom: 1;\n  display: block;\n  box-sizing: border-box;\n  overflow: hidden;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-row {\n  position: relative;\n  height: auto;\n  zoom: 1;\n  display: block;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  overflow: hidden;\n}\n", ""]);
+
 	// exports
 
 
@@ -274,7 +274,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// css base code, injected by the css-loader
 	module.exports = function() {
 		var list = [];
-	
+
 		// return the list of modules as css string
 		list.toString = function toString() {
 			var result = [];
@@ -288,7 +288,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 			return result.join("");
 		};
-	
+
 		// import a list of modules into the list
 		list.i = function(modules, mediaQuery) {
 			if(typeof modules === "string")
@@ -344,23 +344,23 @@ return /******/ (function(modules) { // webpackBootstrap
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [];
-	
+
 	module.exports = function(list, options) {
 		if(false) {
 			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
 		}
-	
+
 		options = options || {};
 		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
 		// tags it will allow on a page
 		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-	
+
 		// By default, add <style> tags to the bottom of <head>.
 		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-	
+
 		var styles = listToStyles(list);
 		addStylesToDom(styles, options);
-	
+
 		return function update(newList) {
 			var mayRemove = [];
 			for(var i = 0; i < styles.length; i++) {
@@ -383,7 +383,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		};
 	}
-	
+
 	function addStylesToDom(styles, options) {
 		for(var i = 0; i < styles.length; i++) {
 			var item = styles[i];
@@ -405,7 +405,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	}
-	
+
 	function listToStyles(list) {
 		var styles = [];
 		var newStyles = {};
@@ -423,7 +423,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 		return styles;
 	}
-	
+
 	function insertStyleElement(options, styleElement) {
 		var head = getHeadElement();
 		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
@@ -442,7 +442,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
 		}
 	}
-	
+
 	function removeStyleElement(styleElement) {
 		styleElement.parentNode.removeChild(styleElement);
 		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
@@ -450,17 +450,17 @@ return /******/ (function(modules) { // webpackBootstrap
 			styleElementsInsertedAtTop.splice(idx, 1);
 		}
 	}
-	
+
 	function createStyleElement(options) {
 		var styleElement = document.createElement("style");
 		styleElement.type = "text/css";
 		insertStyleElement(options, styleElement);
 		return styleElement;
 	}
-	
+
 	function addStyle(obj, options) {
 		var styleElement, update, remove;
-	
+
 		if (options.singleton) {
 			var styleIndex = singletonCounter++;
 			styleElement = singletonElement || (singletonElement = createStyleElement(options));
@@ -473,9 +473,9 @@ return /******/ (function(modules) { // webpackBootstrap
 				removeStyleElement(styleElement);
 			};
 		}
-	
+
 		update(obj);
-	
+
 		return function updateStyle(newObj) {
 			if(newObj) {
 				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
@@ -486,19 +486,19 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		};
 	}
-	
+
 	var replaceText = (function () {
 		var textStore = [];
-	
+
 		return function (index, replacement) {
 			textStore[index] = replacement;
 			return textStore.filter(Boolean).join('\n');
 		};
 	})();
-	
+
 	function applyToSingletonTag(styleElement, index, remove, obj) {
 		var css = remove ? "" : obj.css;
-	
+
 		if (styleElement.styleSheet) {
 			styleElement.styleSheet.cssText = replaceText(index, css);
 		} else {
@@ -512,16 +512,16 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	}
-	
+
 	function applyToTag(styleElement, obj) {
 		var css = obj.css;
 		var media = obj.media;
 		var sourceMap = obj.sourceMap;
-	
+
 		if (media) {
 			styleElement.setAttribute("media", media);
 		}
-	
+
 		if (sourceMap) {
 			// https://developer.chrome.com/devtools/docs/javascript-debugging
 			// this makes source maps inside style tags work properly in Chrome
@@ -529,7 +529,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			// http://stackoverflow.com/a/26603875
 			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
 		}
-	
+
 		if (styleElement.styleSheet) {
 			styleElement.styleSheet.cssText = css;
 		} else {
@@ -546,26 +546,26 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-row',
-	
+
 	  props: {
 	    gutter: Number
 	  },
-	
+
 	  computed: {
 	    style: function style() {
 	      var ret = {};
-	
+
 	      if (this.gutter) {
 	        ret.marginLeft = -this.gutter / 2 + 'px';
 	        ret.marginRight = ret.marginLeft;
 	      }
-	
+
 	      return ret;
 	    }
 	  }
@@ -595,13 +595,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(9)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(11)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(12)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -618,7 +618,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Col.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -632,7 +632,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Col.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -641,7 +641,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(10);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -652,8 +652,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-76cf418e!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Col.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-76cf418e!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Col.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-76cf418e!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Col.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-76cf418e!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Col.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -668,11 +668,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-col-24,\n.z-col-23,\n.z-col-22,\n.z-col-21,\n.z-col-20,\n.z-col-19,\n.z-col-18,\n.z-col-17,\n.z-col-16,\n.z-col-15,\n.z-col-14,\n.z-col-13,\n.z-col-12,\n.z-col-11,\n.z-col-10,\n.z-col-9,\n.z-col-8,\n.z-col-7,\n.z-col-6,\n.z-col-5,\n.z-col-4,\n.z-col-3,\n.z-col-2,\n.z-col-1 {\n  box-sizing: border-box;\n  float: left;\n  position: relative;\n}\n.z-col-24 {\n  width: 100%;\n}\n.z-col-23 {\n  width: 95.83333333%;\n}\n.z-col-22 {\n  width: 91.66666667%;\n}\n.z-col-21 {\n  width: 87.5%;\n}\n.z-col-20 {\n  width: 83.33333333%;\n}\n.z-col-19 {\n  width: 79.16666667%;\n}\n.z-col-18 {\n  width: 75%;\n}\n.z-col-17 {\n  width: 70.83333333%;\n}\n.z-col-16 {\n  width: 66.66666667%;\n}\n.z-col-15 {\n  width: 62.5%;\n}\n.z-col-14 {\n  width: 58.33333333%;\n}\n.z-col-13 {\n  width: 54.16666667%;\n}\n.z-col-12 {\n  width: 50%;\n}\n.z-col-11 {\n  width: 45.83333333%;\n}\n.z-col-10 {\n  width: 41.66666667%;\n}\n.z-col-9 {\n  width: 37.5%;\n}\n.z-col-8 {\n  width: 33.33333333%;\n}\n.z-col-7 {\n  width: 29.16666667%;\n}\n.z-col-6 {\n  width: 25%;\n}\n.z-col-5 {\n  width: 20.83333333%;\n}\n.z-col-4 {\n  width: 16.66666667%;\n}\n.z-col-3 {\n  width: 12.5%;\n}\n.z-col-2 {\n  width: 8.33333333%;\n}\n.z-col-1 {\n  width: 4.16666667%;\n}\n.z-col-offset-24 {\n  margin-left: 100%;\n}\n.z-col-offset-23 {\n  margin-left: 95.83333333%;\n}\n.z-col-offset-22 {\n  margin-left: 91.66666667%;\n}\n.z-col-offset-21 {\n  margin-left: 87.5%;\n}\n.z-col-offset-20 {\n  margin-left: 83.33333333%;\n}\n.z-col-offset-19 {\n  margin-left: 79.16666667%;\n}\n.z-col-offset-18 {\n  margin-left: 75%;\n}\n.z-col-offset-17 {\n  margin-left: 70.83333333%;\n}\n.z-col-offset-16 {\n  margin-left: 66.66666667%;\n}\n.z-col-offset-15 {\n  margin-left: 62.5%;\n}\n.z-col-offset-14 {\n  margin-left: 58.33333333%;\n}\n.z-col-offset-13 {\n  margin-left: 54.16666667%;\n}\n.z-col-offset-12 {\n  margin-left: 50%;\n}\n.z-col-offset-11 {\n  margin-left: 45.83333333%;\n}\n.z-col-offset-10 {\n  margin-left: 41.66666667%;\n}\n.z-col-offset-9 {\n  margin-left: 37.5%;\n}\n.z-col-offset-8 {\n  margin-left: 33.33333333%;\n}\n.z-col-offset-7 {\n  margin-left: 29.16666667%;\n}\n.z-col-offset-6 {\n  margin-left: 25%;\n}\n.z-col-offset-5 {\n  margin-left: 20.83333333%;\n}\n.z-col-offset-4 {\n  margin-left: 16.66666667%;\n}\n.z-col-offset-3 {\n  margin-left: 12.5%;\n}\n.z-col-offset-2 {\n  margin-left: 8.33333333%;\n}\n.z-col-offset-1 {\n  margin-left: 4.16666667%;\n}\n.z-col-push-24 {\n  left: 100%;\n}\n.z-col-push-23 {\n  left: 95.83333333%;\n}\n.z-col-push-22 {\n  left: 91.66666667%;\n}\n.z-col-push-21 {\n  left: 87.5%;\n}\n.z-col-push-20 {\n  left: 83.33333333%;\n}\n.z-col-push-19 {\n  left: 79.16666667%;\n}\n.z-col-push-18 {\n  left: 75%;\n}\n.z-col-push-17 {\n  left: 70.83333333%;\n}\n.z-col-push-16 {\n  left: 66.66666667%;\n}\n.z-col-push-15 {\n  left: 62.5%;\n}\n.z-col-push-14 {\n  left: 58.33333333%;\n}\n.z-col-push-13 {\n  left: 54.16666667%;\n}\n.z-col-push-12 {\n  left: 50%;\n}\n.z-col-push-11 {\n  left: 45.83333333%;\n}\n.z-col-push-10 {\n  left: 41.66666667%;\n}\n.z-col-push-9 {\n  left: 37.5%;\n}\n.z-col-push-8 {\n  left: 33.33333333%;\n}\n.z-col-push-7 {\n  left: 29.16666667%;\n}\n.z-col-push-6 {\n  left: 25%;\n}\n.z-col-push-5 {\n  left: 20.83333333%;\n}\n.z-col-push-4 {\n  left: 16.66666667%;\n}\n.z-col-push-3 {\n  left: 12.5%;\n}\n.z-col-push-2 {\n  left: 8.33333333%;\n}\n.z-col-push-1 {\n  left: 4.16666667%;\n}\n.z-col-pull-24 {\n  right: 100%;\n}\n.z-col-pull-23 {\n  right: 95.83333333%;\n}\n.z-col-pull-22 {\n  right: 91.66666667%;\n}\n.z-col-pull-21 {\n  right: 87.5%;\n}\n.z-col-pull-20 {\n  right: 83.33333333%;\n}\n.z-col-pull-19 {\n  right: 79.16666667%;\n}\n.z-col-pull-18 {\n  right: 75%;\n}\n.z-col-pull-17 {\n  right: 70.83333333%;\n}\n.z-col-pull-16 {\n  right: 66.66666667%;\n}\n.z-col-pull-15 {\n  right: 62.5%;\n}\n.z-col-pull-14 {\n  right: 58.33333333%;\n}\n.z-col-pull-13 {\n  right: 54.16666667%;\n}\n.z-col-pull-12 {\n  right: 50%;\n}\n.z-col-pull-11 {\n  right: 45.83333333%;\n}\n.z-col-pull-10 {\n  right: 41.66666667%;\n}\n.z-col-pull-9 {\n  right: 37.5%;\n}\n.z-col-pull-8 {\n  right: 33.33333333%;\n}\n.z-col-pull-7 {\n  right: 29.16666667%;\n}\n.z-col-pull-6 {\n  right: 25%;\n}\n.z-col-pull-5 {\n  right: 20.83333333%;\n}\n.z-col-pull-4 {\n  right: 16.66666667%;\n}\n.z-col-pull-3 {\n  right: 12.5%;\n}\n.z-col-pull-2 {\n  right: 8.33333333%;\n}\n.z-col-pull-1 {\n  right: 4.16666667%;\n}\n", "", {"version":3,"sources":["/./src/components/Col.vue"],"names":[],"mappings":";AAAA;;;;;;;;;;;;;;;;;;;;;;;;EAwBE,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;CACpB;AACD;EACE,YAAY;CACb;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,WAAW;CACZ;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,WAAW;CACZ;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,WAAW;CACZ;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,kBAAkB;CACnB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,mBAAmB;CACpB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,iBAAiB;CAClB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,mBAAmB;CACpB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,iBAAiB;CAClB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,mBAAmB;CACpB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,iBAAiB;CAClB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,mBAAmB;CACpB;AACD;EACE,yBAAyB;CAC1B;AACD;EACE,yBAAyB;CAC1B;AACD;EACE,WAAW;CACZ;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,YAAY;CACb;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,UAAU;CACX;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,YAAY;CACb;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,UAAU;CACX;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,YAAY;CACb;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,UAAU;CACX;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB;AACD;EACE,YAAY;CACb;AACD;EACE,kBAAkB;CACnB;AACD;EACE,kBAAkB;CACnB;AACD;EACE,YAAY;CACb;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,WAAW;CACZ;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,WAAW;CACZ;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,WAAW;CACZ;AACD;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;CACrB;AACD;EACE,aAAa;CACd;AACD;EACE,mBAAmB;CACpB;AACD;EACE,mBAAmB;CACpB","file":"Col.vue","sourcesContent":[".z-col-24,\n.z-col-23,\n.z-col-22,\n.z-col-21,\n.z-col-20,\n.z-col-19,\n.z-col-18,\n.z-col-17,\n.z-col-16,\n.z-col-15,\n.z-col-14,\n.z-col-13,\n.z-col-12,\n.z-col-11,\n.z-col-10,\n.z-col-9,\n.z-col-8,\n.z-col-7,\n.z-col-6,\n.z-col-5,\n.z-col-4,\n.z-col-3,\n.z-col-2,\n.z-col-1 {\n  box-sizing: border-box;\n  float: left;\n  position: relative;\n}\n.z-col-24 {\n  width: 100%;\n}\n.z-col-23 {\n  width: 95.83333333%;\n}\n.z-col-22 {\n  width: 91.66666667%;\n}\n.z-col-21 {\n  width: 87.5%;\n}\n.z-col-20 {\n  width: 83.33333333%;\n}\n.z-col-19 {\n  width: 79.16666667%;\n}\n.z-col-18 {\n  width: 75%;\n}\n.z-col-17 {\n  width: 70.83333333%;\n}\n.z-col-16 {\n  width: 66.66666667%;\n}\n.z-col-15 {\n  width: 62.5%;\n}\n.z-col-14 {\n  width: 58.33333333%;\n}\n.z-col-13 {\n  width: 54.16666667%;\n}\n.z-col-12 {\n  width: 50%;\n}\n.z-col-11 {\n  width: 45.83333333%;\n}\n.z-col-10 {\n  width: 41.66666667%;\n}\n.z-col-9 {\n  width: 37.5%;\n}\n.z-col-8 {\n  width: 33.33333333%;\n}\n.z-col-7 {\n  width: 29.16666667%;\n}\n.z-col-6 {\n  width: 25%;\n}\n.z-col-5 {\n  width: 20.83333333%;\n}\n.z-col-4 {\n  width: 16.66666667%;\n}\n.z-col-3 {\n  width: 12.5%;\n}\n.z-col-2 {\n  width: 8.33333333%;\n}\n.z-col-1 {\n  width: 4.16666667%;\n}\n.z-col-offset-24 {\n  margin-left: 100%;\n}\n.z-col-offset-23 {\n  margin-left: 95.83333333%;\n}\n.z-col-offset-22 {\n  margin-left: 91.66666667%;\n}\n.z-col-offset-21 {\n  margin-left: 87.5%;\n}\n.z-col-offset-20 {\n  margin-left: 83.33333333%;\n}\n.z-col-offset-19 {\n  margin-left: 79.16666667%;\n}\n.z-col-offset-18 {\n  margin-left: 75%;\n}\n.z-col-offset-17 {\n  margin-left: 70.83333333%;\n}\n.z-col-offset-16 {\n  margin-left: 66.66666667%;\n}\n.z-col-offset-15 {\n  margin-left: 62.5%;\n}\n.z-col-offset-14 {\n  margin-left: 58.33333333%;\n}\n.z-col-offset-13 {\n  margin-left: 54.16666667%;\n}\n.z-col-offset-12 {\n  margin-left: 50%;\n}\n.z-col-offset-11 {\n  margin-left: 45.83333333%;\n}\n.z-col-offset-10 {\n  margin-left: 41.66666667%;\n}\n.z-col-offset-9 {\n  margin-left: 37.5%;\n}\n.z-col-offset-8 {\n  margin-left: 33.33333333%;\n}\n.z-col-offset-7 {\n  margin-left: 29.16666667%;\n}\n.z-col-offset-6 {\n  margin-left: 25%;\n}\n.z-col-offset-5 {\n  margin-left: 20.83333333%;\n}\n.z-col-offset-4 {\n  margin-left: 16.66666667%;\n}\n.z-col-offset-3 {\n  margin-left: 12.5%;\n}\n.z-col-offset-2 {\n  margin-left: 8.33333333%;\n}\n.z-col-offset-1 {\n  margin-left: 4.16666667%;\n}\n.z-col-push-24 {\n  left: 100%;\n}\n.z-col-push-23 {\n  left: 95.83333333%;\n}\n.z-col-push-22 {\n  left: 91.66666667%;\n}\n.z-col-push-21 {\n  left: 87.5%;\n}\n.z-col-push-20 {\n  left: 83.33333333%;\n}\n.z-col-push-19 {\n  left: 79.16666667%;\n}\n.z-col-push-18 {\n  left: 75%;\n}\n.z-col-push-17 {\n  left: 70.83333333%;\n}\n.z-col-push-16 {\n  left: 66.66666667%;\n}\n.z-col-push-15 {\n  left: 62.5%;\n}\n.z-col-push-14 {\n  left: 58.33333333%;\n}\n.z-col-push-13 {\n  left: 54.16666667%;\n}\n.z-col-push-12 {\n  left: 50%;\n}\n.z-col-push-11 {\n  left: 45.83333333%;\n}\n.z-col-push-10 {\n  left: 41.66666667%;\n}\n.z-col-push-9 {\n  left: 37.5%;\n}\n.z-col-push-8 {\n  left: 33.33333333%;\n}\n.z-col-push-7 {\n  left: 29.16666667%;\n}\n.z-col-push-6 {\n  left: 25%;\n}\n.z-col-push-5 {\n  left: 20.83333333%;\n}\n.z-col-push-4 {\n  left: 16.66666667%;\n}\n.z-col-push-3 {\n  left: 12.5%;\n}\n.z-col-push-2 {\n  left: 8.33333333%;\n}\n.z-col-push-1 {\n  left: 4.16666667%;\n}\n.z-col-pull-24 {\n  right: 100%;\n}\n.z-col-pull-23 {\n  right: 95.83333333%;\n}\n.z-col-pull-22 {\n  right: 91.66666667%;\n}\n.z-col-pull-21 {\n  right: 87.5%;\n}\n.z-col-pull-20 {\n  right: 83.33333333%;\n}\n.z-col-pull-19 {\n  right: 79.16666667%;\n}\n.z-col-pull-18 {\n  right: 75%;\n}\n.z-col-pull-17 {\n  right: 70.83333333%;\n}\n.z-col-pull-16 {\n  right: 66.66666667%;\n}\n.z-col-pull-15 {\n  right: 62.5%;\n}\n.z-col-pull-14 {\n  right: 58.33333333%;\n}\n.z-col-pull-13 {\n  right: 54.16666667%;\n}\n.z-col-pull-12 {\n  right: 50%;\n}\n.z-col-pull-11 {\n  right: 45.83333333%;\n}\n.z-col-pull-10 {\n  right: 41.66666667%;\n}\n.z-col-pull-9 {\n  right: 37.5%;\n}\n.z-col-pull-8 {\n  right: 33.33333333%;\n}\n.z-col-pull-7 {\n  right: 29.16666667%;\n}\n.z-col-pull-6 {\n  right: 25%;\n}\n.z-col-pull-5 {\n  right: 20.83333333%;\n}\n.z-col-pull-4 {\n  right: 16.66666667%;\n}\n.z-col-pull-3 {\n  right: 12.5%;\n}\n.z-col-pull-2 {\n  right: 8.33333333%;\n}\n.z-col-pull-1 {\n  right: 4.16666667%;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-col-24,\n.z-col-23,\n.z-col-22,\n.z-col-21,\n.z-col-20,\n.z-col-19,\n.z-col-18,\n.z-col-17,\n.z-col-16,\n.z-col-15,\n.z-col-14,\n.z-col-13,\n.z-col-12,\n.z-col-11,\n.z-col-10,\n.z-col-9,\n.z-col-8,\n.z-col-7,\n.z-col-6,\n.z-col-5,\n.z-col-4,\n.z-col-3,\n.z-col-2,\n.z-col-1 {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  float: left;\n  position: relative;\n}\n.z-col-24 {\n  width: 100%;\n}\n.z-col-23 {\n  width: 95.83333333%;\n}\n.z-col-22 {\n  width: 91.66666667%;\n}\n.z-col-21 {\n  width: 87.5%;\n}\n.z-col-20 {\n  width: 83.33333333%;\n}\n.z-col-19 {\n  width: 79.16666667%;\n}\n.z-col-18 {\n  width: 75%;\n}\n.z-col-17 {\n  width: 70.83333333%;\n}\n.z-col-16 {\n  width: 66.66666667%;\n}\n.z-col-15 {\n  width: 62.5%;\n}\n.z-col-14 {\n  width: 58.33333333%;\n}\n.z-col-13 {\n  width: 54.16666667%;\n}\n.z-col-12 {\n  width: 50%;\n}\n.z-col-11 {\n  width: 45.83333333%;\n}\n.z-col-10 {\n  width: 41.66666667%;\n}\n.z-col-9 {\n  width: 37.5%;\n}\n.z-col-8 {\n  width: 33.33333333%;\n}\n.z-col-7 {\n  width: 29.16666667%;\n}\n.z-col-6 {\n  width: 25%;\n}\n.z-col-5 {\n  width: 20.83333333%;\n}\n.z-col-4 {\n  width: 16.66666667%;\n}\n.z-col-3 {\n  width: 12.5%;\n}\n.z-col-2 {\n  width: 8.33333333%;\n}\n.z-col-1 {\n  width: 4.16666667%;\n}\n.z-col-offset-24 {\n  margin-left: 100%;\n}\n.z-col-offset-23 {\n  margin-left: 95.83333333%;\n}\n.z-col-offset-22 {\n  margin-left: 91.66666667%;\n}\n.z-col-offset-21 {\n  margin-left: 87.5%;\n}\n.z-col-offset-20 {\n  margin-left: 83.33333333%;\n}\n.z-col-offset-19 {\n  margin-left: 79.16666667%;\n}\n.z-col-offset-18 {\n  margin-left: 75%;\n}\n.z-col-offset-17 {\n  margin-left: 70.83333333%;\n}\n.z-col-offset-16 {\n  margin-left: 66.66666667%;\n}\n.z-col-offset-15 {\n  margin-left: 62.5%;\n}\n.z-col-offset-14 {\n  margin-left: 58.33333333%;\n}\n.z-col-offset-13 {\n  margin-left: 54.16666667%;\n}\n.z-col-offset-12 {\n  margin-left: 50%;\n}\n.z-col-offset-11 {\n  margin-left: 45.83333333%;\n}\n.z-col-offset-10 {\n  margin-left: 41.66666667%;\n}\n.z-col-offset-9 {\n  margin-left: 37.5%;\n}\n.z-col-offset-8 {\n  margin-left: 33.33333333%;\n}\n.z-col-offset-7 {\n  margin-left: 29.16666667%;\n}\n.z-col-offset-6 {\n  margin-left: 25%;\n}\n.z-col-offset-5 {\n  margin-left: 20.83333333%;\n}\n.z-col-offset-4 {\n  margin-left: 16.66666667%;\n}\n.z-col-offset-3 {\n  margin-left: 12.5%;\n}\n.z-col-offset-2 {\n  margin-left: 8.33333333%;\n}\n.z-col-offset-1 {\n  margin-left: 4.16666667%;\n}\n.z-col-push-24 {\n  left: 100%;\n}\n.z-col-push-23 {\n  left: 95.83333333%;\n}\n.z-col-push-22 {\n  left: 91.66666667%;\n}\n.z-col-push-21 {\n  left: 87.5%;\n}\n.z-col-push-20 {\n  left: 83.33333333%;\n}\n.z-col-push-19 {\n  left: 79.16666667%;\n}\n.z-col-push-18 {\n  left: 75%;\n}\n.z-col-push-17 {\n  left: 70.83333333%;\n}\n.z-col-push-16 {\n  left: 66.66666667%;\n}\n.z-col-push-15 {\n  left: 62.5%;\n}\n.z-col-push-14 {\n  left: 58.33333333%;\n}\n.z-col-push-13 {\n  left: 54.16666667%;\n}\n.z-col-push-12 {\n  left: 50%;\n}\n.z-col-push-11 {\n  left: 45.83333333%;\n}\n.z-col-push-10 {\n  left: 41.66666667%;\n}\n.z-col-push-9 {\n  left: 37.5%;\n}\n.z-col-push-8 {\n  left: 33.33333333%;\n}\n.z-col-push-7 {\n  left: 29.16666667%;\n}\n.z-col-push-6 {\n  left: 25%;\n}\n.z-col-push-5 {\n  left: 20.83333333%;\n}\n.z-col-push-4 {\n  left: 16.66666667%;\n}\n.z-col-push-3 {\n  left: 12.5%;\n}\n.z-col-push-2 {\n  left: 8.33333333%;\n}\n.z-col-push-1 {\n  left: 4.16666667%;\n}\n.z-col-pull-24 {\n  right: 100%;\n}\n.z-col-pull-23 {\n  right: 95.83333333%;\n}\n.z-col-pull-22 {\n  right: 91.66666667%;\n}\n.z-col-pull-21 {\n  right: 87.5%;\n}\n.z-col-pull-20 {\n  right: 83.33333333%;\n}\n.z-col-pull-19 {\n  right: 79.16666667%;\n}\n.z-col-pull-18 {\n  right: 75%;\n}\n.z-col-pull-17 {\n  right: 70.83333333%;\n}\n.z-col-pull-16 {\n  right: 66.66666667%;\n}\n.z-col-pull-15 {\n  right: 62.5%;\n}\n.z-col-pull-14 {\n  right: 58.33333333%;\n}\n.z-col-pull-13 {\n  right: 54.16666667%;\n}\n.z-col-pull-12 {\n  right: 50%;\n}\n.z-col-pull-11 {\n  right: 45.83333333%;\n}\n.z-col-pull-10 {\n  right: 41.66666667%;\n}\n.z-col-pull-9 {\n  right: 37.5%;\n}\n.z-col-pull-8 {\n  right: 33.33333333%;\n}\n.z-col-pull-7 {\n  right: 29.16666667%;\n}\n.z-col-pull-6 {\n  right: 25%;\n}\n.z-col-pull-5 {\n  right: 20.83333333%;\n}\n.z-col-pull-4 {\n  right: 16.66666667%;\n}\n.z-col-pull-3 {\n  right: 12.5%;\n}\n.z-col-pull-2 {\n  right: 8.33333333%;\n}\n.z-col-pull-1 {\n  right: 4.16666667%;\n}\n", ""]);
+
 	// exports
 
 
@@ -681,24 +681,24 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-col',
-	
+
 	  props: {
 	    span: {
 	      type: Number,
 	      require: true
 	    },
-	
+
 	    offset: Number,
 	    push: Number,
 	    pull: Number
 	  },
-	
+
 	  computed: {
 	    gutter: function gutter() {
 	      return this.$parent.gutter;
@@ -733,13 +733,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(14)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(16)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(17)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -757,7 +757,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-5df07e57"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -771,7 +771,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] ActionSheet.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -780,7 +780,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(15);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -791,8 +791,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-5df07e57&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ActionSheet.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-5df07e57&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ActionSheet.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-5df07e57&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ActionSheet.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-5df07e57&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ActionSheet.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -807,11 +807,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-dimmer[data-v-5df07e57] {\n  position: fixed;\n  z-index: 9999;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.z-actionsheet-items-enter[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  transform: translateY(100%);\n  opacity: 0;\n}\n.z-actionsheet-items-enter-active[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  transition: all .2s;\n}\n.z-actionsheet-items[data-v-5df07e57] {\n  position: fixed;\n  z-index: 999;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items li[data-v-5df07e57] {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57],\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li[data-v-5df07e57]:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57] {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button[data-v-5df07e57] {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n", "", {"version":3,"sources":["/./src/components/ActionSheet.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,QAAQ;EACR,OAAO;EACP,aAAa;EACb,YAAY;EACZ,qCAAqC;CACtC;AACD;;EAEE,4BAA4B;EAC5B,WAAW;CACZ;AACD;;EAEE,oBAAoB;CACrB;AACD;EACE,gBAAgB;EAChB,aAAa;EACb,QAAQ;EACR,YAAY;EACZ,UAAU;CACX;AACD;EACE,YAAY;EACZ,mBAAmB;EACnB,iBAAiB;EACjB,uBAAuB;CACxB;AACD;EACE,kBAAkB;EAClB,qBAAqB;EACrB,eAAe;CAChB;AACD;EACE,kBAAkB;EAClB,qBAAqB;CACtB;AACD;;EAEE,8BAA8B;CAC/B;AACD;EACE,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;CACjB;AACD;EACE,gBAAgB;EAChB,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;EAClB,qBAAqB;CACtB","file":"ActionSheet.vue","sourcesContent":[".z-dimmer {\n  position: fixed;\n  z-index: 9999;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.z-actionsheet-items-enter,\n.z-actionsheet-items-leave-active {\n  transform: translateY(100%);\n  opacity: 0;\n}\n.z-actionsheet-items-enter-active,\n.z-actionsheet-items-leave-active {\n  transition: all .2s;\n}\n.z-actionsheet-items {\n  position: fixed;\n  z-index: 999;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items li {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item,\n.z-actionsheet-items li.z-actionsheet-title {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-dimmer[data-v-5df07e57] {\n  position: fixed;\n  z-index: 9999;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.z-actionsheet-items-enter[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  -webkit-transform: translateY(100%);\n      -ms-transform: translateY(100%);\n          transform: translateY(100%);\n  opacity: 0;\n}\n.z-actionsheet-items-enter-active[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.z-actionsheet-items[data-v-5df07e57] {\n  position: fixed;\n  z-index: 999;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items li[data-v-5df07e57] {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57],\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li[data-v-5df07e57]:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57] {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button[data-v-5df07e57] {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n", ""]);
+
 	// exports
 
 
@@ -820,26 +820,26 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-actionsheet',
-	
+
 	  props: {
 	    show: {
 	      type: Boolean,
 	      required: true
 	    },
-	
+
 	    lis: {
 	      type: Array,
 	      required: true
 	    },
-	
+
 	    title: String,
-	
+
 	    cancelButton: {
 	      type: String,
 	      default: '取消'
@@ -925,13 +925,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(19)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(21)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(22)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -949,7 +949,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-336463c6"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -963,7 +963,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Aside.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -972,7 +972,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(20);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -983,8 +983,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-336463c6&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-336463c6&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-336463c6&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-336463c6&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Aside.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -999,11 +999,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-aside[data-v-336463c6] {\n  background-color: white;\n  position: fixed;\n  z-index: 999;\n  transition: all .5s ease;\n}\n.z-aside-left[data-v-336463c6] {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n.z-aside-right[data-v-336463c6] {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n.z-aside-top[data-v-336463c6] {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n.z-aside-bottom[data-v-336463c6] {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n@media screen and (max-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n    left: -100%;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n    right: -100%;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n    top: -100%;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n    bottom: -100%;\n}\n}\n@media screen and (min-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n    left: -300px;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n    right: -300px;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n    top: -300px;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n    bottom: -300px;\n}\n}\n.z-aside-title[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  z-index: 1000;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n.z-aside-content[data-v-336463c6] {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  position: absolute;\n  padding: 44px 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n.z-aside-footer[data-v-336463c6] {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  z-index: 1000;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n.z-btn-aside[data-v-336463c6] {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/components/Aside.vue?0a7ab8b6"],"names":[],"mappings":";AAgDA;EACA,wBAAA;EACA,gBAAA;EACA,aAAA;EACA,yBAAA;CACA;AAEA;EACA,aAAA;EACA,QAAA;EACA,OAAA;CACA;AAEA;EACA,aAAA;EACA,SAAA;EACA,OAAA;CACA;AAEA;EACA,YAAA;EACA,OAAA;EACA,QAAA;CACA;AAEA;EACA,YAAA;EACA,UAAA;EACA,QAAA;CACA;AACA;AACA;IACA,YAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,YAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;CACA;AAEA;AACA;IACA,aAAA;CACA;AACA;IACA,aAAA;CACA;AAEA;IACA,aAAA;CACA;AACA;IACA,cAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,YAAA;CACA;AAEA;IACA,cAAA;CACA;AACA;IACA,eAAA;CACA;CACA;AAEA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,cAAA;EACA,OAAA;EACA,YAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,aAAA;EACA,eAAA;EACA,kCAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;CACA;AAEA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,cAAA;EACA,UAAA;EACA,2BAAA;EACA,uBAAA;CACA;AAEA;EACA,YAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;CACA","file":"Aside.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-aside-wrapper\">\n    <z-dimmer :show=\"show\" @click-event=\"closeAside\"></z-dimmer>\n    <transition name=\"z-aside-slide\">\n      <div class=\"z-aside\" v-show=\"show\" :class=\"'z-aside-' + type\">\n        <div class=\"z-aside-title\" v-if=\"title\">\n          {{title}}\n        </div>\n        <div class=\"z-aside-content\">\n          <slot></slot>\n        </div>\n        <div class=\"z-aside-footer\">\n          <a class=\"z-btn-aside\" @click=\"closeAside\">{{close}}</a>\n        </div>\n      </div>\n    </transition>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-aside',\n  props: {\n    show: {\n      type: Boolean,\n      required: true\n    },\n    close: {\n      type: String,\n      default: \"关闭\"\n    },\n    title: {\n      type: String\n    },\n    type: {\n      type: String,\n      default: \"left\"\n    }\n  },\n  methods: {\n    closeAside: function() {\n      this.$emit('close-aside')\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-aside {\n  background-color: white;\n  position: fixed;\n  z-index: 999;\n  transition: all .5s ease;\n}\n\n.z-aside-left {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n\n.z-aside-right {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n\n.z-aside-top {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n\n.z-aside-bottom {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n@media screen and (max-width: 768px) {\n  .z-aside-left {\n    width: 100%;\n  }\n  .z-aside-slide-enter.z-aside-left, .z-aside-slide-leave-active.z-aside-left {\n    left: -100%;\n  }\n\n  .z-aside-right {\n    width: 100%;\n  }\n  .z-aside-slide-enter.z-aside-right, .z-aside-slide-leave-active.z-aside-right {\n    right: -100%;\n  }\n\n  .z-aside-top {\n    height: 100%;\n  }\n  .z-aside-slide-enter.z-aside-top, .z-aside-slide-leave-active.z-aside-top {\n    top: -100%;\n  }\n\n  .z-aside-bottom {\n    height: 100%;\n  }\n  .z-aside-slide-enter.z-aside-bottom, .z-aside-slide-leave-active.z-aside-bottom {\n    bottom: -100%;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .z-aside-left {\n    width: 300px;\n  }\n  .z-aside-slide-enter.z-aside-left, .z-aside-slide-leave-active.z-aside-left {\n    left: -300px;\n  }\n\n  .z-aside-right {\n    width: 300px;\n  }\n  .z-aside-slide-enter.z-aside-right, .z-aside-slide-leave-active.z-aside-right {\n    right: -300px;\n  }\n\n  .z-aside-top {\n    height: 300px;\n  }\n  .z-aside-slide-enter.z-aside-top, .z-aside-slide-leave-active.z-aside-top {\n    top: -300px;\n  }\n\n  .z-aside-bottom {\n    height: 300px;\n  }\n  .z-aside-slide-enter.z-aside-bottom, .z-aside-slide-leave-active.z-aside-bottom {\n    bottom: -300px;\n  }\n}\n\n.z-aside-title {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  z-index: 1000;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n\n.z-aside-content {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  position: absolute;\n  padding: 44px 10px;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n\n.z-aside-footer {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  z-index: 1000;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n\n.z-btn-aside {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-aside[data-v-336463c6] {\n  background-color: white;\n  position: fixed;\n  z-index: 999;\n  -webkit-transition: all .5s ease;\n  transition: all .5s ease;\n}\n.z-aside-left[data-v-336463c6] {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n.z-aside-right[data-v-336463c6] {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n.z-aside-top[data-v-336463c6] {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n.z-aside-bottom[data-v-336463c6] {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n@media screen and (max-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n    left: -100%;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 100%;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n    right: -100%;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n    top: -100%;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 100%;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n    bottom: -100%;\n}\n}\n@media screen and (min-width: 768px) {\n.z-aside-left[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n    left: -300px;\n}\n.z-aside-right[data-v-336463c6] {\n    width: 300px;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n    right: -300px;\n}\n.z-aside-top[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n    top: -300px;\n}\n.z-aside-bottom[data-v-336463c6] {\n    height: 300px;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n    bottom: -300px;\n}\n}\n.z-aside-title[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  z-index: 1000;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n.z-aside-content[data-v-336463c6] {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  position: absolute;\n  padding: 44px 10px;\n  font-size: 14px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.z-aside-footer[data-v-336463c6] {\n  height: 44px;\n  width: 100%;\n  position: absolute;\n  z-index: 1000;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  background-color: #fff;\n}\n.z-btn-aside[data-v-336463c6] {\n  width: 100%;\n  display: inline-block;\n  text-align: center;\n  line-height: 44px;\n  cursor: pointer;\n}\n", ""]);
+
 	// exports
 
 
@@ -1012,7 +1012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -1096,13 +1096,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(24)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(26)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(27)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -1119,7 +1119,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\BackTop.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -1133,7 +1133,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] BackTop.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -1142,7 +1142,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(25);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -1153,8 +1153,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-c7611608!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./BackTop.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-c7611608!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./BackTop.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-c7611608!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./BackTop.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-c7611608!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./BackTop.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1169,11 +1169,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  z-index: 9;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", "", {"version":3,"sources":["/./src/components/BackTop.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,WAAW;EACX,gBAAgB;EAChB,oBAAoB;EACpB,WAAW;EACX,mBAAmB;CACpB;AACD;EACE,gBAAgB;CACjB;AACD;EACE,WAAW;EACX,oBAAoB;CACrB","file":"BackTop.vue","sourcesContent":[".z-backtop-wrapper {\n  position: fixed;\n  z-index: 9;\n  cursor: pointer;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  z-index: 9;\n  cursor: pointer;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", ""]);
+
 	// exports
 
 
@@ -1182,50 +1182,50 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-backtop',
-	
+
 	  data: function data() {
 	    return {
 	      isShowTop: false
 	    };
 	  },
-	
-	
+
+
 	  props: {
 	    acceleration: {
 	      type: Number,
 	      default: 0.5
 	    },
-	
+
 	    stime: {
 	      type: Number,
 	      default: 10
 	    },
-	
+
 	    scrollTop: {
 	      type: Number,
 	      default: 0
 	    },
-	
+
 	    right: {
 	      type: String,
 	      default: '5%'
 	    },
-	
+
 	    bottom: {
 	      type: String,
 	      default: '5%'
 	    }
 	  },
-	
+
 	  mounted: function mounted() {
 	    var _this = this;
-	
+
 	    if (this.scrollTop <= 0) {
 	      this.isShowTop = true;
 	      return false;
@@ -1243,8 +1243,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      })();
 	    }
 	  },
-	
-	
+
+
 	  methods: {
 	    goTop: function goTop() {
 	      var self = this;
@@ -1266,14 +1266,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      x3 = window.scrollX || 0;
 	      y3 = window.scrollY || 0;
-	
+
 	      var x = Math.max(x1, Math.max(x2, x3));
-	
+
 	      var y = Math.max(y1, Math.max(y2, y3));
-	
+
 	      var speeding = 1 + acceleration;
 	      window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
-	
+
 	      if (x > 0 || y > 0) {
 	        window.setTimeout(self.goTop, stime);
 	      }
@@ -1316,13 +1316,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(29)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(31)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(32)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -1340,7 +1340,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-2f80a794"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -1354,7 +1354,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Button.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -1363,7 +1363,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(30);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -1374,8 +1374,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2f80a794&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Button.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2f80a794&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Button.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2f80a794&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Button.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2f80a794&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Button.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1390,11 +1390,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-btn[data-v-2f80a794] {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.z-btn[data-v-2f80a794]:focus {\n  outline: none;\n}\n.z-btn[data-v-2f80a794]:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n.z-btn-default[data-v-2f80a794] {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default[data-v-2f80a794]:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.z-btn-primary[data-v-2f80a794] {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary[data-v-2f80a794]:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n.z-btn-success[data-v-2f80a794] {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success[data-v-2f80a794]:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n.z-btn-info[data-v-2f80a794] {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info[data-v-2f80a794]:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.z-btn-warning[data-v-2f80a794] {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning[data-v-2f80a794]:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.z-btn-danger[data-v-2f80a794] {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger[data-v-2f80a794]:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n", "", {"version":3,"sources":["/./src/components/Button.vue?40124236"],"names":[],"mappings":";AAqBA;EACA,sBAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,iBAAA;EACA,wBAAA;EACA,mBAAA;EACA,oBAAA;EACA,uBAAA;EACA,+BAAA;EACA,2BAAA;EACA,gBAAA;EACA,kBAAA;EACA,uBAAA;EACA,8BAAA;EACA,mBAAA;CACA;AACA;EACA,cAAA;CACA;AACA;EACA,qDAAA;EACA,6CAAA;CACA;AAEA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA;AAEA;EACA,YAAA;EACA,0BAAA;EACA,sBAAA;CACA;AACA;EACA,0BAAA;EACA,sBAAA;CACA","file":"Button.vue","sourcesContent":["<template lang=\"html\">\n  <a :class=\"'z-btn z-btn-' + type\">{{text}}</a>\n</template>\n\n<script>\nexport default {\n  name: 'z-button',\n  props: {\n    text: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"default\"\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.z-btn:focus {\n  outline: none;\n}\n.z-btn:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n\n.z-btn-default {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n\n.z-btn-primary {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n\n.z-btn-success {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n\n.z-btn-info {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n\n.z-btn-warning {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n\n.z-btn-danger {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-btn[data-v-2f80a794] {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  -webkit-border-radius: 4px;\n          border-radius: 4px;\n}\n.z-btn[data-v-2f80a794]:focus {\n  outline: none;\n}\n.z-btn[data-v-2f80a794]:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);\n}\n.z-btn-default[data-v-2f80a794] {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.z-btn-default[data-v-2f80a794]:hover {\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.z-btn-primary[data-v-2f80a794] {\n  color: #fff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.z-btn-primary[data-v-2f80a794]:hover {\n  background-color: #3071a9;\n  border-color: #285e8e;\n}\n.z-btn-success[data-v-2f80a794] {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.z-btn-success[data-v-2f80a794]:hover {\n  background-color: #449d44;\n  border-color: #398439;\n}\n.z-btn-info[data-v-2f80a794] {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.z-btn-info[data-v-2f80a794]:hover {\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.z-btn-warning[data-v-2f80a794] {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.z-btn-warning[data-v-2f80a794]:hover {\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.z-btn-danger[data-v-2f80a794] {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.z-btn-danger[data-v-2f80a794]:hover {\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n", ""]);
+
 	// exports
 
 
@@ -1403,7 +1403,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -1444,13 +1444,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(34)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(36)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(42)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -1467,7 +1467,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Carrousel.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -1481,7 +1481,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Carrousel.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -1490,7 +1490,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(35);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -1501,8 +1501,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2a90d8e4!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Carrousel.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2a90d8e4!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Carrousel.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2a90d8e4!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Carrousel.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-2a90d8e4!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Carrousel.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1517,11 +1517,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-carrousel-wrapper {\n  overflow: hidden;\n}\n.z-carrousel-wrapper ul {\n  white-space: nowrap;\n  font-size: 0;\n}\n.z-carrousel-wrapper ul li {\n  list-style: none;\n  display: inline-block;\n}\n.z-carrousel-wrapper ul.is-transition {\n  transition: all 300ms ease-out;\n}\n.z-carrousel-wrapper ul.dots {\n  position: relative;\n  bottom: 25px;\n  text-align: center;\n}\n.z-carrousel-wrapper ul.dots li.dot {\n  width: 20px;\n  height: 20px;\n  line-height: 20px;\n  border-radius: 100%;\n  margin: 0 5px;\n  background-color: #ccc;\n  cursor: pointer;\n  color: #fff;\n  font-size: 12px;\n  text-align: center;\n}\n.z-carrousel-wrapper ul.dots li.is-current {\n  background-color: #41b883;\n}\n", "", {"version":3,"sources":["/./src/components/Carrousel.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAClB;AACD;EACE,oBAAoB;EACpB,aAAa;CACd;AACD;EACE,iBAAiB;EACjB,sBAAsB;CACvB;AACD;EACE,+BAA+B;CAChC;AACD;EACE,mBAAmB;EACnB,aAAa;EACb,mBAAmB;CACpB;AACD;EACE,YAAY;EACZ,aAAa;EACb,kBAAkB;EAClB,oBAAoB;EACpB,cAAc;EACd,uBAAuB;EACvB,gBAAgB;EAChB,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;CACpB;AACD;EACE,0BAA0B;CAC3B","file":"Carrousel.vue","sourcesContent":[".z-carrousel-wrapper {\n  overflow: hidden;\n}\n.z-carrousel-wrapper ul {\n  white-space: nowrap;\n  font-size: 0;\n}\n.z-carrousel-wrapper ul li {\n  list-style: none;\n  display: inline-block;\n}\n.z-carrousel-wrapper ul.is-transition {\n  transition: all 300ms ease-out;\n}\n.z-carrousel-wrapper ul.dots {\n  position: relative;\n  bottom: 25px;\n  text-align: center;\n}\n.z-carrousel-wrapper ul.dots li.dot {\n  width: 20px;\n  height: 20px;\n  line-height: 20px;\n  border-radius: 100%;\n  margin: 0 5px;\n  background-color: #ccc;\n  cursor: pointer;\n  color: #fff;\n  font-size: 12px;\n  text-align: center;\n}\n.z-carrousel-wrapper ul.dots li.is-current {\n  background-color: #41b883;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-carrousel-wrapper {\n  overflow: hidden;\n}\n.z-carrousel-wrapper ul {\n  white-space: nowrap;\n  font-size: 0;\n}\n.z-carrousel-wrapper ul li {\n  list-style: none;\n  display: inline-block;\n}\n.z-carrousel-wrapper ul.is-transition {\n  -webkit-transition: all 300ms ease-out;\n  transition: all 300ms ease-out;\n}\n.z-carrousel-wrapper ul.dots {\n  position: relative;\n  bottom: 25px;\n  text-align: center;\n}\n.z-carrousel-wrapper ul.dots li.dot {\n  width: 20px;\n  height: 20px;\n  line-height: 20px;\n  -webkit-border-radius: 100%;\n          border-radius: 100%;\n  margin: 0 5px;\n  background-color: #ccc;\n  cursor: pointer;\n  color: #fff;\n  font-size: 12px;\n  text-align: center;\n}\n.z-carrousel-wrapper ul.dots li.is-current {\n  background-color: #41b883;\n}\n", ""]);
+
 	// exports
 
 
@@ -1530,20 +1530,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
+
 	var _ImageInput = __webpack_require__(37);
-	
+
 	var _ImageInput2 = _interopRequireDefault(_ImageInput);
-	
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
+
 	exports.default = {
 	  name: 'z-carrousel',
-	
+
 	  data: function data() {
 	    return {
 	      i: 1,
@@ -1558,8 +1558,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      isImagesReady: false
 	    };
 	  },
-	
-	
+
+
 	  props: {
 	    width: {
 	      type: Number,
@@ -1586,17 +1586,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: 'next'
 	    }
 	  },
-	
+
 	  mounted: function mounted() {
 	    this.images.unshift(this.images[this.images.length - 1]);
 	    this.images.push(this.images[1]);
-	
+
 	    this.isImagesReady = true;
-	
+
 	    this.startCarrousel(this.type);
-	
+
 	    var that = this;
-	
+
 	    document.getElementById("z-carrousel").addEventListener("transitionend", function () {
 	      if (that.i >= that.images.length - 1) {
 	        that.isTransition = false;
@@ -1607,26 +1607,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    });
 	  },
-	
-	
+
+
 	  components: {
 	    zImageinput: _ImageInput2.default
 	  },
-	
+
 	  watch: {
 	    'pageX': function pageX(newVal, oldVal) {
 	      if (oldVal !== 0 && this.isTouch === true) {
 	        this.offsetX = this.offsetX + (oldVal - newVal);
 	      }
 	    },
-	
+
 	    'touchTime': function touchTime(newVal, oldVal) {
 	      if (oldVal !== 0) {
 	        this.offsetTime = newVal - oldVal;
 	      }
 	    }
 	  },
-	
+
 	  computed: {
 	    'isPc': function isPc() {
 	      var userAgentInfo = navigator.userAgent;
@@ -1641,21 +1641,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return flag;
 	    }
 	  },
-	
+
 	  methods: {
 	    startTouch: function startTouch(event) {
 	      this.stopCarrousel();
-	
+
 	      var touch = event.targetTouches[0];
-	
+
 	      this.touchTime = new Date().getTime();
-	
+
 	      this.pageX = touch.pageX;
 	      this.startX = this.pageX;
-	
+
 	      this.offsetX = this.i * this.width;
 	      this.isTouch = true;
-	
+
 	      document.body.addEventListener('touchmove touchstart', function (event) {
 	        event.preventDefault();
 	        event.stopPropagation();
@@ -1663,9 +1663,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    moveTouch: function moveTouch(event) {
 	      var touch = event.targetTouches[0];
-	
+
 	      this.pageX = touch.pageX;
-	
+
 	      document.body.addEventListener('touchmove touchstart', function (event) {
 	        event.preventDefault();
 	        event.stopPropagation();
@@ -1673,17 +1673,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    endTouch: function endTouch() {
 	      this.isTransition = true;
-	
+
 	      if (this.pageX - this.startX > this.width / 2) {
 	        this.i--;
 	      } else if (this.startX - this.pageX > this.width / 2) {
 	        this.i++;
 	      }
-	
+
 	      this.pageX = 0;
 	      this.offsetX = 0;
 	      this.isTouch = false;
-	
+
 	      this.startCarrousel();
 	    },
 	    startCarrousel: function startCarrousel(type) {
@@ -1703,10 +1703,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    chooseImage: function chooseImage(index) {
 	      this.stopCarrousel();
-	
+
 	      this.isTransition = true;
 	      this.i = index + 1;
-	
+
 	      this.startCarrousel();
 	    }
 	  }
@@ -1718,13 +1718,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(38)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(40)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(41)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -1742,7 +1742,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-03342411"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -1756,7 +1756,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] ImageInput.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -1765,7 +1765,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(39);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -1776,8 +1776,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-03342411&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-03342411&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-03342411&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-03342411&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./ImageInput.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1792,11 +1792,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-image-wraper[data-v-03342411] {\n  display: inline-block;\n  overflow: hidden;\n  position: relative;\n}\n.z-image-wraper img[data-v-03342411]{\n  display: inline-block;\n  position: absolute;\n}\n", "", {"version":3,"sources":["/./src/components/ImageInput.vue?0d48ef00"],"names":[],"mappings":";AAgEA;EACA,sBAAA;EACA,iBAAA;EACA,mBAAA;CACA;AACA;EACA,sBAAA;EACA,mBAAA;CACA","file":"ImageInput.vue","sourcesContent":["<template lang=\"html\">\n  <div :style=\"{width:width+'px',height:height+'px'}\" class=\"z-image-wraper\">\n    <img :src=\"src\" :style=\"{width:imageWidth+'px',height:imageHeight+'px',top:imageTop+'px',left:imageLeft+'px'}\" :alt=\"alt\" />\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-imageinput',\n  data() {\n    return {\n      imageWidth: \"\",\n      imageHeight: \"\",\n      imageTop: \"\",\n      imageLeft: \"\",\n      imageRatio: \"\"\n    }\n  },\n  props: {\n    width: {\n      type: Number,\n      required: true\n    },\n    height: {\n      type: Number,\n      required: true\n    },\n    src: {\n      type: String,\n      required: true\n    },\n    alt: {\n      type: String\n    }\n  },\n  mounted() {\n    this.getImage()\n  },\n  methods: {\n    getImage: function() {\n      var image = new Image()\n      image.src = this.src\n      var self = this\n      image.onload = function() {\n        self.imageRatio = image.width/image.height\n        self.resetImageSize()\n      }\n    },\n    resetImageSize: function() {\n      if (this.width/this.height>this.imageRatio) {\n        this.imageWidth = this.width\n        this.imageHeight = this.imageWidth / this.imageRatio\n        this.imageTop = -(this.imageHeight - this.height) / 2\n      } else {\n        this.imageHeight = this.height\n        this.imageWidth = this.imageHeight * this.imageRatio\n        this.imageLeft = -(this.imageWidth - this.width) / 2\n      }\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-image-wraper {\n    display: inline-block;\n    overflow: hidden;\n    position: relative;\n  }\n  .z-image-wraper img{\n    display: inline-block;\n    position: absolute;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-image-wraper[data-v-03342411] {\n  display: inline-block;\n  overflow: hidden;\n  position: relative;\n}\n.z-image-wraper img[data-v-03342411]{\n  display: inline-block;\n  position: absolute;\n}\n", ""]);
+
 	// exports
 
 
@@ -1805,7 +1805,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -1820,7 +1820,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      imageRatio: ""
 	    };
 	  },
-	
+
 	  props: {
 	    width: {
 	      type: Number,
@@ -1841,7 +1841,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  mounted: function mounted() {
 	    this.getImage();
 	  },
-	
+
 	  methods: {
 	    getImage: function getImage() {
 	      var image = new Image();
@@ -2006,13 +2006,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(44)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(46)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(47)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -2030,7 +2030,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-6adb3698"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -2044,7 +2044,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Dimmer.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -2053,7 +2053,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(45);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -2064,8 +2064,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6adb3698&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dimmer.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6adb3698&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dimmer.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6adb3698&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dimmer.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6adb3698&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dimmer.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2080,11 +2080,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-dimmer[data-v-6adb3698] {\n  position: fixed;\n  z-index: 99;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  transition: all .5s;\n}\n", "", {"version":3,"sources":["/./src/components/Dimmer.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,YAAY;EACZ,QAAQ;EACR,OAAO;EACP,aAAa;EACb,YAAY;EACZ,wBAAwB;EACxB,aAAa;CACd;AACD;;EAEE,WAAW;CACZ;AACD;;EAEE,oBAAoB;CACrB","file":"Dimmer.vue","sourcesContent":[".z-dimmer {\n  position: fixed;\n  z-index: 99;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter,\n.z-dimmer.z-dimmer-leave-active {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active,\n.z-dimmer.z-dimmer-leave-active {\n  transition: all .5s;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-dimmer[data-v-6adb3698] {\n  position: fixed;\n  z-index: 99;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  -webkit-transition: all .5s;\n  transition: all .5s;\n}\n", ""]);
+
 	// exports
 
 
@@ -2093,20 +2093,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-dimmer',
-	
+
 	  props: {
 	    show: {
 	      type: Boolean,
 	      required: true
 	    }
 	  },
-	
+
 	  watch: {
 	    show: function show(val) {
 	      if (val) {
@@ -2116,7 +2116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 	  },
-	
+
 	  methods: {
 	    addStyleForBody: function addStyleForBody() {
 	      document.querySelector('body').style.overflow = 'hidden';
@@ -2163,13 +2163,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(49)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(51)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(52)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -2187,7 +2187,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-4d56fcb0"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -2201,7 +2201,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Dropmenu.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -2210,7 +2210,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -2221,8 +2221,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-4d56fcb0&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-4d56fcb0&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-4d56fcb0&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-4d56fcb0&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Dropmenu.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2237,11 +2237,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-dropmenu-title[data-v-4d56fcb0] {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a[data-v-4d56fcb0] {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow[data-v-4d56fcb0] {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu[data-v-4d56fcb0] {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  border-radius: 4px;\n  overflow: hidden;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active[data-v-4d56fcb0],.z-dropmenu-show-leave-active[data-v-4d56fcb0] {\n  top: 100%\n}\n.z-dropmenu-show-enter[data-v-4d56fcb0],.z-dropmenu-show-leave-active[data-v-4d56fcb0] {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li[data-v-4d56fcb0] {\n  list-style: none;\n  line-height: 1.8em;\n  white-space:nowrap;\n}\n.z-dropmenu li a[data-v-4d56fcb0] {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a[data-v-4d56fcb0]:hover {\n  color: rgb(65, 184, 131);\n}\n", "", {"version":3,"sources":["/./src/components/Dropmenu.vue?01f2311e"],"names":[],"mappings":";AAoFA;EACA,gBAAA;EACA,mBAAA;CACA;AACA;EACA,eAAA;EACA,eAAA;CACA;AACA;EACA,sBAAA;EACA,uBAAA;EACA,iBAAA;EACA,iBAAA;EACA,SAAA;EACA,UAAA;EACA,mCAAA;EACA,oCAAA;EACA,2BAAA;CACA;AACA;EACA,mBAAA;EACA,cAAA;EACA,UAAA;EACA,QAAA;EACA,uBAAA;EACA,gBAAA;EACA,uBAAA;EACA,0BAAA;EACA,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBAAA;CACA;AACA;EACA,SAAA;CACA;AACA;EACA,SAAA;EACA,WAAA;CACA;AACA;EACA,iBAAA;EACA,mBAAA;EACA,mBAAA;CACA;AACA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;CACA;AACA;EACA,yBAAA;CACA","file":"Dropmenu.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-dropmenu-wraper\">\n    <div class=\"z-dropmenu-title\" v-if=\"type=='click'\">\n      <a @click=\"toggleDropMenu\">{{text}}<span class=\"z-dropmenu-arrow\" v-if=\"isShowArrow\"></span></a>\n      <transition name=\"z-dropmenu-show\">\n        <ul class=\"z-dropmenu\" v-show=\"isShow\">\n          <li v-for=\"li in lis\"><a :href=\"li.href\" @click=\"closeDropMenu\">{{li.text}}</a></li>\n        </ul>\n      </transition>\n    </div>\n    <div v-else class=\"z-dropmenu-title\" @mouseover=\"showDropMenu\" @mouseleave=\"closeDropMenu\">\n      <a>{{text}}<span class=\"z-dropmenu-arrow\" v-if=\"isShowArrow\"></span></a>\n      <transition name=\"z-dropmenu-show\">\n        <ul class=\"z-dropmenu\" v-show=\"isShow\">\n          <li v-for=\"li in lis\"><a :href=\"li.href\" @click=\"closeDropMenu\">{{li.text}}</a></li>\n        </ul>\n      </transition>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-dropmenu',\n  data() {\n    return {\n      isShow: false\n    }\n  },\n  props: {\n    type: {\n      type: String,\n      default: \"click\"\n    },\n    text: {\n      type: String,\n      required: true\n    },\n    lis: {\n      type: Array,\n      required: true\n    },\n    isShowArrow: {\n      type: Boolean,\n      default: false\n    }\n  },\n  watch: {\n    \"isShow\": function(newVal,oldVal) {\n      newVal ? this.clickCloseBind() : this.clickCloseOff()\n    }\n  },\n  methods: {\n    toggleDropMenu() {\n      event.preventDefault()\n      event.stopPropagation()\n      this.isShow = !this.isShow\n    },\n    showDropMenu() {\n      this.isShow = true\n    },\n    closeDropMenu() {\n      this.isShow = false\n    },\n    clickClose(event) {\n      event.preventDefault()\n      event.stopPropagation()\n      if (event.target.parentNode !== this.$el && event.target.parentNode.parentNode !== this.$el) {\n        this.closeDropMenu()\n      }\n    },\n    clickCloseBind() {\n      let self = this\n      this.$root.$el.addEventListener(\"click\",self.clickClose)\n    },\n    clickCloseOff() {\n      let self = this\n      this.$root.$el.removeEventListener(\"click\",self.clickClose)\n    }\n  }\n}\n</script>\n\n<style lang=\"css\" scoped>\n.z-dropmenu-title {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  border-radius: 4px;\n  overflow: hidden;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active,.z-dropmenu-show-leave-active {\n  top: 100%\n}\n.z-dropmenu-show-enter,.z-dropmenu-show-leave-active {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li {\n  list-style: none;\n  line-height: 1.8em;\n  white-space:nowrap;\n}\n.z-dropmenu li a {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a:hover {\n  color: rgb(65, 184, 131);\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-dropmenu-title[data-v-4d56fcb0] {\n  cursor: pointer;\n  position: relative;\n}\n.z-dropmenu-title>a[data-v-4d56fcb0] {\n  display: block;\n  color: #34495e;\n}\n.z-dropmenu-arrow[data-v-4d56fcb0] {\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 6px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 5px solid #ccc;\n}\n.z-dropmenu[data-v-4d56fcb0] {\n  position: absolute;\n  z-index: 9999;\n  top: 100%;\n  left: 0;\n  background-color: #fff;\n  padding: 10px 0;\n  border: 1px solid #ddd;\n  border-bottom-color: #ccc;\n  text-align: left;\n  -webkit-border-radius: 4px;\n          border-radius: 4px;\n  overflow: hidden;\n  -webkit-transition: all .3s ease;\n  transition: all .3s ease;\n}\n.z-dropmenu-show-enter-active[data-v-4d56fcb0],.z-dropmenu-show-leave-active[data-v-4d56fcb0] {\n  top: 100%\n}\n.z-dropmenu-show-enter[data-v-4d56fcb0],.z-dropmenu-show-leave-active[data-v-4d56fcb0] {\n  top: 50%;\n  opacity: 0;\n}\n.z-dropmenu li[data-v-4d56fcb0] {\n  list-style: none;\n  line-height: 1.8em;\n  white-space:nowrap;\n}\n.z-dropmenu li a[data-v-4d56fcb0] {\n  color: #7f8c8d;\n  font-size: 0.9em;\n  display: block;\n  padding: 0 30px 0 20px;\n}\n.z-dropmenu li a[data-v-4d56fcb0]:hover {\n  color: rgb(65, 184, 131);\n}\n", ""]);
+
 	// exports
 
 
@@ -2250,7 +2250,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -2261,7 +2261,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      isShow: false
 	    };
 	  },
-	
+
 	  props: {
 	    type: {
 	      type: String,
@@ -2396,13 +2396,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(54)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(56)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(57)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -2420,7 +2420,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-06db8f7e"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -2434,7 +2434,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] InputNumber.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -2443,7 +2443,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(55);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -2454,8 +2454,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-06db8f7e&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./InputNumber.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-06db8f7e&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./InputNumber.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-06db8f7e&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./InputNumber.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-06db8f7e&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./InputNumber.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2470,11 +2470,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-inputnumber[data-v-06db8f7e] {\n  font-size: 0px;\n  display: inline-block;\n  overflow: hidden;\n}\n.z-inputnumber .z-inputnumber-button[data-v-06db8f7e] {\n  color: #999;\n  font-weight: bold;\n  font-size: 24px;\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  text-align: center;\n  display: inline-block;\n  border: 1px solid #999;\n  float: left;\n  cursor: pointer;\n  user-select: none;\n}\n.z-inputnumber .z-inputnumber-button.disabled[data-v-06db8f7e] {\n  cursor: not-allowed;\n  color: #ccc;\n}\n.z-inputnumber input[data-v-06db8f7e] {\n  height: 30px;\n  line-height: 30px;\n  width: 48px;\n  font-size: 24px;\n  border-top: 1px solid #999;\n  border-right: none;\n  border-bottom: 1px solid #999;\n  border-left: none;\n  padding: 0 10px;\n  text-align: center;\n  float: left;\n  border-radius: 0;\n}\n.z-inputnumber .placeholder[data-v-06db8f7e] {\n  height: 30px;\n  line-height: 30px;\n  width: 48px;\n  font-size: 24px;\n  border-top: 1px solid #999;\n  border-right: none;\n  border-bottom: 1px solid #999;\n  border-left: none;\n  padding: 0 10px;\n  text-align: center;\n  float: left;\n  border-radius: 0;\n  color: #999;\n}\n", "", {"version":3,"sources":["/./src/components/InputNumber.vue"],"names":[],"mappings":";AAAA;EACE,eAAe;EACf,sBAAsB;EACtB,iBAAiB;CAClB;AACD;EACE,YAAY;EACZ,kBAAkB;EAClB,gBAAgB;EAChB,YAAY;EACZ,aAAa;EACb,kBAAkB;EAClB,mBAAmB;EACnB,sBAAsB;EACtB,uBAAuB;EACvB,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;CACnB;AACD;EACE,oBAAoB;EACpB,YAAY;CACb;AACD;EACE,aAAa;EACb,kBAAkB;EAClB,YAAY;EACZ,gBAAgB;EAChB,2BAA2B;EAC3B,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY;EACZ,iBAAiB;CAClB;AACD;EACE,aAAa;EACb,kBAAkB;EAClB,YAAY;EACZ,gBAAgB;EAChB,2BAA2B;EAC3B,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY;EACZ,iBAAiB;EACjB,YAAY;CACb","file":"InputNumber.vue","sourcesContent":[".z-inputnumber {\n  font-size: 0px;\n  display: inline-block;\n  overflow: hidden;\n}\n.z-inputnumber .z-inputnumber-button {\n  color: #999;\n  font-weight: bold;\n  font-size: 24px;\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  text-align: center;\n  display: inline-block;\n  border: 1px solid #999;\n  float: left;\n  cursor: pointer;\n  user-select: none;\n}\n.z-inputnumber .z-inputnumber-button.disabled {\n  cursor: not-allowed;\n  color: #ccc;\n}\n.z-inputnumber input {\n  height: 30px;\n  line-height: 30px;\n  width: 48px;\n  font-size: 24px;\n  border-top: 1px solid #999;\n  border-right: none;\n  border-bottom: 1px solid #999;\n  border-left: none;\n  padding: 0 10px;\n  text-align: center;\n  float: left;\n  border-radius: 0;\n}\n.z-inputnumber .placeholder {\n  height: 30px;\n  line-height: 30px;\n  width: 48px;\n  font-size: 24px;\n  border-top: 1px solid #999;\n  border-right: none;\n  border-bottom: 1px solid #999;\n  border-left: none;\n  padding: 0 10px;\n  text-align: center;\n  float: left;\n  border-radius: 0;\n  color: #999;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-inputnumber[data-v-06db8f7e] {\n  font-size: 0px;\n  display: inline-block;\n  overflow: hidden;\n}\n.z-inputnumber .z-inputnumber-button[data-v-06db8f7e] {\n  color: #999;\n  font-weight: bold;\n  font-size: 24px;\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  text-align: center;\n  display: inline-block;\n  border: 1px solid #999;\n  float: left;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.z-inputnumber .z-inputnumber-button.disabled[data-v-06db8f7e] {\n  cursor: not-allowed;\n  color: #ccc;\n}\n.z-inputnumber input[data-v-06db8f7e] {\n  height: 30px;\n  line-height: 30px;\n  width: 48px;\n  font-size: 24px;\n  border-top: 1px solid #999;\n  border-right: none;\n  border-bottom: 1px solid #999;\n  border-left: none;\n  padding: 0 10px;\n  text-align: center;\n  float: left;\n  -webkit-border-radius: 0;\n          border-radius: 0;\n}\n.z-inputnumber .placeholder[data-v-06db8f7e] {\n  height: 30px;\n  line-height: 30px;\n  width: 48px;\n  font-size: 24px;\n  border-top: 1px solid #999;\n  border-right: none;\n  border-bottom: 1px solid #999;\n  border-left: none;\n  padding: 0 10px;\n  text-align: center;\n  float: left;\n  -webkit-border-radius: 0;\n          border-radius: 0;\n  color: #999;\n}\n", ""]);
+
 	// exports
 
 
@@ -2483,19 +2483,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-inputnumber',
-	
+
 	  data: function data() {
 	    return {
 	      value: 0
 	    };
 	  },
-	
+
 	  props: {
 	    initialValue: {
 	      type: Number,
@@ -2514,7 +2514,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: false
 	    }
 	  },
-	
+
 	  mounted: function mounted() {
 	    if (this.initialValue > this.max) {
 	      this.value = this.max;
@@ -2524,7 +2524,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.value = this.initialValue;
 	    }
 	  },
-	
+
 	  watch: {
 	    'value': function value(val) {
 	      if (val >= this.min && val <= this.max) {
@@ -2532,7 +2532,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 	  },
-	
+
 	  computed: {
 	    'isDecreaseDisabled': function isDecreaseDisabled() {
 	      if (this.value <= this.min) {
@@ -2541,7 +2541,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return false;
 	      }
 	    },
-	
+
 	    'isIncreaseDisabled': function isIncreaseDisabled() {
 	      if (this.value >= this.max) {
 	        return true;
@@ -2550,7 +2550,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 	  },
-	
+
 	  methods: {
 	    increase: function increase() {
 	      if (this.isIncreaseDisabled || this.disabled) {
@@ -2559,7 +2559,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.value++;
 	      }
 	    },
-	
+
 	    decrease: function decrease() {
 	      if (this.isDecreaseDisabled || this.disabled) {
 	        return false;
@@ -2567,14 +2567,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.value--;
 	      }
 	    },
-	
+
 	    checkNumber: function checkNumber() {
 	      this.value = Number(this.value);
-	
+
 	      if (this.value != 0 && !Number(this.value)) {
 	        this.value = this.min;
 	      }
-	
+
 	      if (this.value >= this.max) {
 	        this.value = this.max;
 	      } else if (this.value <= this.min) {
@@ -2645,13 +2645,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(59)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(61)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(62)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -2669,7 +2669,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-79d9d6bb"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -2683,7 +2683,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -2692,7 +2692,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(60);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -2703,8 +2703,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-79d9d6bb&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-79d9d6bb&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-79d9d6bb&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-79d9d6bb&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2719,11 +2719,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-modal[data-v-79d9d6bb] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  border-radius: 4px;\n  overflow: hidden;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  transition: all .3s ease;\n  position: fixed;\n  z-index: 999;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n.z-modal-expand-enter[data-v-79d9d6bb], .z-modal-expand-leave-active[data-v-79d9d6bb] {\n  opacity: 0;\n}\n.z-modal-expand-enter.z-modal[data-v-79d9d6bb], .z-modal-expand-leave-active.z-modal[data-v-79d9d6bb]{\n  -webkit-transform: translate(-50%, -50%) scale(0.5);\n  transform: translate(-50%, -50%) scale(0.5);\n}\n.z-modal-title[data-v-79d9d6bb] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-79d9d6bb] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-79d9d6bb] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-79d9d6bb] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-79d9d6bb]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-79d9d6bb] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", "", {"version":3,"sources":["/./src/components/Modal.vue?77cc71d0"],"names":[],"mappings":";AAwEA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yCAAA;EACA,yBAAA;EACA,gBAAA;EACA,aAAA;EACA,UAAA;EACA,SAAA;EACA,iCAAA;CACA;AAEA;EACA,WAAA;CACA;AAEA;EACA,oDAAA;EACA,4CAAA;CACA;AAEA;EACA,kBAAA;EACA,mBAAA;CACA;AAEA;EACA,qBAAA;EACA,iBAAA;CACA;AAEA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;CACA;AAEA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CACA;AAEA;EACA,4BAAA;CACA;AAEA;EACA,oCAAA;EACA,YAAA;CACA","file":"Modal.vue","sourcesContent":["<template lang=\"html\">\n    <div class=\"z-modal-wrapper\">\n      <z-dimmer :show=\"show\"></z-dimmer>\n      <transition name=\"z-modal-expand\">\n        <div class=\"z-modal\" v-show=\"show\">\n          <div class=\"z-modal-title\">\n            {{title}}\n          </div>\n          <div class=\"z-modal-content\">\n            {{content}}\n          </div>\n          <div class=\"z-modal-footer\">\n            <a class=\"z-btn-modal\" @click=\"cancelFunc\" v-if=\"type=='confirm'\">{{cancel}}</a>\n            <a class=\"z-btn-modal\" :class=\"{'z-btn-modal-sure': type=='confirm'}\" @click=\"sureFunc\">{{sure}}</a>\n          </div>\n        </div>\n      </transition>\n    </div>\n\n</template>\n\n<script>\nexport default {\n  name: 'z-modal',\n  props: {\n    sure: {\n      type: String,\n      default: \"确定\"\n    },\n    cancel: {\n      type: String,\n      default: \"取消\"\n    },\n    show: {\n      type: Boolean,\n      required: true\n    },\n    title: {\n      type: String,\n      default: \"提示\"\n    },\n    content: {\n      type: String,\n      required: true\n    },\n    type: {\n      type: String,\n      default: \"alert\"\n    },\n    sureEvent: {\n      type: Function,\n      default: function() {}\n    },\n    cancelEvent: {\n      type: Function,\n      default: function() {}\n    }\n  },\n  methods: {\n    sureFunc: function() {\n      this.$emit(\"close-modal\")\n      this.sureEvent()\n    },\n    cancelFunc: function() {\n      this.$emit(\"close-modal\")\n      this.cancelEvent()\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n  .z-modal {\n    width: 300px;\n    margin: 0px auto;\n    background-color: #fff;\n    border-radius: 4px;\n    overflow: hidden;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n    position: fixed;\n    z-index: 999;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  .z-modal-expand-enter, .z-modal-expand-leave-active {\n    opacity: 0;\n  }\n\n  .z-modal-expand-enter.z-modal, .z-modal-expand-leave-active.z-modal{\n    -webkit-transform: translate(-50%, -50%) scale(0.5);\n    transform: translate(-50%, -50%) scale(0.5);\n  }\n\n  .z-modal-title {\n    line-height: 44px;\n    text-align: center;\n  }\n\n  .z-modal-content {\n    padding: 0 12px 12px;\n    text-align: left;\n  }\n\n  .z-modal-footer {\n    border-top: 1px solid #ccc;\n    display: table;\n    width: 100%;\n  }\n\n  .z-btn-modal {\n    display: table-cell;\n    text-align: center;\n    cursor: pointer;\n    line-height: 44px;\n  }\n\n  .z-btn-modal:nth-child(2) {\n    border-left: 1px solid #ccc;\n  }\n\n  .z-btn-modal-sure {\n    background-color: rgb(65, 184, 131);\n    color: #fff;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-modal[data-v-79d9d6bb] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  -webkit-border-radius: 4px;\n          border-radius: 4px;\n  overflow: hidden;\n  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n          box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  -webkit-transition: all .3s ease;\n  transition: all .3s ease;\n  position: fixed;\n  z-index: 999;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.z-modal-expand-enter[data-v-79d9d6bb], .z-modal-expand-leave-active[data-v-79d9d6bb] {\n  opacity: 0;\n}\n.z-modal-expand-enter.z-modal[data-v-79d9d6bb], .z-modal-expand-leave-active.z-modal[data-v-79d9d6bb]{\n  -webkit-transform: translate(-50%, -50%) scale(0.5);\n  -ms-transform: translate(-50%, -50%) scale(0.5);\n      transform: translate(-50%, -50%) scale(0.5);\n}\n.z-modal-title[data-v-79d9d6bb] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-79d9d6bb] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-79d9d6bb] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-79d9d6bb] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-79d9d6bb]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-79d9d6bb] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", ""]);
+
 	// exports
 
 
@@ -2732,7 +2732,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -2842,13 +2842,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(64)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(66)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(67)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -2866,7 +2866,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-0d7ffd72"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -2880,7 +2880,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Navbar.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -2889,7 +2889,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(65);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -2900,8 +2900,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-0d7ffd72&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-0d7ffd72&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-0d7ffd72&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-0d7ffd72&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Navbar.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2916,11 +2916,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-navbar[data-v-0d7ffd72] {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-0d7ffd72] {\n  position: fixed;\n  top: 0;\n  z-index: 9999;\n}\n", "", {"version":3,"sources":["/./src/components/Navbar.vue?136b85c0"],"names":[],"mappings":";AA+BA;EACA,uBAAA;EACA,uBAAA;EACA,qCAAA;EACA,YAAA;CACA;AACA;EACA,gBAAA;EACA,OAAA;EACA,cAAA;CACA","file":"Navbar.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-navbar-wraper\">\n    <div class=\"z-navbar-placeholder\" :style=\"{height: isFixed ? navbarHeight + 'px' : ''}\">\n    </div>\n    <div class=\"z-navbar\" :class=\"{'z-navbar-fix': isFixed}\">\n      <slot></slot>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-navbar',\n  data() {\n    return {\n      navbarHeight: \"\"\n    }\n  },\n  props: {\n    isFixed: {\n      type: Boolean,\n      default: false\n    }\n  },\n  mounted() {\n    this.navbarHeight = this.$el.lastChild.clientHeight\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-navbar {\n  box-sizing: border-box;\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix {\n  position: fixed;\n  top: 0;\n  z-index: 9999;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-navbar[data-v-0d7ffd72] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);\n          box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-0d7ffd72] {\n  position: fixed;\n  top: 0;\n  z-index: 9999;\n}\n", ""]);
+
 	// exports
 
 
@@ -2929,7 +2929,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -2940,7 +2940,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      navbarHeight: ""
 	    };
 	  },
-	
+
 	  props: {
 	    isFixed: {
 	      type: Boolean,
@@ -2985,13 +2985,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(69)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(71)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(72)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -3009,7 +3009,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-6d066208"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -3023,7 +3023,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Pagination.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -3032,7 +3032,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(70);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -3043,8 +3043,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6d066208&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Pagination.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6d066208&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Pagination.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6d066208&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Pagination.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-6d066208&scoped=true!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Pagination.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3059,11 +3059,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-pagination[data-v-6d066208] {\n  overflow: hidden;\n}\n.z-pagination ul[data-v-6d066208] {\n  overflow: hidden;\n  float: left;\n}\n.z-pagination ul li[data-v-6d066208] {\n  float: left;\n  list-style: none;\n  width: 28px;\n  height: 28px;\n  line-height: 28px;\n  border-top: 1px solid #ccc;\n  border-bottom: 1px solid #ccc;\n  border-left: 1px solid #ccc;\n  text-align: center;\n  cursor: pointer;\n  user-select: none;\n}\n.z-pagination ul li[data-v-6d066208]:last-child {\n  border-right: 1px solid #ccc;\n}\n.z-pagination ul li.active[data-v-6d066208] {\n  background-color: #5bc0de;\n  color: #fff;\n}\n.z-pagination ul li.arrow[data-v-6d066208] {\n  color: #999;\n  font-weight: bold;\n}\n.z-pagination ul li.arrow.disabled[data-v-6d066208] {\n  color: #e4e4e4;\n  cursor: not-allowed;\n}\n.z-pagination .input-page[data-v-6d066208] {\n  float: left;\n  margin-left: 10px;\n  height: 30px;\n  line-height: 30px;\n}\n.z-pagination .input-page input[data-v-6d066208] {\n  display: inline-block;\n  width: 28px;\n  height: 28px;\n  line-height: 28px;\n  vertical-align: bottom;\n  text-align: center;\n  margin: 0 5px;\n  padding: 0;\n  border: 1px solid #ccc;\n}\n", "", {"version":3,"sources":["/./src/components/Pagination.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAClB;AACD;EACE,iBAAiB;EACjB,YAAY;CACb;AACD;EACE,YAAY;EACZ,iBAAiB;EACjB,YAAY;EACZ,aAAa;EACb,kBAAkB;EAClB,2BAA2B;EAC3B,8BAA8B;EAC9B,4BAA4B;EAC5B,mBAAmB;EACnB,gBAAgB;EAChB,kBAAkB;CACnB;AACD;EACE,6BAA6B;CAC9B;AACD;EACE,0BAA0B;EAC1B,YAAY;CACb;AACD;EACE,YAAY;EACZ,kBAAkB;CACnB;AACD;EACE,eAAe;EACf,oBAAoB;CACrB;AACD;EACE,YAAY;EACZ,kBAAkB;EAClB,aAAa;EACb,kBAAkB;CACnB;AACD;EACE,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,kBAAkB;EAClB,uBAAuB;EACvB,mBAAmB;EACnB,cAAc;EACd,WAAW;EACX,uBAAuB;CACxB","file":"Pagination.vue","sourcesContent":[".z-pagination {\n  overflow: hidden;\n}\n.z-pagination ul {\n  overflow: hidden;\n  float: left;\n}\n.z-pagination ul li {\n  float: left;\n  list-style: none;\n  width: 28px;\n  height: 28px;\n  line-height: 28px;\n  border-top: 1px solid #ccc;\n  border-bottom: 1px solid #ccc;\n  border-left: 1px solid #ccc;\n  text-align: center;\n  cursor: pointer;\n  user-select: none;\n}\n.z-pagination ul li:last-child {\n  border-right: 1px solid #ccc;\n}\n.z-pagination ul li.active {\n  background-color: #5bc0de;\n  color: #fff;\n}\n.z-pagination ul li.arrow {\n  color: #999;\n  font-weight: bold;\n}\n.z-pagination ul li.arrow.disabled {\n  color: #e4e4e4;\n  cursor: not-allowed;\n}\n.z-pagination .input-page {\n  float: left;\n  margin-left: 10px;\n  height: 30px;\n  line-height: 30px;\n}\n.z-pagination .input-page input {\n  display: inline-block;\n  width: 28px;\n  height: 28px;\n  line-height: 28px;\n  vertical-align: bottom;\n  text-align: center;\n  margin: 0 5px;\n  padding: 0;\n  border: 1px solid #ccc;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-pagination[data-v-6d066208] {\n  overflow: hidden;\n}\n.z-pagination ul[data-v-6d066208] {\n  overflow: hidden;\n  float: left;\n}\n.z-pagination ul li[data-v-6d066208] {\n  float: left;\n  list-style: none;\n  width: 28px;\n  height: 28px;\n  line-height: 28px;\n  border-top: 1px solid #ccc;\n  border-bottom: 1px solid #ccc;\n  border-left: 1px solid #ccc;\n  text-align: center;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.z-pagination ul li[data-v-6d066208]:last-child {\n  border-right: 1px solid #ccc;\n}\n.z-pagination ul li.active[data-v-6d066208] {\n  background-color: #5bc0de;\n  color: #fff;\n}\n.z-pagination ul li.arrow[data-v-6d066208] {\n  color: #999;\n  font-weight: bold;\n}\n.z-pagination ul li.arrow.disabled[data-v-6d066208] {\n  color: #e4e4e4;\n  cursor: not-allowed;\n}\n.z-pagination .input-page[data-v-6d066208] {\n  float: left;\n  margin-left: 10px;\n  height: 30px;\n  line-height: 30px;\n}\n.z-pagination .input-page input[data-v-6d066208] {\n  display: inline-block;\n  width: 28px;\n  height: 28px;\n  line-height: 28px;\n  vertical-align: bottom;\n  text-align: center;\n  margin: 0 5px;\n  padding: 0;\n  border: 1px solid #ccc;\n}\n", ""]);
+
 	// exports
 
 
@@ -3072,13 +3072,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-pagination',
-	
+
 	  data: function data() {
 	    return {
 	      currentPage: this.page,
@@ -3092,7 +3092,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      inputPage: this.page
 	    };
 	  },
-	
+
 	  props: {
 	    total: {
 	      type: Number,
@@ -3111,7 +3111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: false
 	    }
 	  },
-	
+
 	  mounted: function mounted() {
 	    if (this.pageCount === 1) {
 	      this.canGoPre = false;
@@ -3121,7 +3121,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } else if (this.currentPage === this.pageCount) {
 	      this.canGoNext = false;
 	    }
-	
+
 	    if (Number(this.inputPage) < 1) {
 	      this.currentPage = 1;
 	      this.inputPage = 1;
@@ -3131,19 +3131,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } else {
 	      this.currentPage = Number(this.inputPage);
 	    }
-	
+
 	    this.initPage();
 	  },
-	
+
 	  computed: {
 	    'pageCount': function pageCount() {
 	      return Math.ceil(this.total / this.pageSize);
 	    },
-	
+
 	    'middleEnd': function middleEnd() {
 	      return this.middleStart + 5;
 	    },
-	
+
 	    'isShowMiddle': function isShowMiddle() {
 	      if (this.isShowPreItemsButton && this.isShowNextItemsButton) {
 	        return true;
@@ -3151,7 +3151,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return false;
 	      }
 	    },
-	
+
 	    'frontCount': function frontCount() {
 	      if (this.isShowPreItemsButton) {
 	        return 1;
@@ -3159,7 +3159,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return 8;
 	      }
 	    },
-	
+
 	    'behindCount': function behindCount() {
 	      if (this.isShowNextItemsButton) {
 	        return 1;
@@ -3168,11 +3168,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 	  },
-	
+
 	  watch: {
 	    'currentPage': function currentPage(val) {
 	      this.$emit("current-page", val);
-	
+
 	      if (val <= 1) {
 	        this.currentPage = 1;
 	        this.canGoPre = false;
@@ -3186,14 +3186,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.canGoNext = true;
 	      }
 	    },
-	
+
 	    'inputPage': function inputPage(val) {
 	      if (!Number(val)) {
 	        this.inputPage = '';
 	      }
 	    }
 	  },
-	
+
 	  methods: {
 	    goPage: function goPage(index) {
 	      if (index === this.pageCount) {
@@ -3205,29 +3205,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      this.currentPage = index;
 	    },
-	
+
 	    goPre: function goPre() {
 	      if (!this.canGoPre) {
 	        return false;
 	      }
 	      this.currentPage--;
-	
+
 	      if (this.behindCount === 8 && this.currentPage < this.pageCount - 8 + 1 || this.behindCount === 1 && this.currentPage < this.middleStart) {
 	        this.showPreItems();
 	      }
 	    },
-	
+
 	    goNext: function goNext() {
 	      if (!this.canGoNext) {
 	        return false;
 	      }
 	      this.currentPage++;
-	
+
 	      if (this.frontCount === 8 && this.currentPage > 8 || this.frontCount === 1 && this.currentPage > this.middleEnd) {
 	        this.showNextItems();
 	      }
 	    },
-	
+
 	    showPreItems: function showPreItems() {
 	      if (this.behindCount === 8) {
 	        this.isShowNextItemsButton = true;
@@ -3236,17 +3236,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	      } else {
 	        this.middleStart = this.middleStart - 6;
 	      }
-	
+
 	      if (this.middleStart < 1) {
 	        this.frontCount = 8;
 	        this.isShowPreItemsButton = false;
 	      } else {
 	        this.isShowPreItemsButton = true;
 	      }
-	
+
 	      this.currentPage = this.middleEnd;
 	    },
-	
+
 	    showNextItems: function showNextItems() {
 	      if (this.frontCount === 8) {
 	        this.isShowPreItemsButton = true;
@@ -3255,17 +3255,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	      } else {
 	        this.middleStart = this.middleEnd + 1;
 	      }
-	
+
 	      if (this.middleEnd >= this.pageCount - 1) {
 	        this.behindCount = 8;
 	        this.isShowNextItemsButton = false;
 	      } else {
 	        this.isShowNextItemsButton = true;
 	      }
-	
+
 	      this.currentPage = this.middleStart;
 	    },
-	
+
 	    initPage: function initPage() {
 	      if (this.currentPage >= 1 && this.currentPage <= 8) {
 	        this.frontCount = 8;
@@ -3285,7 +3285,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.behindCount = 1;
 	      }
 	    },
-	
+
 	    changePage: function changePage() {
 	      if (Number(this.inputPage) < 1) {
 	        this.currentPage = 1;
@@ -3296,7 +3296,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      } else {
 	        this.currentPage = Number(this.inputPage);
 	      }
-	
+
 	      this.initPage();
 	    }
 	  }
@@ -3434,13 +3434,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(74)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(76)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(77)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -3457,7 +3457,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.__file = "D:\\work\\vue-components\\src\\components\\Progress.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -3471,7 +3471,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Progress.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -3480,7 +3480,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(75);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -3491,8 +3491,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-f9d67ae2!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-f9d67ae2!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-f9d67ae2!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-f9d67ae2!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Progress.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3507,11 +3507,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Progress.vue"],"names":[],"mappings":";AAAA;EACE,gBAAgB;EAChB,QAAQ;EACR,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,8BAA8B;CAC/B;AACD;EACE,aAAa;EACb,8BAA8B;CAC/B;AACD;EACE,OAAO;CACR;AACD;EACE,UAAU;CACX","file":"Progress.vue","sourcesContent":[".z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  -webkit-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", ""]);
+
 	// exports
 
 
@@ -3520,13 +3520,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
 	  name: 'z-progress',
-	
+
 	  data: function data() {
 	    return {
 	      width: 0,
@@ -3536,7 +3536,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      isShowProgress: false
 	    };
 	  },
-	
+
 	  props: {
 	    bgc: {
 	      type: String,
@@ -3554,7 +3554,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    runProgress: function runProgress() {
 	      var _this = this;
-	
+
 	      if (document.readyState != 'complete') {
 	        this.progressing();
 	      } else {
@@ -3622,13 +3622,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(79)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(81)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(82)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -3646,7 +3646,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-056e6696"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -3660,7 +3660,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Switch.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -3669,7 +3669,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(80);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -3680,8 +3680,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-056e6696&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-056e6696&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-056e6696&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-056e6696&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Switch.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3696,11 +3696,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-switch[data-v-056e6696] {\n  display: inline-block;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n  border: 1px solid #999;\n  transition: background-color .2s;\n  box-sizing: content-box;\n}\n.z-switch-button[data-v-056e6696] {\n  display: inline-block;\n  border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  transition: left .2s;\n}\n", "", {"version":3,"sources":["/./src/components/Switch.vue?08aca799"],"names":[],"mappings":";AAqCA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;EACA,uBAAA;EACA,iCAAA;EACA,wBAAA;CACA;AAEA;EACA,sBAAA;EACA,oBAAA;EACA,uBAAA;EACA,mBAAA;EACA,qBAAA;CACA","file":"Switch.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-switch\" :style=\"{width: width+'px',height: height+'px',borderRadius: height+'px',backgroundColor: isOpen ? bgc : ''}\" @click=\"toggleSwitch\">\n    <div class=\"z-switch-button\" :style=\"{width: height+'px', height: height+'px', left: isOpen ? ((width - height) + 'px') : (0 + 'px')}\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-switch',\n  data() {\n    return {\n      isOpen: false\n    }\n  },\n  props: {\n    width: {\n      type: Number,\n      default: 50\n    },\n    height: {\n      type: Number,\n      default: 25\n    },\n    bgc: {\n      type: String,\n      default: \"rgb(65, 184, 131)\"\n    }\n  },\n  methods: {\n    toggleSwitch: function() {\n      this.isOpen = !this.isOpen\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-switch {\n  display: inline-block;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n  border: 1px solid #999;\n  transition: background-color .2s;\n  box-sizing: content-box;\n}\n\n.z-switch-button {\n  display: inline-block;\n  border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  transition: left .2s;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-switch[data-v-056e6696] {\n  display: inline-block;\n  background-color: #ccc;\n  cursor: pointer;\n  position: relative;\n  border: 1px solid #999;\n  -webkit-transition: background-color .2s;\n  transition: background-color .2s;\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n}\n.z-switch-button[data-v-056e6696] {\n  display: inline-block;\n  -webkit-border-radius: 100%;\n          border-radius: 100%;\n  background-color: #fff;\n  position: absolute;\n  -webkit-transition: left .2s;\n  transition: left .2s;\n}\n", ""]);
+
 	// exports
 
 
@@ -3709,7 +3709,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -3720,7 +3720,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      isOpen: false
 	    };
 	  },
-	
+
 	  props: {
 	    width: {
 	      type: Number,
@@ -3781,13 +3781,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
-	
+
 	/* styles */
 	__webpack_require__(84)
-	
+
 	/* script */
 	__vue_exports__ = __webpack_require__(86)
-	
+
 	/* template */
 	var __vue_template__ = __webpack_require__(87)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
@@ -3805,7 +3805,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-fc02c148"
-	
+
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
@@ -3819,7 +3819,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Table.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
+
 	module.exports = __vue_exports__
 
 
@@ -3828,7 +3828,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
+
 	// load the styles
 	var content = __webpack_require__(85);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -3839,8 +3839,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-fc02c148&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Table.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js?sourceMap!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-fc02c148&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Table.vue");
+			module.hot.accept("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-fc02c148&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Table.vue", function() {
+				var newContent = require("!!./../../node_modules/.0.23.1@css-loader/index.js!./../../node_modules/.10.0.2@vue-loader/lib/style-rewriter.js?id=data-v-fc02c148&scoped=true!./../../node_modules/.10.0.2@vue-loader/lib/selector.js?type=styles&index=0!./Table.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3855,11 +3855,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-	
-	
+
+
 	// module
-	exports.push([module.id, "\n.z-table-wraper[data-v-fc02c148] {\n  max-width: 100%;\n  overflow-x: auto;\n}\n.z-table[data-v-fc02c148] {\n  max-width: 100%;\n  border: 1px solid #ddd;\n  border-collapse: collapse;\n}\n.z-table>caption[data-v-fc02c148] {\n  padding-top: 8px;\n  padding-bottom: 8px;\n  color: #777;\n  text-align: left;\n}\n.z-table>thead>tr>th[data-v-fc02c148],\n.z-table>tbody>tr>td[data-v-fc02c148],\n.z-table>tfoot>tr>td[data-v-fc02c148] {\n  border: 1px solid #ddd;\n  padding: 8px;\n  text-align: left;\n}\n.z-table>thead>tr>th[data-v-fc02c148] {\n  border-bottom-width: 2px;\n}\n", "", {"version":3,"sources":["/./src/components/Table.vue?7818f104"],"names":[],"mappings":";AAsCA;EACA,gBAAA;EACA,iBAAA;CACA;AAEA;EACA,gBAAA;EACA,uBAAA;EACA,0BAAA;CACA;AAEA;EACA,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,iBAAA;CACA;AAEA;;;EAGA,uBAAA;EACA,aAAA;EACA,iBAAA;CACA;AAEA;EACA,yBAAA;CACA","file":"Table.vue","sourcesContent":["<template lang=\"html\">\n  <div class=\"z-table-wraper\">\n    <table class=\"z-table\">\n      <caption v-if=\"title\">{{title}}</caption>\n      <thead>\n        <tr>\n          <th v-for=\"th in ths\">{{th}}</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr v-for=\"tr in trs\">\n          <td v-for=\"td in tr\">{{td}}</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'z-table',\n  props: {\n    title: {\n      type: String\n    },\n    ths: {\n      type: Array,\n      required: true\n    },\n    trs: {\n      type: Array,\n      required: true\n    }\n  }\n};\n</script>\n\n<style lang=\"css\" scoped>\n.z-table-wraper {\n  max-width: 100%;\n  overflow-x: auto;\n}\n\n.z-table {\n  max-width: 100%;\n  border: 1px solid #ddd;\n  border-collapse: collapse;\n}\n\n.z-table>caption {\n  padding-top: 8px;\n  padding-bottom: 8px;\n  color: #777;\n  text-align: left;\n}\n\n.z-table>thead>tr>th,\n.z-table>tbody>tr>td,\n.z-table>tfoot>tr>td {\n  border: 1px solid #ddd;\n  padding: 8px;\n  text-align: left;\n}\n\n.z-table>thead>tr>th {\n  border-bottom-width: 2px;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
+	exports.push([module.id, "\n.z-table-wraper[data-v-fc02c148] {\n  max-width: 100%;\n  overflow-x: auto;\n}\n.z-table[data-v-fc02c148] {\n  max-width: 100%;\n  border: 1px solid #ddd;\n  border-collapse: collapse;\n}\n.z-table>caption[data-v-fc02c148] {\n  padding-top: 8px;\n  padding-bottom: 8px;\n  color: #777;\n  text-align: left;\n}\n.z-table>thead>tr>th[data-v-fc02c148],\n.z-table>tbody>tr>td[data-v-fc02c148],\n.z-table>tfoot>tr>td[data-v-fc02c148] {\n  border: 1px solid #ddd;\n  padding: 8px;\n  text-align: left;\n}\n.z-table>thead>tr>th[data-v-fc02c148] {\n  border-bottom-width: 2px;\n}\n", ""]);
+
 	// exports
 
 
@@ -3868,7 +3868,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-	
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -3918,4 +3918,3 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ])
 });
 ;
-//# sourceMappingURL=z-vue-components.js.map

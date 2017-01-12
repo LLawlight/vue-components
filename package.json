@@ -6,7 +6,7 @@
     "name": "zGOD",
     "url": "http://zhaoyuxiang.cn"
   },
-  "main": "./libs/z-vue-components.js",
+  "main": "./libs/z-vue-components.min.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js && webpack --progress --hide-modules --config  webpack.build.min.js && webpack --progress --hide-modules --config  webpack.build.js",
