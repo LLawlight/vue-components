@@ -63,9 +63,6 @@ export default {
 
   &.z-dimmer-enter-active, &.z-dimmer-leave-active {
     transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
   }
 }
 </style>

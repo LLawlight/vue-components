@@ -32,9 +32,6 @@ export default {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-image: none;
   border: 1px solid transparent;

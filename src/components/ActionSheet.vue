@@ -58,24 +58,21 @@ export default {
   background-color: rgba(0, 0, 0, .5);
 }
 
+.z-actionsheet-items-enter, .z-actionsheet-items-leave-active {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.z-actionsheet-items-enter-active, .z-actionsheet-items-leave-active {
+  transition: all .2s;
+}
+
 .z-actionsheet-items {
   position: fixed;
   z-index: 999;
   left: 0;
   width: 100%;
   bottom: 0;
-
-  &.z-actionsheet-items-enter, &.z-actionsheet-items-leave-active {
-    bottom: -100%;
-    opacity: 0;
-  }
-
-  &.z-actionsheet-items-enter-active, &.z-actionsheet-items-leave-active {
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-  }
 
   li {
     width: 100%;

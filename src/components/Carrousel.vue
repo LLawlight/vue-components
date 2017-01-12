@@ -229,9 +229,6 @@ export default {
 
   ul.is-transition {
     transition: all 300ms ease-out;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
   }
 
   ul.dots {

@@ -267,9 +267,6 @@ export default {
       text-align: center;
       cursor: pointer;
       user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
     }
 
     li:last-child {
