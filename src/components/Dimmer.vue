@@ -62,7 +62,7 @@ export default {
   }
 
   &.z-dimmer-enter-active, &.z-dimmer-leave-active {
-    transition: all .5s;
+    transition: all .2s;
   }
 }
 </style>

@@ -36,7 +36,7 @@ Vue.component(zButton.name, zButton)
 </z-button>
 ```
 
-### 单组件使用
+### 单文件使用
 
 #### ES6 or CommonJS
 ```js
@@ -62,7 +62,7 @@ new Vue({
 #### Browser globals
 ```html
 <script src="path/to/vue.js"></script>
-<script src="path/to/z-vue-components.js"></script>
+<script src="path/to/z-vue-components.min.js"></script>
 <script>
   var vm = new Vue({
     components: {
