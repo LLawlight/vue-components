@@ -1,12 +1,5 @@
 ## BackTop 返回顶部
 
-<template>
-  <z-backtop
-  :scroll-top="100"
-  :right="'5%'"
-  :bottom="'20px'"></z-backtop>
-</template>
-
 ```html
 <z-backtop
 :scroll-top="100"
@@ -15,12 +8,6 @@
 ></z-backtop>
 ```
 效果见本页返回顶部按钮。
-
-按钮距离页面边缘的距离建议使用css来调整，可以根据不同尺寸的设备来设置显示的位置。
-
-默认图标引用方式:
-
-`<link rel="stylesheet" href="//at.alicdn.com/t/font_jplna4shxcfbhuxr.css">`
 
 `<z-backtop>`标签中可以自定义html结构，用于替换成自己的返回顶部按钮样式。
 
@@ -37,6 +24,7 @@
 
 ```html
 <z-backtop
+class="example"
 :acceleration="0.2"
 :stime="5"
 >

@@ -2,18 +2,18 @@
 
 <template>
   <z-button
-  :text="'打开动作面板'"
-  :type="'success'"
-  @click.native="isShowActionSheet = true">
+  type="success"
+  @click="isShowActionSheet = true">
+  打开动作面板
   </z-button>
 
   <z-actionsheet
   :show="isShowActionSheet"
   :title="'动作面板展示'"
   :lis="lis"
-  :cancel-button="'确定或者取消或者其他'"
+  :close-text="'确定或者取消或者其他'"
   @click998="test"
-  @after-close="isShowActionSheet = false">
+  @close="isShowActionSheet = false">
   </z-actionsheet>
 </template>
 
@@ -48,18 +48,18 @@ export default {
 
 ```html
 <z-button
-:text="'打开动作面板'"
-:type="'success'"
-@click.native="isShowActionSheet = true">
+type="success"
+@click="isShowActionSheet = true">
+打开动作面板
 </z-button>
 
 <z-actionsheet
 :show="isShowActionSheet"
 :title="'动作面板展示'"
 :lis="lis"
-:cancel-button="'确定或者取消或者其他'"
+:close-text="'确定或者取消或者其他'"
 @click998="test"
-@after-close="isShowActionSheet = false">
+@close="isShowActionSheet = false">
 </z-actionsheet>
 ```
 
@@ -99,7 +99,7 @@ methods: {
     ['show','Boolean','是','-','是否显示动作面板'],
     ['lis','Array','是','-','动作面板中的各项条目'],
     ['title','String','否','-','动作面板的标题'],
-    ['cancel-button','String','否','取消','动作面板关闭按钮的文字']
+    ['close-text','String','否','取消','动作面板关闭按钮的文字']
   ]">
   </z-table>
 
@@ -114,9 +114,18 @@ methods: {
   </z-table>
 </template>
 
-#### 关闭动作面板的方法
-
-当关闭面板的按钮被点击时，组件会emit一个"after-close"，在父组件接收即可。
+### EVENT
+<template>
+  <div class="introduce-block">
+    <z-table
+    :ths="['事件名称', '说明', '回调参数']"
+    :trs="[
+            ['close','关闭动作面板时的回调函数','-'],
+            ['click + id','点击单个条目时的回调函数','-'],
+          ]">
+    </z-table>
+  </div>
+</template>
 
 #### 给条目追加点击事件的方法
 

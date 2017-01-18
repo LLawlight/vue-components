@@ -25,7 +25,7 @@
           </ul>
         </div>
 
-        <z-aside :show="isShowGuide" @close-aside="isShowGuide = false" class="siderbar-wrapper">
+        <z-aside :show="isShowGuide" @close="isShowGuide = false" class="siderbar-wrapper">
           <div class="siderbar">
             <router-link to="/install"><span class="group-title">安装与使用</span></router-link>
             <router-link to="/grid"><span class="group-title">栅格</span></router-link>
@@ -41,6 +41,9 @@
         </div>
 
       </div>
+
+      <div id="uyan_frame"></div>
+
     </div>
 
     <div class="footer">
@@ -54,6 +57,10 @@
     :type="'bottom'"
     ref="progress"
     ></z-progress>
+
+    <z-backtop
+    :scroll-top="100"
+    ></z-backtop>
   </div>
 </template>
 
@@ -173,7 +180,7 @@ body {
 
 #app {
   color: rgb(53, 73, 94);
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   font-size: 16px;
 }
 
@@ -233,9 +240,17 @@ a {
   text-align: center;
 }
 
+#uyan_frame {
+  width: 92%;
+  margin: 0 auto 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
 .content {
   padding: 20px 0;
-  margin: 50px 0;
+  margin: 50px 0 10px;
   width: 92%;
   background-color: #fff;
   border-radius: 6px;
@@ -361,6 +376,11 @@ a {
 @media screen and (max-width: 768px) {
   #app {
     font-size: 14px;
+  }
+
+  #uyan_frame {
+    width: 100%;
+    margin: 0  0 10px 0;
   }
 
   .content {

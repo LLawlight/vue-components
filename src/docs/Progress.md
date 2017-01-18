@@ -2,11 +2,7 @@
   <h2><a href="#progress">Progress 进度条</a></h2>
 
   <div class="introduce">
-    <z-button
-    :text="'点击感受进度条 ↓'"
-    :type="'info'"
-    @click.native="startProgress"
-    ></z-button>
+    <z-button type="info" @click="startProgress">点击感受进度条 ↓</z-button>
   </div>
 
   <div class="introduce-block">

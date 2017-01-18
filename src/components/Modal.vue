@@ -58,11 +58,11 @@ export default {
   },
   methods: {
     sureFunc: function() {
-      this.$emit("close-modal")
+      this.$emit("close")
       this.sureEvent()
     },
     cancelFunc: function() {
-      this.$emit("close-modal")
+      this.$emit("close")
       this.cancelEvent()
     }
   }

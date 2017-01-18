@@ -49,7 +49,7 @@ export default {
   watch: {
     'value': function(val) {
       if ((val >= this.min) && (val <= this.max)) {
-        this.$emit('value-change', val)
+        this.$emit('change', val)
       }
     }
   },

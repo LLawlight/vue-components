@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="z-aside-wrapper">
-    <z-dimmer :show="show" @click-event="closeAside"></z-dimmer>
+    <z-dimmer :show="show" @click="closeAside"></z-dimmer>
     <transition name="z-aside-slide">
       <div class="z-aside" v-show="show" :class="'z-aside-' + type">
         <div class="z-aside-title" v-if="title">{{title}}</div>
@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     closeAside: function() {
-      this.$emit('close-aside')
+      this.$emit('close')
     }
   }
 };

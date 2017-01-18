@@ -40,7 +40,7 @@ export default {
     },
 
     clickEvent() {
-      this.$emit('click-event')
+      this.$emit('click')
     }
   }
 };

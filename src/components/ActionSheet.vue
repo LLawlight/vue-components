@@ -1,11 +1,11 @@
 <template lang="html">
   <div class="z-actionsheet-wrapper" @touchmove.prevent>
-    <z-dimmer :show="show" @click-event="closeActionSheet"></z-dimmer>
+    <z-dimmer :show="show" @click="closeActionSheet"></z-dimmer>
     <transition name="z-actionsheet-items">
       <ul class="z-actionsheet-items" v-show="show">
         <li class="z-actionsheet-title" v-if="title">{{title}}</li>
         <li v-for="li in lis" class="z-actionsheet-item" @click="clickItem(li.id)"><a :href="li.href" target="_blank">{{li.text}}</a></li>
-        <li class="z-actionsheet-button" @click="closeActionSheet">{{cancelButton}}</li>
+        <li class="z-actionsheet-button" @click="closeActionSheet">{{closeText}}</li>
       </ul>
     </transition>
   </div>
@@ -28,14 +28,14 @@ export default {
 
     title: String,
 
-    cancelButton: {
+    closeText: {
       type: String,
       default: '取消'
     }
   },
   methods: {
     closeActionSheet() {
-      this.$emit('after-close')
+      this.$emit('close')
     },
 
     clickItem(id) {

@@ -1,29 +1,15 @@
 ## Dimmer 遮罩层
 
 <template>
-  <z-button
-  :text="'点击制造雾霾'"
-  :type="'danger'"
-  @click.native="show = true">
-  </z-button>
+  <z-button type="danger" @click="show = true">点击制造雾霾</z-button>
 
-  <z-dimmer
-  :show="show"
-  @click-event="show = false">
-  </z-dimmer>
+  <z-dimmer :show="show" @click="show = false"></z-dimmer>
 </template>
 
 ```html
-<z-button
-:text="'点击制造雾霾'"
-:type="'danger'"
-@click.native="show = true">
-</z-button>
+<z-button type="danger" @click="show = true">点击制造雾霾</z-button>
 
-<z-dimmer
-:show="show"
-@click-event="show = false">
-</z-dimmer>
+<z-dimmer :show="show" @click="show = false"></z-dimmer>
 ```
 
 ```js
@@ -44,6 +30,8 @@ export default {
 }
 </script>
 
+注：遮罩层显示状态下将会自动禁用PC端和移动端页面滚动（不影响遮罩层之上的浮层滚动）。
+
 ### API
 
 <template>
@@ -54,7 +42,3 @@ export default {
   ]">
   </z-table>
 </template>
-
-点击遮罩层会emit一个"click-event"，在父组件接收可继续执行其他函数。
-
-注：遮罩层显示状态下将会自动禁用PC端和移动端页面滚动（不影响遮罩层之上的浮层滚动）。

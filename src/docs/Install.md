@@ -6,6 +6,11 @@
 $ npm install z-vue-components --save
 ```
 
+### 图标引用地址
+```html
+<link rel="stylesheet" href="//at.alicdn.com/t/font_kpowu9ee7fvl5wmi.css">
+```
+
 ### 全局使用
 
 #### 所有组件
@@ -25,9 +30,7 @@ Vue.component(zButton.name, zButton)
 ```
 
 ```html
-<z-button
-:text="'Hello World!'">
-</z-button>
+<z-button>Hello World!</z-button>
 ```
 
 ### 单文件使用
@@ -49,9 +52,7 @@ new Vue({
 ```
 
 ```html
-<z-button
-:text="'Hello world!'">
-</z-button>
+<z-button>Hello World!</z-button>
 ```
 
 ### 浏览器引入
@@ -70,9 +71,7 @@ new Vue({
 ```
 
 ```html
-<z-button
-:text="'Hello world!'">
-</z-button>
+<z-button>Hello World!</z-button>
 ```
 
 <template>
@@ -81,10 +80,12 @@ new Vue({
 :ths="['组件名称','name','标签']"
 :trs="[
         ['Grid 栅格','zRow, zCol','<z-row>, <z-col>'],
+        ['ActionSheet 动作面板','zActionsheet','<z-actionsheet>'],
         ['Aside 侧边栏','zAside','<z-aside>'],
         ['BackTop 返回顶部','zBacktop','<z-backtop>'],
         ['Button 按钮','zButton','<z-button>'],
         ['Carrousel 轮播图','zCarrousel','<z-carrousel>'],
+        ['Dimmer 遮罩层','zDimmer','<z-dimmer>'],
         ['Dropmenu 下拉菜单','zDropmenu','<z-dropmenu>'],
         ['ImageInput 图片放置','zImageinput','<z-imageinput>'],
         ['InputNumber 计数器','zInputnumber','<z-inputnumber>'],

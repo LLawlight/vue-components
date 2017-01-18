@@ -61,6 +61,8 @@ methods: {
 :page="8"
 ></z-pagination>
 ```
+
+### API
 <template>
   <div class="introduce-block">
     <z-table
@@ -73,6 +75,16 @@ methods: {
           ]">
     </z-table>
   </div>
+</template>
+
+### EVENT
+<template>
+  <z-table
+  :ths="['事件名称', '说明', '回调参数']"
+  :trs="[
+          ['current-page','当前页码发生改变时的回调函数','新的页码']
+        ]">
+  </z-table>
 </template>
 
 <script>

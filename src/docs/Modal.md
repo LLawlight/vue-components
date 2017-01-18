@@ -2,32 +2,38 @@
   <h2><a href="#modal">Modal 模态窗</a></h2>
 
   <div class="introduce">
-    <z-button
-    :text="'Alert'"
-    @click.native="alert.show = true">
-    </z-button>
+    <z-button @click="alert.show = true">Alert</z-button>
     <z-modal
     :show="alert.show"
     :content="'这是一个alert！'"
-    @close-modal="alert.show = false">
+    @close="alert.show = false">
     </z-modal>
   </div>
 
   <div class="introduce">
-    <z-button
-    :text="'Confirm'"
-    @click.native="confirm.show = true">
-    </z-button>
+    <z-button @click="confirm.show = true">Confirm</z-button>
     <z-modal
     :show="confirm.show"
     :type="'confirm'"
     :content="'这是一个confirm！'"
-    @close-modal="confirm.show = false"
+    @close="confirm.show = false"
     ></z-modal>
   </div>
+</template>
 
+```html
+<z-button @click="alert.show = true">Alert</z-button>
+
+<z-modal
+:show="alert.show"
+:content="'这是一个alert！'"
+@close="alert.show = false">
+</z-modal>
+```
+### API
+<template>
   <div class="introduce-block">
-    <p>组件标签须写上<code class="z-code">@close-modal="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
+    <p>组件标签须写上<code class="z-code">@close="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
     <z-table
     :ths="['参数','类型','必填','默认值','说明']"
     :trs="[
@@ -44,6 +50,16 @@
   </div>
 </template>
 
+### EVENT
+<template>
+  <z-table
+  :ths="['事件名称', '说明', '回调参数']"
+  :trs="[
+          ['close','关闭模态窗时的回调函数','-']
+        ]">
+  </z-table>
+</template>
+
 <script>
 export default {
   data() {
@@ -58,15 +74,3 @@ export default {
   }
 }
 </script>
-
-```html
-<z-button
-:text="'Alert'"
-@click.native="alert.show = true">
-</z-button>
-<z-modal
-:show="alert.show"
-:content="'这是一个alert！'"
-@close-modal="alert.show = false">
-</z-modal>
-```
