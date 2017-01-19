@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <z-navbar
+    class="navbar"
     :isFixed="true"
     @touchmove.prevent.native>
       <ul>
@@ -279,6 +280,12 @@ a {
 
 .header {
   text-align: center;
+}
+
+.navbar.z-navbar-wraper {
+  .z-navbar-fix {
+    z-index: 900;
+  }
 }
 
 #SOHUCS {
