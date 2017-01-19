@@ -42,7 +42,7 @@
 
       </div>
 
-      <div id="uyan_frame"></div>
+      <div id="SOHUCS"></div>
 
     </div>
 
@@ -240,7 +240,7 @@ a {
   text-align: center;
 }
 
-#uyan_frame {
+#SOHUCS {
   width: 92%;
   margin: 0 auto 50px;
   padding: 10px;
@@ -378,7 +378,7 @@ a {
     font-size: 14px;
   }
 
-  #uyan_frame {
+  #SOHUCS {
     width: 100%;
     margin: 0  0 10px 0;
   }
