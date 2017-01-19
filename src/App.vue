@@ -154,6 +154,8 @@ export default {
     '$route.query': function() {
       this.startProgress()
 
+      this.isShowGuide = false
+
       this.$nextTick(function() {
         hljs.initHighlighting.called = false
         hljs.initHighlighting()
