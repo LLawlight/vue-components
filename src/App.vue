@@ -60,6 +60,7 @@
     ></z-progress>
 
     <z-backtop
+    class="backtop"
     :scroll-top="100"
     bottom="55px"
     ></z-backtop>
@@ -242,8 +243,9 @@ code.z-code {
   background-color: #f8f8f8;
 }
 
-.z-backtop-wrapper {
+.backtop.z-backtop-wrapper {
   color: #41b883;
+  z-index: 900;
 }
 
 .heart {
