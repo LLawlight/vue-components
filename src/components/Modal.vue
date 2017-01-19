@@ -79,7 +79,7 @@ export default {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
     transition: all .3s ease;
     position: fixed;
-    z-index: 999;
+    z-index: 3000;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

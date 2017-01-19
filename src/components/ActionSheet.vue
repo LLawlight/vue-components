@@ -48,16 +48,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.z-dimmer {
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .5);
-}
-
 .z-actionsheet-items-enter, .z-actionsheet-items-leave-active {
   transform: translateY(100%);
   opacity: 0;
@@ -69,7 +59,7 @@ export default {
 
 .z-actionsheet-items {
   position: fixed;
-  z-index: 999;
+  z-index: 3000;
   left: 0;
   width: 100%;
   bottom: 0;

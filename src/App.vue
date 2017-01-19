@@ -60,6 +60,7 @@
 
     <z-backtop
     :scroll-top="100"
+    bottom="55px"
     ></z-backtop>
   </div>
 </template>
@@ -172,7 +173,35 @@ export default {
       var conf = 'prod_0ac045c2d3f8c8f9c94075b367169d93';
       var width = window.innerWidth || document.documentElement.clientWidth;
       if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+      }
+      else {
+        var loadJs = function(d,a) {
+          var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+          var b = document.createElement("script");
+          b.setAttribute("type","text/javascript");
+          b.setAttribute("charset","UTF-8");
+          b.setAttribute("src",d);
+          if (typeof a === "function") {
+            if (window.attachEvent) {
+              b.onreadystatechange = function() {
+                var e = b.readyState;
+                if (e === "loaded" || e === "complete") {
+                  b.onreadystatechange = null;
+                  a()
+                }
+              }
+            }
+            else {
+              b.onload = a
+            }
+          }
+          c.appendChild(b)
+        };
+        loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+          window.changyan.api.config({appid:appid,conf:conf})
+        });
+      }
     }
   }
 }
@@ -268,29 +297,36 @@ a {
   border-radius: 6px;
   box-sizing: border-box;
 
-  .siderbar-wrapper .z-aside.z-aside-left {
-    width: 180px;
+  .siderbar-wrapper {
+    .z-dimmer {
+      z-index: 8;
+    }
 
-    .z-aside-content {
-      padding: 60px 0 44px 0;
+    .z-aside.z-aside-left {
+      width: 180px;
+      z-index: 9;
 
-      .siderbar {
-        width: 180px;
-        border-right: none;
+      .z-aside-content {
+        padding: 60px 0 44px 0;
 
-        &>a {
-          padding: 0 8px 0 16px;
-        }
+        .siderbar {
+          width: 180px;
+          border-right: none;
 
-        >.group-title {
-          padding: 8px 8px 8px 16px;
-        }
+          &>a {
+            padding: 0 8px 0 16px;
+          }
 
-        ul {
-          li {
-            a {
-              padding-left: 24px;
-              padding-right: 8px;
+          >.group-title {
+            padding: 8px 8px 8px 16px;
+          }
+
+          ul {
+            li {
+              a {
+                padding-left: 24px;
+                padding-right: 8px;
+              }
             }
           }
         }

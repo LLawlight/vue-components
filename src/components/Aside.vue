@@ -7,7 +7,7 @@
         <div class="z-aside-content">
           <slot></slot>
         </div>
-        <a class="z-aside-footer" @click="closeAside">{{close}}</a>
+        <a class="z-aside-footer" @click="closeAside">{{closeText}}</a>
       </div>
     </transition>
   </div>
@@ -21,7 +21,7 @@ export default {
       type: Boolean,
       required: true
     },
-    close: {
+    closeText: {
       type: String,
       default: "关闭"
     },
@@ -45,7 +45,7 @@ export default {
 .z-aside {
   background-color: #fff;
   position: fixed;
-  z-index: 999;
+  z-index: 3000;
   transition: all .2s ease;
 }
 

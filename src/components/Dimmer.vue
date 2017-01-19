@@ -49,7 +49,7 @@ export default {
 <style lang="less" scoped>
 .z-dimmer {
   position: fixed;
-  z-index: 99;
+  z-index: 2000;
   left: 0;
   top: 0;
   height: 100%;

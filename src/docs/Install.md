@@ -77,24 +77,24 @@ new Vue({
 <template>
 <z-table
 :title="'组件名称与标签一览表'"
-:ths="['组件名称','name','标签']"
+:ths="['组件名称','name','标签','z-index']"
 :trs="[
-        ['Grid 栅格','zRow, zCol','<z-row>, <z-col>'],
-        ['ActionSheet 动作面板','zActionsheet','<z-actionsheet>'],
-        ['Aside 侧边栏','zAside','<z-aside>'],
-        ['BackTop 返回顶部','zBacktop','<z-backtop>'],
-        ['Button 按钮','zButton','<z-button>'],
-        ['Carrousel 轮播图','zCarrousel','<z-carrousel>'],
-        ['Dimmer 遮罩层','zDimmer','<z-dimmer>'],
-        ['Dropmenu 下拉菜单','zDropmenu','<z-dropmenu>'],
-        ['ImageInput 图片放置','zImageinput','<z-imageinput>'],
-        ['InputNumber 计数器','zInputnumber','<z-inputnumber>'],
-        ['Modal 模态窗','zModal','<z-modal>'],
-        ['Navbar 导航栏','zNavbar','<z-navbar>'],
-        ['Pagination 分页器','zPagination','<z-pagination>'],
-        ['Progress 进度条','zProgress','<z-progress>'],
-        ['Switch 开关','zSwitch','<z-switch>'],
-        ['Table 表格','zTable','<z-table>']
+        ['Grid 栅格','zRow, zCol','<z-row>, <z-col>',''],
+        ['ActionSheet 动作面板','zActionsheet','<z-actionsheet>','3000'],
+        ['Aside 侧边栏','zAside','<z-aside>','3000'],
+        ['BackTop 返回顶部','zBacktop','<z-backtop>','1000'],
+        ['Button 按钮','zButton','<z-button>',''],
+        ['Carrousel 轮播图','zCarrousel','<z-carrousel>',''],
+        ['Dimmer 遮罩层','zDimmer','<z-dimmer>','2000'],
+        ['Dropmenu 下拉菜单','zDropmenu','<z-dropmenu>',''],
+        ['ImageInput 图片放置','zImageinput','<z-imageinput>',''],
+        ['InputNumber 计数器','zInputnumber','<z-inputnumber>',''],
+        ['Modal 模态窗','zModal','<z-modal>','3000'],
+        ['Navbar 导航栏','zNavbar','<z-navbar>','1000'],
+        ['Pagination 分页器','zPagination','<z-pagination>',''],
+        ['Progress 进度条','zProgress','<z-progress>','10000'],
+        ['Switch 开关','zSwitch','<z-switch>',''],
+        ['Table 表格','zTable','<z-table>','']
       ]">
 </z-table>
 </template>

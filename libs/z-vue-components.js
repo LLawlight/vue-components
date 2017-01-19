@@ -810,7 +810,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-dimmer[data-v-5df07e57] {\n  position: fixed;\n  z-index: 9999;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.z-actionsheet-items-enter[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  -webkit-transform: translateY(100%);\n      -ms-transform: translateY(100%);\n          transform: translateY(100%);\n  opacity: 0;\n}\n.z-actionsheet-items-enter-active[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.z-actionsheet-items[data-v-5df07e57] {\n  position: fixed;\n  z-index: 999;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items li[data-v-5df07e57] {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57],\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li[data-v-5df07e57]:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57] {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button[data-v-5df07e57] {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n", ""]);
+	exports.push([module.id, "\n.z-actionsheet-items-enter[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  -webkit-transform: translateY(100%);\n      -ms-transform: translateY(100%);\n          transform: translateY(100%);\n  opacity: 0;\n}\n.z-actionsheet-items-enter-active[data-v-5df07e57],\n.z-actionsheet-items-leave-active[data-v-5df07e57] {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n.z-actionsheet-items[data-v-5df07e57] {\n  position: fixed;\n  z-index: 3000;\n  left: 0;\n  width: 100%;\n  bottom: 0;\n}\n.z-actionsheet-items li[data-v-5df07e57] {\n  width: 100%;\n  text-align: center;\n  list-style: none;\n  background-color: #fff;\n}\n.z-actionsheet-items li a[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  display: block;\n}\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57],\n.z-actionsheet-items li.z-actionsheet-title[data-v-5df07e57] {\n  border-bottom: 1px solid #eee;\n}\n.z-actionsheet-items li[data-v-5df07e57]:nth-last-child(2) {\n  border-bottom: none;\n}\n.z-actionsheet-items li.z-actionsheet-item[data-v-5df07e57] {\n  color: #41b883;\n  cursor: pointer;\n}\n.z-actionsheet-items li.z-actionsheet-button[data-v-5df07e57] {\n  margin-top: 5px;\n  color: #999;\n  cursor: pointer;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n", ""]);
 
 	// exports
 
@@ -1002,7 +1002,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-aside[data-v-336463c6] {\n  background-color: #fff;\n  position: fixed;\n  z-index: 999;\n  -webkit-transition: all .2s ease;\n  transition: all .2s ease;\n}\n.z-aside-left[data-v-336463c6] {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n  -webkit-transform: translateX(-100%);\n      -ms-transform: translateX(-100%);\n          transform: translateX(-100%);\n}\n.z-aside-right[data-v-336463c6] {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n  -webkit-transform: translateX(100%);\n      -ms-transform: translateX(100%);\n          transform: translateX(100%);\n}\n.z-aside-top[data-v-336463c6] {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n  -webkit-transform: translateY(-100%);\n      -ms-transform: translateY(-100%);\n          transform: translateY(-100%);\n}\n.z-aside-bottom[data-v-336463c6] {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n  -webkit-transform: translateY(100%);\n      -ms-transform: translateY(100%);\n          transform: translateY(100%);\n}\n.z-aside-title[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n.z-aside-content[data-v-336463c6] {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  font-size: 14px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 54px 10px;\n}\n.z-aside-footer[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  text-align: center;\n  cursor: pointer;\n  background-color: #fff;\n}\n", ""]);
+	exports.push([module.id, "\n.z-aside[data-v-336463c6] {\n  background-color: #fff;\n  position: fixed;\n  z-index: 3000;\n  -webkit-transition: all .2s ease;\n  transition: all .2s ease;\n}\n.z-aside-left[data-v-336463c6] {\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n.z-aside-slide-enter.z-aside-left[data-v-336463c6], .z-aside-slide-leave-active.z-aside-left[data-v-336463c6] {\n  -webkit-transform: translateX(-100%);\n      -ms-transform: translateX(-100%);\n          transform: translateX(-100%);\n}\n.z-aside-right[data-v-336463c6] {\n  height: 100%;\n  right: 0;\n  top: 0;\n}\n.z-aside-slide-enter.z-aside-right[data-v-336463c6], .z-aside-slide-leave-active.z-aside-right[data-v-336463c6] {\n  -webkit-transform: translateX(100%);\n      -ms-transform: translateX(100%);\n          transform: translateX(100%);\n}\n.z-aside-top[data-v-336463c6] {\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n.z-aside-slide-enter.z-aside-top[data-v-336463c6], .z-aside-slide-leave-active.z-aside-top[data-v-336463c6] {\n  -webkit-transform: translateY(-100%);\n      -ms-transform: translateY(-100%);\n          transform: translateY(-100%);\n}\n.z-aside-bottom[data-v-336463c6] {\n  width: 100%;\n  bottom: 0;\n  left: 0;\n}\n.z-aside-slide-enter.z-aside-bottom[data-v-336463c6], .z-aside-slide-leave-active.z-aside-bottom[data-v-336463c6] {\n  -webkit-transform: translateY(100%);\n      -ms-transform: translateY(100%);\n          transform: translateY(100%);\n}\n.z-aside-title[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  position: absolute;\n  top: 0;\n  width: 100%;\n  background-color: #fff;\n}\n.z-aside-content[data-v-336463c6] {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  font-size: 14px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 54px 10px;\n}\n.z-aside-footer[data-v-336463c6] {\n  height: 44px;\n  line-height: 44px;\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n  border-top: 1px solid #ccc;\n  text-align: center;\n  cursor: pointer;\n  background-color: #fff;\n}\n", ""]);
 
 	// exports
 
@@ -1023,7 +1023,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      type: Boolean,
 	      required: true
 	    },
-	    close: {
+	    closeText: {
 	      type: String,
 	      default: "关闭"
 	    },
@@ -1078,7 +1078,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "click": _vm.closeAside
 	    }
-	  }, [_vm._s(_vm.close)])])])])
+	  }, [_vm._s(_vm.closeText)])])])])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
@@ -1170,7 +1170,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  z-index: 9;\n  cursor: pointer;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", ""]);
+	exports.push([module.id, "\n.z-backtop-wrapper {\n  position: fixed;\n  z-index: 1000;\n  cursor: pointer;\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  opacity: 0;\n  visibility: hidden;\n}\n.z-backtop-wrapper i {\n  font-size: 42px;\n}\n.show-top {\n  opacity: 1;\n  visibility: visible;\n}\n", ""]);
 
 	// exports
 
@@ -2104,7 +2104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-dimmer[data-v-6adb3698] {\n  position: fixed;\n  z-index: 99;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n", ""]);
+	exports.push([module.id, "\n.z-dimmer[data-v-6adb3698] {\n  position: fixed;\n  z-index: 2000;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  background-color: black;\n  opacity: 0.5;\n}\n.z-dimmer.z-dimmer-enter[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  opacity: 0;\n}\n.z-dimmer.z-dimmer-enter-active[data-v-6adb3698],\n.z-dimmer.z-dimmer-leave-active[data-v-6adb3698] {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n}\n", ""]);
 
 	// exports
 
@@ -2743,7 +2743,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-modal[data-v-79d9d6bb] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  -webkit-border-radius: 4px;\n          border-radius: 4px;\n  overflow: hidden;\n  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n          box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  -webkit-transition: all .3s ease;\n  transition: all .3s ease;\n  position: fixed;\n  z-index: 999;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.z-modal-expand-enter[data-v-79d9d6bb], .z-modal-expand-leave-active[data-v-79d9d6bb] {\n  opacity: 0;\n}\n.z-modal-expand-enter.z-modal[data-v-79d9d6bb], .z-modal-expand-leave-active.z-modal[data-v-79d9d6bb]{\n  -webkit-transform: translate(-50%, -50%) scale(0.5);\n  -ms-transform: translate(-50%, -50%) scale(0.5);\n      transform: translate(-50%, -50%) scale(0.5);\n}\n.z-modal-title[data-v-79d9d6bb] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-79d9d6bb] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-79d9d6bb] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-79d9d6bb] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-79d9d6bb]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-79d9d6bb] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", ""]);
+	exports.push([module.id, "\n.z-modal[data-v-79d9d6bb] {\n  width: 300px;\n  margin: 0px auto;\n  background-color: #fff;\n  -webkit-border-radius: 4px;\n          border-radius: 4px;\n  overflow: hidden;\n  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n          box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n  -webkit-transition: all .3s ease;\n  transition: all .3s ease;\n  position: fixed;\n  z-index: 3000;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.z-modal-expand-enter[data-v-79d9d6bb], .z-modal-expand-leave-active[data-v-79d9d6bb] {\n  opacity: 0;\n}\n.z-modal-expand-enter.z-modal[data-v-79d9d6bb], .z-modal-expand-leave-active.z-modal[data-v-79d9d6bb]{\n  -webkit-transform: translate(-50%, -50%) scale(0.5);\n  -ms-transform: translate(-50%, -50%) scale(0.5);\n      transform: translate(-50%, -50%) scale(0.5);\n}\n.z-modal-title[data-v-79d9d6bb] {\n  line-height: 44px;\n  text-align: center;\n}\n.z-modal-content[data-v-79d9d6bb] {\n  padding: 0 12px 12px;\n  text-align: left;\n}\n.z-modal-footer[data-v-79d9d6bb] {\n  border-top: 1px solid #ccc;\n  display: table;\n  width: 100%;\n}\n.z-btn-modal[data-v-79d9d6bb] {\n  display: table-cell;\n  text-align: center;\n  cursor: pointer;\n  line-height: 44px;\n}\n.z-btn-modal[data-v-79d9d6bb]:nth-child(2) {\n  border-left: 1px solid #ccc;\n}\n.z-btn-modal-sure[data-v-79d9d6bb] {\n  background-color: rgb(65, 184, 131);\n  color: #fff;\n}\n", ""]);
 
 	// exports
 
@@ -2940,7 +2940,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-navbar[data-v-0d7ffd72] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);\n          box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-0d7ffd72] {\n  position: fixed;\n  top: 0;\n  z-index: 9999;\n}\n", ""]);
+	exports.push([module.id, "\n.z-navbar[data-v-0d7ffd72] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);\n          box-shadow: 0 0 4px rgba(0,0,0,0.25);\n  width: 100%;\n}\n.z-navbar-fix[data-v-0d7ffd72] {\n  position: fixed;\n  top: 0;\n  z-index: 1000;\n}\n", ""]);
 
 	// exports
 
@@ -3531,7 +3531,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 99999;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  -webkit-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", ""]);
+	exports.push([module.id, "\n.z-progress-wraper {\n  position: fixed;\n  left: 0;\n  z-index: 10000;\n  width: 100%;\n  height: 4px;\n  background-color: transparent;\n}\n.z-progress-wraper .z-progress {\n  height: 100%;\n  -webkit-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n.z-progress-top {\n  top: 0;\n}\n.z-progress-bottom {\n  bottom: 0;\n}\n", ""]);
 
 	// exports
 

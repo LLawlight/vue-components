@@ -106,7 +106,7 @@ export default {
 <style lang="less">
 .z-backtop-wrapper {
   position: fixed;
-  z-index: 9;
+  z-index: 1000;
   cursor: pointer;
   transition: all .2s;
   opacity: 0;
