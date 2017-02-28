@@ -26,6 +26,7 @@ const asideMd = resolve => require(['src/docs/Aside.md'], resolve)
 const backtopMd = resolve => require(['src/docs/BackTop.md'], resolve)
 const buttonMd = resolve => require(['src/docs/Button.md'], resolve)
 const carrouselMd = resolve => require(['src/docs/Carrousel.md'], resolve)
+const checkboxMd = resolve => require(['src/docs/Checkbox.md'], resolve)
 const dimmerMd = resolve => require(['src/docs/Dimmer.md'], resolve)
 const dropmenuMd = resolve => require(['src/docs/Dropmenu.md'], resolve)
 const imageinputMd = resolve => require(['src/docs/ImageInput.md'], resolve)
@@ -34,6 +35,7 @@ const modalMd = resolve => require(['src/docs/Modal.md'], resolve)
 const navbarMd = resolve => require(['src/docs/Navbar.md'], resolve)
 const paginationMd = resolve => require(['src/docs/Pagination.md'], resolve)
 const progressMd = resolve => require(['src/docs/Progress.md'], resolve)
+const radioMd = resolve => require(['src/docs/Radio.md'], resolve)
 const switchMd = resolve => require(['src/docs/Switch.md'], resolve)
 const tableMd = resolve => require(['src/docs/Table.md'], resolve)
 
@@ -48,6 +50,7 @@ const routes = [
   { path: '/backtop', component: backtopMd},
   { path: '/button', component: buttonMd},
   { path: '/carrousel', component: carrouselMd},
+  { path: '/checkbox', component: checkboxMd},
   { path: '/dimmer', component: dimmerMd},
   { path: '/dropmenu', component: dropmenuMd},
   { path: '/imageinput', component: imageinputMd},
@@ -56,6 +59,7 @@ const routes = [
   { path: '/navbar', component: navbarMd},
   { path: '/pagination', component: paginationMd},
   { path: '/progress', component: progressMd},
+  { path: '/radio', component: radioMd},
   { path: '/switch', component: switchMd},
   { path: '/table', component: tableMd}
 ]

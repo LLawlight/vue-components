@@ -102,6 +102,10 @@ export default {
           text: 'Carrousel 轮播图'
         },
         {
+          href: '/checkbox',
+          text: 'Checkbox 复选框'
+        },
+        {
           href: '/dimmer',
           text: 'Dimmer 遮罩层'
         },
@@ -129,10 +133,13 @@ export default {
           href: '/pagination',
           text: 'Pagination 分页器'
         },
-
         {
           href: '/progress',
           text: 'Progress 进度条'
+        },
+        {
+          href: '/radio',
+          text: 'Radio 单选框'
         },
         {
           href: '/switch',

@@ -6,6 +6,7 @@ import zAside from './components/Aside.vue'
 import zBacktop from './components/BackTop.vue'
 import zButton from './components/Button.vue'
 import zCarrousel from './components/Carrousel.vue'
+import zCheckbox from './components/Checkbox.vue'
 import zDimmer from './components/Dimmer.vue'
 import zDropmenu from './components/Dropmenu.vue'
 import zImageinput from './components/ImageInput.vue'
@@ -14,6 +15,7 @@ import zModal from './components/Modal.vue'
 import zNavbar from './components/Navbar.vue'
 import zPagination from './components/Pagination.vue'
 import zProgress from './components/Progress.vue'
+import zRadio from './components/Radio.vue'
 import zSwitch from './components/Switch.vue'
 import zTable from './components/Table.vue'
 
@@ -28,6 +30,7 @@ const install = (Vue) => {
   Vue.component(zBacktop.name, zBacktop)
   Vue.component(zButton.name, zButton)
   Vue.component(zCarrousel.name, zCarrousel)
+  Vue.component(zCheckbox.name, zCheckbox)
   Vue.component(zDimmer.name, zDimmer)
   Vue.component(zDropmenu.name, zDropmenu)
   Vue.component(zImageinput.name, zImageinput)
@@ -36,6 +39,7 @@ const install = (Vue) => {
   Vue.component(zNavbar.name, zNavbar)
   Vue.component(zPagination.name, zPagination)
   Vue.component(zProgress.name, zProgress)
+  Vue.component(zRadio.name, zRadio)
   Vue.component(zSwitch.name, zSwitch)
   Vue.component(zTable.name, zTable)
 }
@@ -56,6 +60,7 @@ module.exports = {
   zBacktop,
   zButton,
   zCarrousel,
+  zCheckbox,
   zDimmer,
   zDropmenu,
   zImageinput,
@@ -64,6 +69,7 @@ module.exports = {
   zNavbar,
   zPagination,
   zProgress,
+  zRadio,
   zSwitch,
   zTable
 }
