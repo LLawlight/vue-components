@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import App from './App'
 import routes from './routes.js'
 
-// import zyx from '../libs/z-vue-components.min.js'
-import zyx from './index.js'
+import zyx from '../libs/z-vue-components.min.js'
+// import zyx from './index.js'
 
 Vue.use(VueRouter)
 Vue.use(zyx)

@@ -6,7 +6,7 @@ import zAside from './components/Aside.vue'
 import zBacktop from './components/BackTop.vue'
 import zButton from './components/Button.vue'
 import zCarrousel from './components/Carrousel.vue'
-import zCheckbox from './components/Checkbox.vue'
+// import zCheckbox from './components/Checkbox.vue'
 import zDimmer from './components/Dimmer.vue'
 import zDropmenu from './components/Dropmenu.vue'
 import zImageinput from './components/ImageInput.vue'
@@ -19,48 +19,14 @@ import zRadio from './components/Radio.vue'
 import zSwitch from './components/Switch.vue'
 import zTable from './components/Table.vue'
 
-const install = (Vue) => {
-  if (install.installed) return;
-
-  Vue.component(zRow.name, zRow)
-  Vue.component(zCol.name, zCol)
-
-  Vue.component(zActionsheet.name, zActionsheet)
-  Vue.component(zAside.name, zAside)
-  Vue.component(zBacktop.name, zBacktop)
-  Vue.component(zButton.name, zButton)
-  Vue.component(zCarrousel.name, zCarrousel)
-  Vue.component(zCheckbox.name, zCheckbox)
-  Vue.component(zDimmer.name, zDimmer)
-  Vue.component(zDropmenu.name, zDropmenu)
-  Vue.component(zImageinput.name, zImageinput)
-  Vue.component(zInputnumber.name, zInputnumber)
-  Vue.component(zModal.name, zModal)
-  Vue.component(zNavbar.name, zNavbar)
-  Vue.component(zPagination.name, zPagination)
-  Vue.component(zProgress.name, zProgress)
-  Vue.component(zRadio.name, zRadio)
-  Vue.component(zSwitch.name, zSwitch)
-  Vue.component(zTable.name, zTable)
-}
-
-
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
-};
-
-module.exports = {
-  install,
-
-  zCol,
+const components = [
   zRow,
-
+  zCol,
   zActionsheet,
   zAside,
   zBacktop,
   zButton,
   zCarrousel,
-  zCheckbox,
   zDimmer,
   zDropmenu,
   zImageinput,
@@ -72,4 +38,41 @@ module.exports = {
   zRadio,
   zSwitch,
   zTable
-}
+];
+
+const install = function(Vue, opts = {}) {
+  /* istanbul ignore if */
+  if (install.installed) return;
+
+  components.map(component => {
+    Vue.component(component.name, component);
+  });
+};
+
+/* istanbul ignore if */
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+};
+
+module.exports = {
+  version: '1.1.18',
+  install,
+  zRow,
+  zCol,
+  zActionsheet,
+  zAside,
+  zBacktop,
+  zButton,
+  zCarrousel,
+  zDimmer,
+  zDropmenu,
+  zImageinput,
+  zInputnumber,
+  zModal,
+  zNavbar,
+  zPagination,
+  zProgress,
+  zRadio,
+  zSwitch,
+  zTable
+};
