@@ -16,7 +16,7 @@
         </a>
       </li>
     </ul>
-    <ul class="dots">
+    <ul class="dots" v-if="images.length > 1">
       <li v-if="isPc" v-for="(li, index) in images.length - 2" class="dot" :class="{'is-current': (index === (i - 1)) || ((index === 0) && (i === images.length - 1)) || ((index === images.length - 3) && (i === 0))}" @click.stop.prevent="chooseImage(index)">{{isShowIndex ? (index + 1) : ''}}</li>
       <li v-if="!isPc" v-for="(li, index) in images.length - 2" class="dot" :class="{'is-current': (index === (i - 1)) || ((index === 0) && (i === images.length - 1)) || ((index === images.length - 3) && (i === 0))}" @touchstart.stop.prevent="chooseImage(index)" @touchmove.stop.prevent="" @touchend.stop.prevent="">{{isShowIndex ? (index + 1) : ''}}</li>
     </ul>
@@ -68,6 +68,10 @@ export default {
     type: {
       type: String,
       default: 'next'
+    },
+    autoplay: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -77,10 +81,12 @@ export default {
 
     this.isImagesReady = true
 
-    this.startCarrousel(this.type)
+    if (this.autoplay) {
+      this.startCarrousel(this.type)
+    }
 
     let that = this
-    //  监听动画，动画结束才把收尾从假的切换为真的
+    //  监听动画，动画结束才把首尾从假的切换为真的
     document.getElementById("z-carrousel").addEventListener("transitionend", function() {
       if (that.i >= that.images.length - 1) {
         that.isTransition = false
@@ -181,11 +187,12 @@ export default {
       this.isTouch = false
 
       // 继续自动轮播
-      this.startCarrousel()
+      if (this.autoplay) {
+        this.startCarrousel()
+      }
     },
 
     startCarrousel(type) {
-      console.log("start");
       let that = this
       that.timer = setInterval(function() {
         that.isTransition = true
@@ -198,7 +205,6 @@ export default {
     },
 
     stopCarrousel() {
-      console.log("stop");
       clearInterval(this.timer)
       this.timer = null
     },
@@ -209,7 +215,9 @@ export default {
       this.isTransition = true
       this.i = index + 1
 
-      this.startCarrousel()
+      if (this.autoplay) {
+        this.startCarrousel()
+      }
     }
   }
 };
@@ -231,9 +239,6 @@ export default {
 
   ul.is-transition {
     transition: all 300ms ease-out;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
   }
 
   ul.dots {

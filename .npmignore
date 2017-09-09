@@ -12,6 +12,7 @@ src/assets
 src/docs
 src/App.vue
 src/main.js
+src/routes.js
 index.html
 webpack.build.js
 webpack.build.min.js

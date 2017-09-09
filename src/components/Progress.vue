@@ -64,10 +64,11 @@ export default {
 <style lang="less">
 .z-progress-wraper {
   position: fixed;
-  z-index: 99999;
+  left: 0;
+  z-index: 10000;
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: transparent;
 
   .z-progress {
     height: 100%;

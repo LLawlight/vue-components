@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="z-backtop-wrapper" @click="goTop" :class="{'show-top': isShowTop}">
+  <div class="z-backtop-wrapper" @click="goTop" :class="{'show-top': isShowTop}" :style="{'right': right, 'bottom': bottom}">
     <slot>
       <i class="iconfont icon-top"></i>
     </slot>
@@ -32,6 +32,16 @@ export default {
     scrollTop: {
       type: Number,
       default: 0
+    },
+
+    right: {
+      type: String,
+      default: '5%'
+    },
+
+    bottom: {
+      type: String,
+      default: '5%'
     }
   },
 
@@ -96,9 +106,7 @@ export default {
 <style lang="less">
 .z-backtop-wrapper {
   position: fixed;
-  right: 100px;
-  bottom: 100px;
-  z-index: 99999;
+  z-index: 1000;
   cursor: pointer;
   transition: all .2s;
   opacity: 0;

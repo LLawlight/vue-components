@@ -49,7 +49,7 @@ export default {
   watch: {
     'value': function(val) {
       if ((val >= this.min) && (val <= this.max)) {
-        this.$emit('value-change', val)
+        this.$emit('change', val)
       }
     }
   },
@@ -125,9 +125,6 @@ export default {
     float: left;
     cursor: pointer;
     user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 
     &.disabled {
       cursor: not-allowed;

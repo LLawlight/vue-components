@@ -1,10 +1,12 @@
 <template>
+  <h2><a href="#InputNumber">InputNumber 计数器</a></h2>
+
   <div class="introduce-block">
     <z-inputnumber
     :initial-value="5"
     :min="1"
     :max="9"
-    @value-change="getValue"
+    @change="getValue"
     ></z-inputnumber>
   </div>
 </template>
@@ -14,10 +16,10 @@
 :initial-value="5"
 :min="1"
 :max="9"
-@value-change="getValue"
+@change="getValue"
 ></z-inputnumber>
 ```
-当数值发生改变时，计数器会把新的数值传递出来，父组件可以通过`@value-change`来接收。
+当数值发生改变时，计数器会把新的数值传递出来，父组件可以通过`@change`来接收。
 
 ```js
 methods: {
@@ -46,6 +48,7 @@ methods: {
 :disabled="true"
 ></z-inputnumber>
 ```
+### API
 
 <template>
   <div class="introduce-block">
@@ -61,15 +64,19 @@ methods: {
   </div>
 </template>
 
-<script>
-import zInputnumber from 'src/components/InputNumber'
-import zTable from 'src/components/Table'
+### EVENT
 
+<template>
+  <z-table
+  :ths="['事件名称', '说明', '回调参数']"
+  :trs="[
+          ['change','计数器的值发生改变时的回调函数','计数器的新值']
+        ]">
+  </z-table>
+</template>
+
+<script>
 export default {
-  components: {
-    zInputnumber,
-    zTable
-  },
   methods: {
     getValue: function(val) {
       console.log(val)

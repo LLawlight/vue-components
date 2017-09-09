@@ -1,577 +1,238 @@
 <template>
   <div id="app">
+    <z-navbar
+    class="navbar"
+    :isFixed="true"
+    @touchmove.prevent.native>
+      <ul>
+        <li><a href="https://github.com/Clark-Zhao/vue-components/archive/dev.zip" target="_blank">Download</a></li>
+        <li><a href="https://github.com/Clark-Zhao/vue-components" target="_blank">Github</a></li>
+        <li><a href="http://zhaoyuxiang.cn" target="_blank">Home</a></li>
+        <li class="small-logo"><router-link to="/"><img src="static/favicon.ico" /><span>ZVueComponents</span></a></router-link></li>
+        <li class="z-guide" @click="isShowGuide = !isShowGuide">Guide</li>
+      </ul>
+    </z-navbar>
+
+    <div class="main">
+
+      <div class="content clearfix">
+
+        <div class="siderbar">
+          <router-link to="/install"><span class="group-title">安装与使用</span></router-link>
+          <router-link to="/grid"><span class="group-title">栅格</span></router-link>
+          <span class="group-title">组件</span>
+          <ul>
+            <li v-for="nav in navs" @click="getTitle(nav.text)"><router-link :to="nav.href">{{nav.text}}</router-link></li>
+          </ul>
+        </div>
+
+        <z-aside :show="isShowGuide" @close="isShowGuide = false" class="siderbar-wrapper">
+          <div class="siderbar">
+            <router-link to="/install"><span class="group-title">安装与使用</span></router-link>
+            <router-link to="/grid"><span class="group-title">栅格</span></router-link>
+            <span class="group-title">组件</span>
+            <ul>
+              <li v-for="nav in navs" @click="getTitle(nav.text)"><router-link :to="nav.href">{{nav.text}}</router-link></li>
+            </ul>
+          </div>
+        </z-aside>
+
+        <div class="section">
+          <router-view></router-view>
+        </div>
+
+      </div>
+
+      <div id="SOHUCS"></div>
+
+    </div>
+
+    <div class="footer">
+      <p>Released under the <a href="https://github.com/Clark-Zhao/vue-components/blob/master/LICENSE">MIT License</a></p>
+      <p>Copyright &copy; 2016-2017</p>
+      <p>made with <span class="heart">❤</span> by <a href="http://zhaoyuxiang.cn" target="_blank">Z<span style="display:none;">GOD_</span>YX</a></p>
+    </div>
+
     <z-progress
     :bgc="'rgb(65, 184, 131)'"
     :type="'bottom'"
     ref="progress"
     ></z-progress>
-    <z-navbar
-    :isFixed="true">
-      <ul>
-        <li><a href="http://www.zhaoyuxiang.cn" target="_blank">Blog</a></li>
-        <li><a href="https://github.com/Clark-Zhao/vue-components/archive/master.zip" target="_blank">Download</a></li>
-        <li><a href="https://github.com/Clark-Zhao/vue-components" target="_blank">Github</a></li>
-        <li class="z-guide">
-          <z-dropmenu
-          :type="'hover'"
-          :text="'Guide'"
-          :lis="[
-            {
-              href: '#aside',
-              text: 'Aside 侧边栏'
-            },
-            {
-              href: '#backtop',
-              text: 'Backtop 返回顶部'
-            },
-            {
-              href: '#button',
-              text: 'Button 按钮'
-            },
-            {
-              href: '#carrousel',
-              text: 'Carrousel 轮播图'
-            },
-            {
-              href: '#dropmenu',
-              text: 'Dropmenu 下拉菜单'
-            },
-            {
-              href: '#ImageInput',
-              text: 'ImageInput 图片放置'
-            },
-            {
-              href: '#InputNumber',
-              text: 'InputNumber 计数器'
-            },
-            {
-              href: '#modal',
-              text: 'Modal 模态窗'
-            },
-            {
-              href: '#navbar',
-              text: 'Navbar 导航栏'
-            },
-            {
-              href: '#pagination',
-              text: 'Pagination 分页器'
-            },
 
-            {
-              href: '#progress',
-              text: 'Progress 进度条'
-            },
-            {
-              href: '#switch',
-              text: 'Switch 开关'
-            },
-            {
-              href: '#table',
-              text: 'Table 表格'
-            }
-          ]"
-          ></z-dropmenu>
-        </li>
-      </ul>
-    </z-navbar>
-    <div class="header">
-      <img class="logo" src="./assets/logo.png">
-      <hello></hello>
-    </div>
-
-    <div class="main">
-
-      <div class="content">
-
-        <div id="aside" class="section">
-          <h2><a href="#aside">Aside</a></h2>
-
-          <div class="introduce">
-            <z-button
-            :text="'Left'"
-            @click.native="asideLeft.show = true">
-            </z-button>
-            <z-aside
-            :show="asideLeft.show"
-            :title="'标题'"
-            :type="'left'"
-            @close-aside="asideLeft.show = false">
-              <h3>我是Aside-Left</h3>
-              <div>组件内部可以自定义HTML结构</div>
-              <p>直接在&lt;aside&gt;标签中写即可</p>
-              <div>内容长度无限制，超过部分可以滚动浏览</div>
-            </z-aside>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'Top'"
-            @click.native="asideTop.show = true">
-            </z-button>
-            <z-aside
-            :show="asideTop.show"
-            :title="'标题'"
-            :type="'top'"
-            @close-aside="asideTop.show = false">
-              <h3>我是Aside-Top</h3>
-              <div>组件内部可以自定义HTML结构</div>
-              <p>直接在&lt;aside&gt;标签中写即可</p>
-              <div>内容长度无限制，超过部分可以滚动浏览</div>
-            </z-aside>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'Right'"
-            @click.native="asideRight.show = true">
-            </z-button>
-            <z-aside
-            :show="asideRight.show"
-            :title="'标题'"
-            :type="'right'"
-            @close-aside="asideRight.show = false">
-              <h3>我是Aside-Right</h3>
-              <div>组件内部可以自定义HTML结构</div>
-              <p>直接在&lt;aside&gt;标签中写即可</p>
-              <div>内容长度无限制，超过部分可以滚动浏览</div>
-            </z-aside>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'Bottom'"
-            @click.native="asideBottom.show = true">
-            </z-button>
-            <z-aside
-            :show.sync="asideBottom.show"
-            :title="'标题'"
-            :type="'bottom'"
-            @close-aside="asideBottom.show = false">
-              <h3>我是Aside-Bottom</h3>
-              <div>组件内部可以自定义HTML结构</div>
-              <p>直接在&lt;aside&gt;标签中写即可</p>
-              <div>内容长度无限制，超过部分可以滚动浏览</div>
-            </z-aside>
-          </div>
-
-          <div class="introduce-block">
-            <p>备注：组件标签内可以自定义HTML结构。</p>
-            <p>组件标签须写上<code class="z-code">@close-aside="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['show','Boolean','是','-','显示状态'],
-                    ['title','String','否','-','表体的数据'],
-                    ['type','String','否','left','显示位置(left,top,right,bottom)'],
-                    ['close','String','否','关闭','关闭按钮文字']
-                  ]">
-            </z-table>
-          </div>
-          <aside-md></aside-md>
-        </div>
-
-        <div id="backtop" class="section">
-          <h2><a href="#backtop">BackTop</a></h2>
-          <backtop-md></backtop-md>
-        </div>
-
-        <div id="button" class="section">
-          <h2><a href="#button">Button</a></h2>
-
-          <div class="introduce">
-            <z-button
-            :text="'defalut'">
-            </z-button>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'primary'"
-            :type="'primary'">
-            </z-button>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'success'"
-            :type="'success'">
-            </z-button>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'info'"
-            :type="'info'">
-            </z-button>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'warning'"
-            :type="'warning'">
-            </z-button>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'danger'"
-            :type="'danger'">
-            </z-button>
-          </div>
-
-          <div class="introduce-block">
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['text','String','是','-','按钮文字'],
-                    ['type','String','否','defalut','按钮样式(defalut,primary,success,info,warning,danger)']
-                  ]">
-            </z-table>
-          </div>
-
-          <button-md></button-md>
-        </div>
-
-        <div id="carrousel" class="section">
-          <h2><a href="#carrousel">Carrousel</a></h2>
-          <carrousel-md></carrousel-md>
-        </div>
-
-        <div id="dropmenu" class="section">
-          <h2><a href="#dropmenu">Dropmenu</a></h2>
-
-          <div class="introduce">
-            <z-dropmenu
-            :text="'Guide'"
-            :lis="[
-              {
-                href: 'https://github.com/Clark-Zhao/vue-components',
-                text: 'Github'
-              },
-              {
-                href: 'https://github.com/Clark-Zhao/vue-components/archive/master.zip',
-                text: 'Download'
-              },
-              {
-                href: 'http://www.zhaoyuxiang.cn',
-                text: 'Blog'
-              }
-            ]"
-            :isShowArrow="true"
-            ></z-dropmenu>
-          </div>
-
-          <div class="introduce-block">
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['type','String','否','click','菜单显示方式(click,hover)'],
-                    ['text','String','是','-','菜单文字'],
-                    ['lis','Array','是','-','列表的文字(text)和链接(href)'],
-                    ['isShowArrow','Boolean','否','false','是否在右侧显示▲小箭头']
-                  ]">
-            </z-table>
-          </div>
-
-          <dropmenu-md></dropmenu-md>
-        </div>
-
-        <div id="ImageInput" class="section">
-          <h2><a href="#ImageInput">ImageInput</a></h2>
-
-          <div class="introduce">
-            <z-imageinput
-            :width="200"
-            :height="150"
-            :src="'http://placehold.it/500x500'"
-            :alt="'测试图片'"
-            ></z-imageinput>
-          </div>
-
-          <div class="introduce-block">
-            <p>自动根据容器尺寸缩放图片并展示中心位置。</p>
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['width','Number','是','-','容器宽度'],
-                    ['height','Number','是','-','容器高度'],
-                    ['src','String','是','-','图片路径'],
-                    ['alt','String','否','-','图片加载失败时显示的文字信息']
-                  ]">
-            </z-table>
-          </div>
-
-          <imageinput-md></imageinput-md>
-        </div>
-
-        <div id="InputNumber" class="section">
-          <h2><a href="#InputNumber">InputNumber</a></h2>
-          <inputnumber-md></inputnumber-md>
-        </div>
-
-        <div id="modal" class="section">
-          <h2><a href="#modal">Modal</a></h2>
-
-
-          <div class="introduce">
-            <z-button
-            :text="'Alert'"
-            @click.native="alert.show = true">
-            </z-button>
-            <z-modal
-            :show="alert.show"
-            :content="'这是一个alert！'"
-            @close-modal="alert.show = false">
-            </z-modal>
-          </div>
-
-          <div class="introduce">
-            <z-button
-            :text="'Confirm'"
-            @click.native="confirm.show = true">
-            </z-button>
-            <z-modal
-            :show="confirm.show"
-            :type="'confirm'"
-            :content="'这是一个confirm！'"
-            @close-modal="confirm.show = false"
-            ></z-modal>
-          </div>
-
-          <div class="introduce-block">
-            <p>组件标签须写上<code class="z-code">@close-modal="xxx.show=false"</code>来通知父组件改变<code class="z-code">show</code>值。</p>
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['show','Boolean','是','-','显示状态'],
-                    ['content','String','是','-','弹窗内容'],
-                    ['type','String','否','alert','弹窗类型(alert,confirm)'],
-                    ['title','String','否','提示','弹窗标题'],
-                    ['sure','String','否','确定','确定按钮文字'],
-                    ['cancle','String','否','取消','取消按钮文字'],
-                    ['sureEvent','Function','否','-','确定按钮点击事件'],
-                    ['cancelEvent','Function','否','-','取消按钮点击事件'],
-                  ]">
-            </z-table>
-          </div>
-
-          <modal-md></modal-md>
-        </div>
-
-        <div id="navbar" class="section">
-          <h2><a href="#navbar">Navbar</a></h2>
-
-          <div class="introduce-block">
-            <p>效果见本页导航栏。</p>
-            <p>备注：组件标签内可以自定义HTML结构。</p>
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['isFixed','Boolean','否','false','滚动时菜单是否固定在顶部']
-                  ]">
-            </z-table>
-          </div>
-
-          <navbar-md></navbar-md>
-        </div>
-
-        <div id="pagination" class="section">
-          <h2><a href="#pagination">Pagination</a></h2>
-          <pagination-md></pagination-md>
-        </div>
-
-        <div id="progress" class="section">
-          <h2><a href="#progress">Progress</a></h2>
-
-          <div class="introduce">
-            <z-button
-            :text="'点击感受进度条 ↓'"
-            :type="'info'"
-            @click.native="startProgress"
-            ></z-button>
-          </div>
-
-          <div class="introduce-block">
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['bgc','String','否','#0080ff','进度条颜色'],
-                    ['type','String','否','top','进度条显示位置(top,bottom)']
-                  ]">
-            </z-table>
-          </div>
-
-          <progress-md></progress-md>
-        </div>
-
-        <div id="switch" class="section">
-          <h2><a href="#switch">Switch</a></h2>
-
-
-          <div class="introduce">
-            <z-switch></z-switch>
-          </div>
-
-          <div class="introduce-block">
-            <z-table
-            :ths="['参数','类型','必填','默认值','说明']"
-            :trs="[
-                    ['width','Number','否','50','开关宽度'],
-                    ['height','Number','否','25','开关高度'],
-                    ['bgc','String','否','rgb(65, 184, 131)','开启时的背景色']
-                  ]">
-            </z-table>
-          </div>
-
-          <switch-md></switch-md>
-        </div>
-
-        <div id="table" class="section">
-          <h2><a href="#table">Table</a></h2>
-
-          <div class="introduce">
-            <z-table
-            :title="'表格属性'"
-            :ths="['参数','类型','必填','说明']"
-            :trs="[['title','字符串','否','表格标题'],['ths','一维数组','是','表头的数据'],['trs','二维数组','是','表体的数据']]">
-            </z-table>
-          </div>
-
-          <table-md></table-md>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>Released under the <a href="https://github.com/Clark-Zhao/vue-components/blob/master/LICENSE">MIT License</a></p>
-      <p>Copyright &copy; 2016</p>
-      <p>made with <span class="heart">❤</span> by <a href="http://zhaoyuxiang.cn">Z<span style="display:none;">GOD_</span>YX</a></p>
-    </div>
+    <z-backtop
+    class="backtop"
+    :scroll-top="100"
+    bottom="55px"
+    ></z-backtop>
   </div>
 </template>
 
 <script>
-import hljs from '../node_modules/highlightjs/highlight.pack.min.js';
+import 'highlight.js/styles/solarized-dark.css';
+import hljs from 'highlight.js';
+
 hljs.initHighlightingOnLoad()
-import '../node_modules/highlightjs/styles/github.css';
-
-import Hello from './components/Hello'
-import zAside from './components/Aside'
-import zButton from './components/Button'
-import zCarrousel from './components/Carrousel'
-import zDropmenu from './components/Dropmenu'
-import zImageinput from './components/ImageInput'
-import zInputnumber from './components/InputNumber'
-import zModal from './components/Modal'
-import zNavbar from './components/Navbar'
-import zProgress from './components/Progress'
-import zSwitch from './components/Switch'
-import zTable from './components/Table'
-
-import asideMd from 'src/docs/Aside.md'
-import backtopMd from 'src/docs/BackTop.md'
-import buttonMd from 'src/docs/Button.md'
-import carrouselMd from 'src/docs/Carrousel.md'
-import dropmenuMd from 'src/docs/Dropmenu.md'
-import imageinputMd from 'src/docs/ImageInput.md'
-import inputnumberMd from 'src/docs/InputNumber.md'
-import modalMd from 'src/docs/Modal.md'
-import navbarMd from 'src/docs/Navbar.md'
-import paginationMd from 'src/docs/Pagination.md'
-import progressMd from 'src/docs/Progress.md'
-import switchMd from 'src/docs/Switch.md'
-import tableMd from 'src/docs/Table.md'
 
 export default {
-  components: {
-    Hello,
-    zAside,
-    zButton,
-    zCarrousel,
-    zDropmenu,
-    zImageinput,
-    zInputnumber,
-    zModal,
-    zNavbar,
-    zProgress,
-    zSwitch,
-    zTable,
+  name: 'app',
 
-    asideMd,
-    backtopMd,
-    buttonMd,
-    carrouselMd,
-    dropmenuMd,
-    imageinputMd,
-    inputnumberMd,
-    modalMd,
-    navbarMd,
-    paginationMd,
-    progressMd,
-    switchMd,
-    tableMd
-  },
   data() {
     return {
-      alert: {
-        show: false
-      },
-      confirm: {
-        show: false
-      },
-      asideLeft: {
-        show: false
-      },
-      asideTop: {
-        show: false
-      },
-      asideRight: {
-        show: false
-      },
-      asideBottom: {
-        show: false
-      },
-      inputNumber: {
-        value: 5
-      }
+      isShowGuide: false,
+      componentTitle: '',
+      navs: [
+        {
+          href: '/actionsheet',
+          text: 'ActionSheet 动作面板'
+        },
+        {
+          href: '/aside',
+          text: 'Aside 侧边栏'
+        },
+        {
+          href: '/backtop',
+          text: 'Backtop 返回顶部'
+        },
+        {
+          href: '/button',
+          text: 'Button 按钮'
+        },
+        {
+          href: '/carrousel',
+          text: 'Carrousel 轮播图'
+        },
+        {
+          href: '/checkbox',
+          text: 'Checkbox 复选框'
+        },
+        {
+          href: '/dimmer',
+          text: 'Dimmer 遮罩层'
+        },
+        {
+          href: '/dropmenu',
+          text: 'Dropmenu 下拉菜单'
+        },
+        {
+          href: '/imageinput',
+          text: 'ImageInput 图片放置'
+        },
+        {
+          href: '/inputnumber',
+          text: 'InputNumber 计数器'
+        },
+        {
+          href: '/modal',
+          text: 'Modal 模态窗'
+        },
+        {
+          href: '/navbar',
+          text: 'Navbar 导航栏'
+        },
+        {
+          href: '/pagination',
+          text: 'Pagination 分页器'
+        },
+        {
+          href: '/progress',
+          text: 'Progress 进度条'
+        },
+        {
+          href: '/radio',
+          text: 'Radio 单选框'
+        },
+        {
+          href: '/switch',
+          text: 'Switch 开关'
+        },
+        {
+          href: '/table',
+          text: 'Table 表格'
+        }
+      ]
     }
   },
+
   mounted() {
-    this.startProgress()
+    this.changyan()
   },
+
   watch: {
-    'inputNumber.value': function(val) {
-      console.log(val);
+    '$route.query': function() {
+      this.startProgress()
+
+      this.isShowGuide = false
+
+      this.$nextTick(function() {
+        hljs.initHighlighting.called = false
+        hljs.initHighlighting()
+      })
     }
   },
+
   methods: {
     startProgress: function() {
       this.$refs.progress.startProgress()
     },
 
-    getValue: function(val) {
-      console.log(val)
+    getTitle(title) {
+      this.componentTitle = title
+    },
+
+    changyan() {
+      var appid = 'cysNYmpbA';
+      var conf = 'prod_0ac045c2d3f8c8f9c94075b367169d93';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+      }
+      else {
+        var loadJs = function(d,a) {
+          var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+          var b = document.createElement("script");
+          b.setAttribute("type","text/javascript");
+          b.setAttribute("charset","UTF-8");
+          b.setAttribute("src",d);
+          if (typeof a === "function") {
+            if (window.attachEvent) {
+              b.onreadystatechange = function() {
+                var e = b.readyState;
+                if (e === "loaded" || e === "complete") {
+                  b.onreadystatechange = null;
+                  a()
+                }
+              }
+            }
+            else {
+              b.onload = a
+            }
+          }
+          c.appendChild(b)
+        };
+        loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+          window.changyan.api.config({appid:appid,conf:conf})
+        });
+      }
     }
   }
 }
 </script>
 
 <style lang="less">
+@primary-color: rgb(65, 184, 131);
+
 html,body,h1,h2,ul {
   margin: 0;
   padding: 0;
 }
-.section {
-  padding-top: 60px
-}
 body {
   font-size: 0;
+  background-color: rgb(236,236,236);
 }
 
 #app {
   color: rgb(53, 73, 94);
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   font-size: 16px;
 }
 
@@ -591,16 +252,40 @@ code.z-code {
   background-color: #f8f8f8;
 }
 
-.z-backtop-wrapper {
+.backtop.z-backtop-wrapper {
   color: #41b883;
+  z-index: 900;
 }
 
 .heart {
   color: red;
 }
 
+.clearfix {
+  *zoom:1;
+  clear:both;
+}
+
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+  zoom: 1;
+}
+
+h2 {
+  color: @primary-color;
+  margin-bottom: 24px;
+}
+
+h3 {
+  margin: 1.6em 0 0.6em 0;
+}
+
 a {
-  color: rgb(65, 184, 131);
+  color: @primary-color;
   text-decoration: none;
 }
 
@@ -608,13 +293,216 @@ a {
   text-align: center;
 }
 
+.navbar.z-navbar-wraper {
+  .z-navbar-fix {
+    z-index: 900;
+  }
+}
+
+#SOHUCS {
+  width: 92% !important;
+  margin: 0 auto 50px !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
+  background-color: #fff !important;
+}
+
 .content {
-  padding: 0 10px 50px;
+  padding: 20px 0;
+  margin: 50px 0 10px;
+  width: 92%;
+  background-color: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  .siderbar-wrapper {
+    .z-dimmer {
+      z-index: 8;
+    }
+
+    .z-aside.z-aside-left {
+      width: 180px;
+      z-index: 9;
+
+      .z-aside-content {
+        padding: 60px 0 44px 0;
+
+        .siderbar {
+          width: 180px;
+          border-right: none;
+
+          &>a {
+            padding: 0 8px 0 16px;
+          }
+
+          >.group-title {
+            padding: 8px 8px 8px 16px;
+          }
+
+          ul {
+            li {
+              a {
+                padding-left: 24px;
+                padding-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .siderbar {
+    width: 100%/6;
+    float: left;
+    border-right: 1px solid #eee;
+
+    .router-link-active {
+      color: @primary-color;
+      border-right: 2px solid @primary-color;
+      background-color: rgba(65, 184, 131,.3);
+    }
+
+    a {
+      display: block;
+    }
+
+    >a {
+      color: #35495e;
+      height: 42px;
+      line-height: 42px;
+      padding: 0px 16px 0px 32px;
+
+      .group-title {
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .group-title {
+      display: inline-block;
+      padding: 8px 16px 8px 32px;
+    }
+
+    >.group-title {
+      height: 26px;
+      line-height: 26px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+
+        a {
+          color: gray;
+          height: 42px;
+          line-height: 42px;
+          padding-left: 48px;
+          padding-right: 16px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 14px;
+
+          &:hover {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    padding: 5px 4%;
+    margin-left: 100%/6;
+    border-left: 1px solid #eee;
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .content {
+
+    .siderbar {
+      width: 210px;
+    }
+
+    .section {
+      margin-left: 210px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   #app {
     font-size: 14px;
+  }
+
+  #SOHUCS {
+    width: 100% !important;
+    margin: 0  0 10px 0 !important;
+  }
+
+  .content {
+    width: 100%;
+    margin: 10px 0;
+
+    &>.siderbar {
+      display: none;
+    }
+
+    .section {
+      margin-left: 0px;
+      padding: 10px;
+    }
+
+    .siderbar-wrapper .z-aside.z-aside-left {
+      width: 180px;
+
+      .z-aside-content {
+        padding: 60px 0 44px 0;
+
+        .siderbar {
+          width: 180px;
+
+          &>a {
+            padding: 0 8px 0 16px;
+          }
+
+          >.group-title {
+            padding: 8px 8px 8px 16px;
+          }
+
+          ul {
+            li {
+              a {
+                padding-left: 24px;
+                padding-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .z-navbar-wraper .z-navbar {
+    .small-logo {
+      display: none;
+    }
+
+    .z-guide {
+      display: block;
+      color: @primary-color;
+      font-weight: bold;
+      cursor: pointer;
+    }
   }
 
   .z-navbar>ul {
@@ -635,6 +523,14 @@ a {
   .content {
     display: inline-block;
     text-align: left;
+
+    // .z-aside.z-aside-left {
+    //   .z-aside-content {
+    //     .siderbar {
+    //       display: none;
+    //     }
+    //   }
+    // }
   }
 
   .z-navbar>ul {
@@ -648,6 +544,7 @@ a {
   color: #fff;
   padding: 50px 0;
   background-color: #727f80;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .footer a {
@@ -657,10 +554,6 @@ a {
 .logo {
   width: 100px;
   height: 100px
-}
-
-.section {
-  margin: 20px 0 0;
 }
 
 .introduce {
@@ -689,14 +582,44 @@ a {
   padding-bottom: 3px;
 }
 .z-navbar>ul>li>a:hover {
-  border-bottom: 3px solid rgb(65, 184, 131);
+  border-bottom: 3px solid @primary-color;
 }
+
+.z-navbar {
+  .small-logo {
+    float: left;
+    height: 40px;
+
+    a {
+      display: inline-block;
+      height: 40px;
+
+      span {
+        display: inline-block;
+        height: 100%;
+        margin-left: 10px;
+        font-size: 32px;
+        float: right;
+      }
+    }
+
+    a:hover {
+      border-bottom: none;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}
+
 .z-navbar .z-guide {
   float: left;
   position: relative;
+  display: none;
 
   .z-dropmenu-title>a {
-    color: rgb(65, 184, 131);
+    color: @primary-color;
     font-weight: bold;
   }
 }
