@@ -1,6 +1,9 @@
-# vue-components
+# z-vue-components
 
 > Components for VueJS2.0
+
+**如果你使用的vue版本小于2.1.5，请使用1.x.x的z-vue-components。**
+**如果你使用的vue版本大于等于2.1.5，请使用2.x.x的z-vue-components。**
 
 ## Installation
 ```bash
@@ -8,7 +11,7 @@ $ npm install z-vue-components
 ```
 
 ## Documentation
-[http://vue-components.zhaoyuxiang.cn](http://vue-components.zhaoyuxiang.cn)
+[https://llawlight.github.io/vue-components/](https://llawlight.github.io/vue-components/)
 
 ## Usage
 
