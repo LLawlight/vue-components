@@ -7,15 +7,15 @@
   :autoplay="true"
   :images="[
   {
-    src: 'static/1.JPG'
+    src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505548627&di=08274114517ec51664c7faf924e4ba1b&imgtype=jpg&er=1&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F1f178a82b9014a909461e9baa1773912b31bee5e.jpg'
   },
   {
-    src: 'static/2.JPG',
-    href: 'http://www.blog.zhaoyuxiang.cn'
+    src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=959991046,3561375491&fm=27&gp=0.jpg',
+    href: 'http://zhaoyuxiang.cn'
   },
   {
-    src: 'static/3.JPG',
-    href: 'https://github.com/Clark-Zhao'
+    src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2988405876,1451635215&fm=27&gp=0.jpg',
+    href: 'https://github.com/LLawlight'
   }
   ]"></z-carrousel>
 </template>
@@ -29,16 +29,15 @@
 :autoplay="true"
 :images="[
   {
-    src: 'static/1.JPG',
-    href: 'http://www.zhaoyuxiang.cn'
+    src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505548627&di=08274114517ec51664c7faf924e4ba1b&imgtype=jpg&er=1&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F1f178a82b9014a909461e9baa1773912b31bee5e.jpg'
   },
   {
-    src: 'static/2.JPG',
-    href: 'http://www.blog.zhaoyuxiang.cn'
+    src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=959991046,3561375491&fm=27&gp=0.jpg',
+    href: 'http://zhaoyuxiang.cn'
   },
   {
-    src: 'static/3.JPG',
-    href: 'https://github.com/Clark-Zhao'
+    src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2988405876,1451635215&fm=27&gp=0.jpg',
+    href: 'https://github.com/LLawlight'
   }
 ]"></z-carrousel>
 ```

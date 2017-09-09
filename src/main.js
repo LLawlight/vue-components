@@ -10,7 +10,6 @@ Vue.use(VueRouter)
 Vue.use(zyx)
 
 const router = new VueRouter({
-  mode: 'history',
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
