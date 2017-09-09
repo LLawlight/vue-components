@@ -11,7 +11,7 @@ $ npm install z-vue-components
 ```
 
 ## Documentation
-[https://llawlight.github.io/vue-components/](https://llawlight.github.io/vue-components/)
+[https://llawlight.github.io/vue-components/dist](https://llawlight.github.io/vue-components/dist)
 
 ## Usage
 
