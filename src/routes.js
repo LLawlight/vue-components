@@ -55,7 +55,7 @@ const routes = [
   { path: '/backtop', component: backtopMd},
   { path: '/button', component: buttonMd},
   { path: '/carrousel', component: carrouselMd},
-  { path: '/checkbox', component: checkboxMd},
+  // { path: '/checkbox', component: checkboxMd},
   { path: '/dimmer', component: dimmerMd},
   { path: '/dropmenu', component: dropmenuMd},
   { path: '/imageinput', component: imageinputMd},
